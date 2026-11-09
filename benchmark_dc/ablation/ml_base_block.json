@@ -1,0 +1,119 @@
+{
+ "view_rows": 1069,
+ "stations_with_truth": 673,
+ "variants": {
+  "median": {
+   "n": 673,
+   "mae": 1.306,
+   "bias": 0.251,
+   "median": 0.97,
+   "within_0.5": 31.5
+  },
+  "median [foot]": {
+   "n": 98,
+   "mae": 0.481,
+   "bias": 0.199,
+   "median": 0.271,
+   "within_0.5": 66.3
+  },
+  "median [pano]": {
+   "n": 575,
+   "mae": 1.447,
+   "bias": 0.259,
+   "median": 1.127,
+   "within_0.5": 25.6
+  },
+  "weighted": {
+   "n": 673,
+   "mae": 1.303,
+   "bias": 0.242,
+   "median": 0.962,
+   "within_0.5": 32.1
+  },
+  "weighted [foot]": {
+   "n": 98,
+   "mae": 0.48,
+   "bias": 0.2,
+   "median": 0.271,
+   "within_0.5": 66.3
+  },
+  "weighted [pano]": {
+   "n": 575,
+   "mae": 1.443,
+   "bias": 0.25,
+   "median": 1.119,
+   "within_0.5": 26.3
+  },
+  "weighted+bias": {
+   "n": 673,
+   "mae": 0.967,
+   "bias": -0.067,
+   "median": 0.729,
+   "within_0.5": 37.7
+  },
+  "weighted+bias [foot]": {
+   "n": 98,
+   "mae": 0.489,
+   "bias": 0.013,
+   "median": 0.324,
+   "within_0.5": 61.2
+  },
+  "weighted+bias [pano]": {
+   "n": 575,
+   "mae": 1.049,
+   "bias": -0.081,
+   "median": 0.828,
+   "within_0.5": 33.7
+  },
+  "weighted + smooth 10 m": {
+   "n": 673,
+   "mae": 1.296,
+   "bias": 0.238,
+   "median": 0.957,
+   "within_0.5": 31.9
+  },
+  "weighted+bias + smooth 10 m": {
+   "n": 673,
+   "mae": 0.962,
+   "bias": -0.056,
+   "median": 0.726,
+   "within_0.5": 38.3
+  }
+ },
+ "best": "weighted+bias + smooth 10 m",
+ "abstention_on_best": {
+  "keep 100%": {
+   "n": 673,
+   "mae": 0.962,
+   "bias": -0.056,
+   "median": 0.726,
+   "within_0.5": 38.3
+  },
+  "keep 75%": {
+   "n": 504,
+   "mae": 0.889,
+   "bias": -0.099,
+   "median": 0.646,
+   "within_0.5": 41.5
+  },
+  "keep 50%": {
+   "n": 336,
+   "mae": 0.805,
+   "bias": -0.014,
+   "median": 0.589,
+   "within_0.5": 45.8
+  },
+  "keep 25%": {
+   "n": 168,
+   "mae": 0.699,
+   "bias": -0.127,
+   "median": 0.462,
+   "within_0.5": 53.0
+  }
+ },
+ "conformal_90": {
+  "empirical_coverage": 0.902,
+  "median_half_width_m": 2.35,
+  "share_with_half_width_le_0.5m": 0.03
+ }
+}

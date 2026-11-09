@@ -1,0 +1,117 @@
+{
+  "location": {
+    "ai_samples": 852,
+    "on_official_sidewalk_pct": 42.4,
+    "within_1m_pct": 60.8,
+    "within_3m_pct": 86.5,
+    "median_offset_m": 0.27
+  },
+  "width_all": {
+    "n": 360,
+    "bias_m": 0.289,
+    "mae_m": 1.343,
+    "rmse_m": 1.723,
+    "median_abs_m": 1.087,
+    "within_0.25m_pct": 11.7,
+    "within_0.5m_pct": 24.2
+  },
+  "width_matched_share_pct": 42.3,
+  "width_by_distance": {},
+  "width_by_filled": {
+    "filled 0.9-1.01": {
+      "n": 360,
+      "bias_m": 0.289,
+      "mae_m": 1.343,
+      "rmse_m": 1.723,
+      "median_abs_m": 1.087,
+      "within_0.25m_pct": 11.7,
+      "within_0.5m_pct": 24.2
+    }
+  },
+  "width_aggregated_per_location": {
+    "n": 340,
+    "bias_m": 0.247,
+    "mae_m": 1.35,
+    "rmse_m": 1.725,
+    "median_abs_m": 1.087,
+    "within_0.25m_pct": 11.8,
+    "within_0.5m_pct": 23.5
+  },
+  "flag_under_1.2m": {
+    "gt_narrow": 36,
+    "sensitivity_pct": 13.9,
+    "precision_pct": 12.2
+  },
+  "width_same_station": {
+    "n": 575,
+    "bias_m": 0.259,
+    "mae_m": 1.447,
+    "rmse_m": 1.89,
+    "median_abs_m": 1.13,
+    "within_0.25m_pct": 11.5,
+    "within_0.5m_pct": 26.1,
+    "transects_with_official_sidewalk": 575,
+    "transects_total": 852,
+    "median_lateral_shift_m": 1.67
+  },
+  "width_same_station_by_method": {
+    "edges_bridged": {
+      "n": 182,
+      "bias_m": 0.227,
+      "mae_m": 1.384,
+      "rmse_m": 1.72,
+      "median_abs_m": 1.158,
+      "within_0.25m_pct": 9.9,
+      "within_0.5m_pct": 24.2
+    },
+    "edges_seen": {
+      "n": 393,
+      "bias_m": 0.274,
+      "mae_m": 1.476,
+      "rmse_m": 1.964,
+      "median_abs_m": 1.07,
+      "within_0.25m_pct": 12.2,
+      "within_0.5m_pct": 27.0
+    }
+  },
+  "objects": {
+    "utility_pole": {
+      "ai_objects_dedup": 2067,
+      "precision_pct": 43.4,
+      "official_assets_in_view": 4115,
+      "recall_pct": 25.9
+    },
+    "street_light": {
+      "ai_objects_dedup": 26,
+      "precision_pct": 7.7,
+      "official_assets_in_view": 1347,
+      "recall_pct": 0.1
+    },
+    "sign_post": {
+      "ai_objects_dedup": 1,
+      "precision_pct": 0.0,
+      "official_assets_in_view": 3269,
+      "recall_pct": 0.0
+    },
+    "cabinet": {
+      "ai_objects_dedup": 187,
+      "precision_pct": 4.8,
+      "official_assets_in_view": 20,
+      "recall_pct": 30.0
+    }
+  },
+  "objects_without_answer_key": {
+    "barrier": 2472,
+    "parked_car": 2326,
+    "bin": 631,
+    "bicycle": 349,
+    "billboard": 316,
+    "bike_rack": 276,
+    "bench": 175,
+    "parked_motorcycle": 141,
+    "fire_hydrant": 138,
+    "truck": 79,
+    "kiosk": 21,
+    "mailbox": 4
+  }
+}

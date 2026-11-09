@@ -1,0 +1,248 @@
+osm_way,street,highway,side,width_m,offset_from_centreline_m,complete,filled_frac,dist_m,dist_to_gt_sidewalk_m,gt_width_m,err_m,gt_idx
+6053553,Quarry Road Northwest,residential,right,3.5,4.0,False,1.0,0.0,0.0,2.121,1.379,30217
+6053553,Quarry Road Northwest,residential,right,2.2,4.2,False,1.0,0.0,0.0,2.28,-0.07999999999999963,30214
+6053553,Quarry Road Northwest,residential,right,2.85,3.95,False,1.0,0.0,0.0,2.524,0.32600000000000007,30211
+6053553,Quarry Road Northwest,residential,left,1.6,4.5,False,1.0,0.0,0.0,2.524,-0.9239999999999999,30056
+6053553,Quarry Road Northwest,residential,right,2.25,3.85,False,1.0,0.0,0.0,2.693,-0.44300000000000006,30207
+6053553,Quarry Road Northwest,residential,left,1.7,4.2,False,1.0,0.0,0.0,2.524,-0.8240000000000001,30056
+6053553,Quarry Road Northwest,residential,right,0.55,4.2,False,1.0,0.0,0.0,2.555,-2.005,30200
+6053572,Adams Mill Road Northwest,secondary,right,5.5,7.15,False,1.0,0.0,0.008596729223762738,1.421,4.079,38888
+6053572,Adams Mill Road Northwest,secondary,right,4.85,6.65,False,1.0,0.0,0.0,4.177,0.673,38887
+6053572,Adams Mill Road Northwest,secondary,right,5.2,6.45,False,1.0,0.0,0.0,1.253,3.947,38885
+6053660,Belmont Road Northwest,residential,left,1.3,5.7,False,1.0,0.0,0.0,3.1,-1.8,7666
+6053660,Belmont Road Northwest,residential,left,2.9,8.25,False,1.0,0.0,0.0,5.727,-2.8270000000000004,7658
+6057420,20th Street Northwest,residential,right,2.25,5.65,False,1.0,0.0,0.0,2.184,0.06599999999999984,13646
+6057420,20th Street Northwest,residential,right,0.65,7.35,False,1.0,0.0,0.0,1.581,-0.9309999999999999,14559
+6057420,20th Street Northwest,residential,right,2.0,6.35,False,1.0,0.0,0.0,1.552,0.44799999999999995,22714
+6057420,20th Street Northwest,residential,right,2.25,6.1,False,1.0,0.0,0.0,1.649,0.601,22713
+6057420,20th Street Northwest,residential,right,0.5,6.45,False,1.0,0.0,0.0,1.105,-0.605,8856
+6057420,20th Street Northwest,residential,right,2.35,4.6,False,1.0,0.0,0.0,2.354,-0.0040000000000000036,8853
+6060950,Calvert Street Northwest,secondary,right,0.8,3.05,False,1.0,0.0,0.0,4.7,-3.9000000000000004,39007
+6062691,Kalorama Road Northwest,tertiary,left,3.3,3.65,False,1.0,0.0,0.0,2.9,0.3999999999999999,13445
+29235012,Calvert Street Northwest,secondary,right,0.9,8.8,False,1.0,0.0,0.0,2.0,-1.1,29556
+29235012,Calvert Street Northwest,secondary,right,2.7,6.95,False,1.0,0.0,0.6987138349173269,0.6,2.1,29594
+29235012,Calvert Street Northwest,secondary,right,0.7,9.0,False,1.0,0.0,0.0,3.1,-2.4000000000000004,28242
+29235012,Calvert Street Northwest,secondary,right,1.8,9.05,False,1.0,0.0,0.0,3.2,-1.4000000000000001,28217
+29961093,New Hampshire Avenue Northwest,secondary,right,2.8,8.8,True,1.0,0.0,0.0,1.9,0.8999999999999999,37657
+29961093,New Hampshire Avenue Northwest,secondary,right,2.85,16.45,False,1.0,0.0,0.0,2.433,0.41700000000000026,25062
+29961093,New Hampshire Avenue Northwest,secondary,right,2.15,14.15,False,1.0,0.0,0.06118470286585928,2.404,-0.254,25066
+50525416,Adams Mill Road Northwest,tertiary,left,2.8,10.5,False,1.0,0.0,0.0,4.7,-1.9000000000000004,39007
+50525416,Adams Mill Road Northwest,tertiary,left,2.7,9.7,False,1.0,0.0,0.0,4.7,-2.0,39006
+50525416,Adams Mill Road Northwest,tertiary,right,4.1,10.75,True,1.0,0.0,0.0,4.6,-0.5,38936
+109663680,17th Street Northwest,residential,left,1.2,16.8,False,1.0,0.0,0.0,4.604,-3.404,39194
+109663680,17th Street Northwest,residential,left,0.55,17.0,False,1.0,0.0,0.0,4.604,-4.054,39194
+109672314,Lanier Place Northwest,residential,left,3.55,16.45,False,1.0,0.0,0.0,4.6,-1.0499999999999998,38935
+130788149,Florida Avenue Northwest,primary,left,2.35,17.65,False,1.0,0.0,0.0,5.6,-3.2499999999999996,3579
+130808335,Columbia Road Northwest,secondary,right,0.65,10.0,False,1.0,0.0,0.03580804279819838,2.594,-1.944,1535
+130808335,Columbia Road Northwest,secondary,right,1.4,10.4,True,1.0,0.0,0.0,2.72,-1.3200000000000003,13063
+130808335,Columbia Road Northwest,secondary,right,1.05,9.8,False,1.0,0.0,0.0,2.907,-1.857,13065
+130808336,Columbia Road Northwest,secondary,left,0.65,9.6,False,1.0,0.0,0.0,1.421,-0.771,1197
+130808336,Columbia Road Northwest,secondary,left,1.25,9.2,False,1.0,0.0,0.0,0.943,0.30700000000000005,38523
+130808336,Columbia Road Northwest,secondary,right,0.95,11.5,True,1.0,0.0,0.0,5.954,-5.004,8419
+130808336,Columbia Road Northwest,secondary,left,0.95,8.55,False,1.0,0.0,0.14336308639672674,1.342,-0.3920000000000001,13900
+130808336,Columbia Road Northwest,secondary,left,1.65,9.75,False,1.0,0.0,0.0,6.768,-5.118,13921
+130808336,Columbia Road Northwest,secondary,right,1.85,10.3,False,1.0,0.0,0.0,6.041,-4.191000000000001,8465
+130808336,Columbia Road Northwest,secondary,left,1.35,10.65,False,1.0,0.0,0.0,6.768,-5.417999999999999,13923
+130808336,Columbia Road Northwest,secondary,right,3.15,9.7,False,1.0,0.0,0.0,4.776,-1.626,8466
+130808336,Columbia Road Northwest,secondary,right,2.55,10.15,False,1.0,0.0,0.0,4.588,-2.0380000000000003,8468
+130808336,Columbia Road Northwest,secondary,left,1.1,10.2,False,1.0,0.0,0.0,5.1,-3.9999999999999996,13924
+130808336,Columbia Road Northwest,secondary,right,1.8,10.4,False,1.0,0.0,0.0,4.332,-2.532,8470
+130808336,Columbia Road Northwest,secondary,left,2.9,9.7,True,1.0,0.0,0.0,2.11,0.79,13939
+130808336,Columbia Road Northwest,secondary,right,1.8,10.15,False,1.0,0.0,0.0,6.263,-4.463,8479
+130808336,Columbia Road Northwest,secondary,left,1.4,9.15,False,1.0,0.0,0.0,1.616,-0.2160000000000002,13940
+130808336,Columbia Road Northwest,secondary,right,2.9,9.45,True,1.0,0.0,0.0,5.06,-2.1599999999999997,8480
+130808336,Columbia Road Northwest,secondary,right,2.4,10.05,False,1.0,0.0,0.0,4.717,-2.3169999999999997,8482
+130808336,Columbia Road Northwest,secondary,right,3.3,8.95,False,1.0,0.0,0.0,4.428,-1.1280000000000001,8496
+130808336,Columbia Road Northwest,secondary,right,0.75,10.1,True,1.0,0.0,0.0,3.202,-2.452,8501
+130808336,Columbia Road Northwest,secondary,right,1.85,9.5,False,1.0,0.0,0.0,7.409,-5.558999999999999,8513
+130808336,Columbia Road Northwest,secondary,right,4.7,8.6,False,1.0,0.0,0.0,4.332,0.3680000000000003,8520
+130808336,Columbia Road Northwest,secondary,left,1.6,9.65,False,1.0,0.0,0.0,2.912,-1.3119999999999998,13966
+130808336,Columbia Road Northwest,secondary,right,0.75,10.1,False,1.0,0.0,0.0,2.2,-1.4500000000000002,38502
+130808336,Columbia Road Northwest,secondary,left,0.8,10.95,False,1.0,0.0,0.65799454846716,1.3,-0.5,13975
+130808336,Columbia Road Northwest,secondary,left,0.75,12.6,False,1.0,0.0,0.20523610379696933,1.1,-0.3500000000000001,7574
+130808336,Columbia Road Northwest,secondary,left,2.35,11.65,False,1.0,0.0,0.0,1.6,0.75,7575
+130808336,Columbia Road Northwest,secondary,left,0.75,11.45,False,1.0,0.0,0.0,6.325,-5.575,7582
+130808336,Columbia Road Northwest,secondary,right,0.9,8.5,False,1.0,0.0,0.0,2.088,-1.1880000000000002,22520
+130808336,Columbia Road Northwest,secondary,right,0.55,8.8,False,1.0,0.0,0.0,1.942,-1.392,22521
+130808336,Columbia Road Northwest,secondary,left,1.5,11.8,True,1.0,0.0,0.0,4.317,-2.817,7606
+130808336,Columbia Road Northwest,secondary,right,0.75,8.0,False,1.0,0.0,0.016364409560809732,1.97,-1.22,1383
+130808336,Columbia Road Northwest,secondary,right,0.55,8.25,True,1.0,0.0,0.0,1.97,-1.42,1384
+130808336,Columbia Road Northwest,secondary,left,1.0,12.8,False,1.0,0.0,0.0,5.984,-4.984,7636
+130808337,Columbia Road Northwest,secondary,right,1.6,10.05,False,1.0,0.0,0.41198292148962595,0.64,0.9600000000000001,33441
+130808337,Columbia Road Northwest,secondary,right,1.0,10.2,False,1.0,0.0,0.0,1.221,-0.22100000000000009,33442
+130808337,Columbia Road Northwest,secondary,right,2.95,10.3,False,1.0,0.0,0.37731249046250587,2.081,0.8690000000000002,33444
+130808337,Columbia Road Northwest,secondary,right,2.1,10.35,False,1.0,0.0,0.0,2.163,-0.06299999999999972,33452
+130808337,Columbia Road Northwest,secondary,right,1.85,10.6,False,1.0,0.0,0.0,2.5,-0.6499999999999999,33458
+130808337,Columbia Road Northwest,secondary,right,0.9,10.55,True,1.0,0.0,0.0,1.86,-0.9600000000000001,33459
+130808337,Columbia Road Northwest,secondary,right,0.95,10.55,False,1.0,0.0,0.0,1.5,-0.55,30125
+130808337,Columbia Road Northwest,secondary,right,0.9,10.8,False,1.0,0.0,0.0,2.625,-1.725,30127
+130808337,Columbia Road Northwest,secondary,right,2.05,11.35,False,1.0,0.0,0.0,1.432,0.6179999999999999,30195
+130808337,Columbia Road Northwest,secondary,right,2.25,10.55,False,1.0,0.0,0.0,1.36,0.8899999999999999,30208
+130808337,Columbia Road Northwest,secondary,right,2.75,10.75,False,1.0,0.0,0.0,1.36,1.39,30208
+130808337,Columbia Road Northwest,secondary,right,3.45,10.65,False,1.0,0.0,0.0,2.28,1.1700000000000004,30216
+130808337,Columbia Road Northwest,secondary,right,7.15,12.1,False,1.0,0.0,0.0,2.524,4.626,30211
+130927004,Biltmore Street Northwest,residential,right,1.1,6.35,False,1.0,0.0,0.0,5.4,-4.300000000000001,8418
+130927004,Biltmore Street Northwest,residential,left,3.8,11.3,False,1.0,0.0,0.0,1.803,1.9969999999999999,19219
+131076051,Columbia Road Northwest,secondary,right,2.8,11.6,False,1.0,0.0,0.0,5.022,-2.2220000000000004,28160
+131076051,Columbia Road Northwest,secondary,right,2.45,13.8,False,1.0,0.0,0.0,4.924,-2.474,28185
+131076051,Columbia Road Northwest,secondary,right,2.45,13.5,False,1.0,0.0,0.0,4.686,-2.2359999999999998,28191
+131076051,Columbia Road Northwest,secondary,right,5.5,9.35,False,1.0,0.0,0.0,3.688,1.8119999999999998,28201
+131076051,Columbia Road Northwest,secondary,right,4.25,10.65,False,1.0,0.0,0.0,3.688,0.5619999999999998,28201
+131076051,Columbia Road Northwest,secondary,right,0.85,14.8,False,1.0,0.0,0.0,1.8,-0.9500000000000001,28203
+131076051,Columbia Road Northwest,secondary,right,5.7,14.3,False,1.0,0.0,0.0,1.421,4.279,38888
+131076051,Columbia Road Northwest,secondary,right,4.35,15.65,False,1.0,0.0,0.0,4.177,0.17300000000000004,38887
+131076058,Columbia Road Northwest,secondary,right,3.7,13.5,False,1.0,0.0,0.0,4.111,-0.4109999999999996,32911
+131076058,Columbia Road Northwest,secondary,right,2.3,12.0,False,1.0,0.0,0.0,6.341,-4.041,32917
+131076058,Columbia Road Northwest,secondary,right,2.3,11.45,False,1.0,0.0,0.0,5.727,-3.4270000000000005,32929
+131076058,Columbia Road Northwest,secondary,right,2.3,12.25,False,1.0,0.0,0.0,7.747,-5.447,29696
+131076058,Columbia Road Northwest,secondary,right,2.95,11.95,False,1.0,0.0,0.0,7.734,-4.784,29697
+131076058,Columbia Road Northwest,secondary,right,2.45,12.15,False,1.0,0.0,0.0,7.762,-5.311999999999999,29698
+131076058,Columbia Road Northwest,secondary,right,0.9,12.6,False,1.0,0.0,0.0,7.723,-6.8229999999999995,29700
+131076058,Columbia Road Northwest,secondary,right,1.05,13.0,False,1.0,0.0,0.0,7.669,-6.619,29707
+131076058,Columbia Road Northwest,secondary,right,3.0,12.15,False,1.0,0.0,0.0,5.787,-2.787,29708
+131076058,Columbia Road Northwest,secondary,right,2.05,12.25,False,1.0,0.0,0.0,4.215,-2.165,29711
+131076058,Columbia Road Northwest,secondary,right,1.0,11.8,False,1.0,0.0,0.0,5.903,-4.903,29724
+131076058,Columbia Road Northwest,secondary,right,1.05,11.6,False,1.0,0.0,0.0,5.63,-4.58,29726
+131076058,Columbia Road Northwest,secondary,right,1.7,11.8,False,1.0,0.0,0.0,6.061,-4.361,29728
+131076058,Columbia Road Northwest,secondary,right,1.3,11.7,False,1.0,0.0,0.0,6.727,-5.4270000000000005,29731
+131076058,Columbia Road Northwest,secondary,right,3.0,11.65,False,1.0,0.0,0.0,7.529,-4.529,29733
+131076058,Columbia Road Northwest,secondary,right,0.65,11.75,False,1.0,0.0,0.0,7.543,-6.893,29734
+219443201,Calvert Street Loop,service,left,6.9,5.55,True,1.0,0.0,0.0,4.0,2.9000000000000004,27455
+219443201,Calvert Street Loop,service,right,1.5,5.4,False,1.0,0.0,0.0,2.47,-0.9700000000000002,28210
+219443201,Calvert Street Loop,service,left,1.3,14.6,True,1.0,0.0,0.0,3.9,-2.5999999999999996,27454
+219443201,Calvert Street Loop,service,left,1.6,13.75,False,1.0,0.0,0.0,3.9,-2.3,27454
+219443201,Calvert Street Loop,service,left,2.2,13.05,False,1.0,0.0,0.0,3.9,-1.6999999999999997,27454
+221491664,,primary_link,right,2.15,4.0,False,1.0,0.0,0.0,2.46,-0.31000000000000005,25064
+221491664,,primary_link,left,3.0,4.4,False,1.0,0.0,0.0,1.9,1.1,37657
+221491664,,primary_link,right,1.35,4.75,False,1.0,0.0,0.0,2.46,-1.1099999999999999,25064
+221491664,,primary_link,right,1.35,4.8,False,1.0,0.0,0.0,2.404,-1.0539999999999998,25066
+243604719,,service,left,2.7,6.8,False,1.0,0.0,0.0,6.139,-3.439,32930
+243604719,,service,right,6.9,10.35,False,1.0,0.0,0.0,7.734,-0.8339999999999996,29697
+243604719,,service,left,2.3,6.4,False,1.0,0.0,0.0,6.139,-3.8390000000000004,32930
+346627386,Swann Street Northwest,residential,right,1.3,5.45,False,1.0,0.0,0.0,2.3,-0.9999999999999998,14188
+356850364,,service,left,4.25,1.0,False,1.0,0.0,0.0,7.22,-2.9699999999999998,29760
+356850364,,service,right,0.9,10.8,False,1.0,0.0,0.0,6.629,-5.728999999999999,27966
+392354724,Florida Avenue Northwest,primary,right,1.45,15.35,False,1.0,0.0,0.0,6.166,-4.716,3578
+397038968,U Street Northwest,primary,left,1.75,8.3,False,1.0,0.0,0.23279073338989467,1.9,-0.1499999999999999,37657
+397038968,U Street Northwest,primary,left,4.3,10.6,False,1.0,0.0,0.0,2.46,1.8399999999999999,25064
+397330837,Adams Mill Road Northwest,secondary,left,3.25,6.75,False,1.0,0.0,0.0,4.6,-1.3499999999999996,38936
+397330837,Adams Mill Road Northwest,secondary,left,1.35,7.15,False,1.0,0.0,0.0,4.6,-3.2499999999999996,38936
+397331629,18th Street Northwest,secondary,left,2.55,13.15,False,1.0,0.0,0.34421696217993014,0.728,1.8219999999999998,38743
+397334650,18th Street Northwest,secondary,right,1.0,9.45,False,1.0,0.0,0.0,3.808,-2.808,18894
+397334650,18th Street Northwest,secondary,right,1.1,8.0,False,1.0,0.0,0.0,5.12,-4.02,18889
+397334650,18th Street Northwest,secondary,right,5.5,7.25,False,1.0,0.0,0.0,5.967,-0.46699999999999964,18887
+397334650,18th Street Northwest,secondary,right,2.4,8.35,False,1.0,0.0,0.0,5.263,-2.863,18884
+397334659,18th Street Northwest,secondary,left,0.6,8.7,False,1.0,0.0,0.0,5.9,-5.300000000000001,3628
+397334659,18th Street Northwest,secondary,right,1.9,4.15,False,1.0,0.0,0.0,0.985,0.9149999999999999,38312
+397336483,18th Street Northwest,secondary,right,3.0,8.1,False,1.0,0.0,0.0,4.512,-1.5119999999999996,2911
+397336483,18th Street Northwest,secondary,right,2.7,8.6,False,1.0,0.0,0.0,4.866,-2.1659999999999995,2906
+397336483,18th Street Northwest,secondary,right,0.9,9.75,True,1.0,0.0,0.0,4.438,-3.538,2901
+406530015,Columbia Road Northwest,secondary,right,3.0,10.3,False,1.0,0.0,0.0,3.551,-0.5510000000000002,32516
+406530015,Columbia Road Northwest,secondary,right,2.4,10.55,False,1.0,0.0,0.0,1.879,0.5209999999999999,32518
+406530015,Columbia Road Northwest,secondary,right,1.0,6.25,False,1.0,0.0,0.0,4.883,-3.883,38793
+421948773,16th Street Northwest,primary,right,0.6,12.0,False,1.0,0.0,0.0,2.802,-2.202,361
+421948773,16th Street Northwest,primary,left,2.3,17.7,False,1.0,0.0,0.0,1.9,0.3999999999999999,37657
+421948774,T Street Northwest,tertiary,right,1.3,6.9,False,1.0,0.0,0.0,5.166,-3.8660000000000005,18766
+431754363,,service,left,5.2,1.35,False,1.0,0.0,0.0,1.6,3.6,7575
+431754365,,service,left,1.4,13.9,False,1.0,0.0,0.0,4.016,-2.616,13897
+440942567,U Street Northwest,primary,left,1.8,16.8,False,1.0,0.0,0.0,2.802,-1.002,361
+468494294,Columbia Road Northwest,secondary,right,0.65,11.65,False,1.0,0.0,0.0,7.543,-6.893,29735
+468494294,Columbia Road Northwest,secondary,right,2.35,11.45,False,1.0,0.0,0.0,7.593,-5.243,29750
+468494294,Columbia Road Northwest,secondary,right,1.05,11.5,False,1.0,0.0,0.0,5.967,-4.917,29753
+468494294,Columbia Road Northwest,secondary,right,3.35,11.05,True,1.0,0.0,0.0,7.22,-3.8699999999999997,29760
+468494294,Columbia Road Northwest,secondary,right,1.55,11.0,False,1.0,0.0,0.0,7.716,-6.166,27968
+468494294,Columbia Road Northwest,secondary,right,1.65,11.25,False,1.0,0.0,0.0,7.684,-6.034000000000001,27970
+468494294,Columbia Road Northwest,secondary,right,2.0,11.35,False,1.0,0.0,0.0,7.701,-5.701,27972
+468494299,Columbia Road Northwest,secondary,right,1.05,14.1,False,1.0,0.0,0.0,2.823,-1.773,28025
+468494299,Columbia Road Northwest,secondary,right,0.85,14.15,False,1.0,0.0,0.0,2.648,-1.798,28035
+468494302,Columbia Road Northwest,secondary,left,2.55,7.3,False,1.0,0.0,0.7964245270036117,0.728,1.8219999999999998,38743
+468494302,Columbia Road Northwest,secondary,right,2.5,13.6,False,1.0,0.0,0.0,1.803,0.6970000000000001,19219
+468494963,Columbia Road Northwest,secondary,right,2.2,7.9,False,1.0,0.0,0.0,1.044,1.1560000000000001,21814
+468494963,Columbia Road Northwest,secondary,right,2.8,7.55,False,1.0,0.0,0.0,3.13,-0.33000000000000007,21817
+468494963,Columbia Road Northwest,secondary,left,2.55,12.85,False,1.0,0.0,0.0,2.9,-0.3500000000000001,13445
+565580359,,service,right,1.6,4.65,False,1.0,0.0,0.0,2.3,-0.6999999999999997,14188
+565580359,,service,right,3.95,1.55,False,1.0,0.0,0.0,1.4,2.5500000000000003,6014
+565580367,,service,left,4.1,3.75,True,1.0,0.0,0.0,5.6,-1.5,3579
+565580387,,service,left,1.8,5.1,False,1.0,0.0,0.0,3.5,-1.7,13085
+565580387,,service,right,0.7,3.8,False,1.0,0.0,0.0,3.041,-2.341,16341
+565862122,,service,left,1.25,2.65,False,1.0,0.0,0.0,1.942,-0.692,28802
+565862122,,service,left,7.55,2.4,False,1.0,0.0,0.13629627711416914,2.163,5.3870000000000005,28805
+565862122,,service,right,2.05,1.55,True,1.0,0.0,0.2930604346345153,1.581,0.46899999999999986,30097
+565868593,,service,right,2.4,17.6,False,1.0,0.0,0.0,6.727,-4.327,2770
+565871006,,service,left,2.45,1.05,False,1.0,0.0,0.0,1.992,0.4580000000000002,13647
+664056259,18th Street Northwest,secondary,right,2.6,9.2,False,1.0,0.0,0.0,6.727,-4.127000000000001,2770
+664056259,18th Street Northwest,secondary,right,2.3,9.5,True,1.0,0.0,0.0,6.001,-3.7010000000000005,2768
+664056259,18th Street Northwest,secondary,right,1.1,9.95,True,1.0,0.0,0.0,4.1,-2.9999999999999996,2764
+666219692,,service,left,1.95,2.75,False,1.0,0.0,0.0,0.64,1.31,33441
+666219692,,service,left,1.5,2.95,False,1.0,0.0,0.0,0.64,0.86,33441
+666219692,,service,left,1.5,2.85,False,1.0,0.0,0.0,1.221,0.2789999999999999,33442
+666219692,,service,left,2.85,1.4,False,1.0,0.0,0.3507885079784265,2.081,0.7690000000000001,33444
+666219692,,service,left,1.9,2.1,False,1.0,0.0,0.05602911434428822,2.163,-0.2629999999999999,33452
+666219692,,service,left,2.1,1.95,False,1.0,0.0,0.03626302636966338,2.5,-0.3999999999999999,33458
+666219692,,service,left,1.15,2.8,False,1.0,0.0,0.0,1.86,-0.7100000000000002,33459
+666219692,,service,left,2.35,1.0,False,1.0,0.0,0.04822418068045932,1.86,0.49,33459
+679953036,,service,left,1.3,4.95,False,1.0,0.0,0.0,4.4,-3.1000000000000005,8018
+679953036,,service,left,2.3,2.85,False,1.0,0.0,0.0,0.6,1.6999999999999997,7995
+777913125,California Street Northwest,residential,right,6.8,5.6,False,1.0,0.0,0.0,4.866,1.9340000000000002,2906
+922526017,18th Street Northwest,secondary,right,3.1,8.7,False,1.0,0.0,0.0,5.6,-2.4999999999999996,3579
+922526017,18th Street Northwest,secondary,right,3.3,8.85,False,1.0,0.0,0.0,5.6,-2.3,3579
+922526017,18th Street Northwest,secondary,right,0.7,9.1,False,1.0,0.0,0.0,6.166,-5.466,3578
+1042776582,Calvert Street Northwest,secondary,right,0.9,12.15,False,1.0,0.0,0.0,3.2,-2.3000000000000003,27451
+1042776582,Calvert Street Northwest,secondary,right,2.8,9.6,False,1.0,0.0,0.0,4.0,-1.2000000000000002,27455
+1042776582,Calvert Street Northwest,secondary,right,1.8,11.05,False,1.0,0.0,0.0,3.9,-2.0999999999999996,27454
+1042776586,18th Street Northwest,secondary,right,1.3,8.05,False,1.0,0.0,0.0,6.9,-5.6000000000000005,2790
+1042776586,18th Street Northwest,secondary,right,0.9,8.95,False,1.0,0.0,0.0,6.9,-6.0,2786
+1042798281,18th Street Northwest,secondary,right,2.35,4.05,False,1.0,0.0,0.0,1.581,0.7690000000000001,38473
+1042798281,18th Street Northwest,secondary,right,1.35,4.15,False,1.0,0.0,0.37681125085931383,1.628,-0.2779999999999998,18824
+1042798281,18th Street Northwest,secondary,left,0.85,8.95,False,1.0,0.0,0.0,3.239,-2.389,7729
+1042798281,18th Street Northwest,secondary,right,1.95,6.45,True,1.0,0.0,0.0,6.237,-4.287,18817
+1042798281,18th Street Northwest,secondary,left,2.8,6.9,False,1.0,0.0,0.0,5.727,-2.9270000000000005,7658
+1042798281,18th Street Northwest,secondary,right,3.5,2.8,False,1.0,0.0,0.0,0.728,2.7720000000000002,36842
+1042798281,18th Street Northwest,secondary,left,2.15,6.85,True,1.0,0.0,0.0,5.727,-3.5770000000000004,7658
+1042798281,18th Street Northwest,secondary,left,0.7,7.2,False,1.0,0.0,0.0,5.022,-4.322,7640
+1042798281,18th Street Northwest,secondary,right,2.85,3.45,False,1.0,0.0,0.0,1.456,1.3940000000000001,36837
+1042798281,18th Street Northwest,secondary,right,0.7,4.1,False,1.0,0.0,0.697843133034226,1.456,-0.756,36837
+1110534926,18th Street Northwest,secondary,right,0.9,10.25,True,1.0,0.0,0.0,6.0,-5.1,3577
+1110535131,18th Street Northwest,secondary,right,1.9,8.95,False,1.0,0.0,0.0,0.7,1.2,38591
+1111546582,17th Street Northwest,tertiary,right,0.8,5.6,True,1.0,0.0,0.0,2.0,-1.2,22247
+1163801038,Kalorama Road Northwest,tertiary,right,3.75,4.45,False,1.0,0.0,0.0,1.552,2.198,22714
+1192129787,,service,left,1.35,4.75,False,1.0,0.0,0.0,5.295,-3.945,7577
+1208935171,,service,left,1.95,4.85,False,1.0,0.0,0.0,2.184,-0.2340000000000002,13646
+1232223628,Kalorama Road Northwest,tertiary,right,2.25,7.75,False,1.0,0.0,0.0,5.12,-2.87,18889
+1232223629,Kalorama Road Northwest,tertiary,left,1.85,15.85,False,1.0,0.0,0.0,2.417,-0.5669999999999997,9561
+1332645091,,service,left,2.85,10.25,False,1.0,0.0,0.0,3.551,-0.7010000000000001,32516
+1364378490,Ontario Road Northwest,residential,left,3.45,5.9,False,1.0,0.0,0.0,5.78,-2.33,32913
+1445231745,Adams Mill Road Northwest,secondary,left,0.5,1.0,False,1.0,0.0,0.0,4.6,-4.1,38937
+1445231745,Adams Mill Road Northwest,secondary,right,2.15,1.0,False,1.0,0.0,0.0,4.6,-2.4499999999999997,38935
+1456312750,Wyoming Avenue Northwest,residential,left,3.9,4.1,False,1.0,0.0,0.0,2.72,1.1799999999999997,13063
+1456312750,Wyoming Avenue Northwest,residential,left,0.85,8.15,False,1.0,0.0,0.0,2.997,-2.147,13066
+1480680619,Columbia Road Northwest,secondary,right,3.45,6.75,False,1.0,0.0,0.0,2.335,1.1150000000000002,30094
+1480680619,Columbia Road Northwest,secondary,right,1.6,8.2,False,1.0,0.0,0.0,3.606,-2.006,30095
+1480680619,Columbia Road Northwest,secondary,right,0.65,8.7,False,1.0,0.0,0.0,1.942,-1.2919999999999998,28802
+1480680619,Columbia Road Northwest,secondary,right,1.2,9.0,False,1.0,0.0,0.0,3.523,-2.3230000000000004,28811
+1480680619,Columbia Road Northwest,secondary,right,1.95,9.5,False,1.0,0.0,0.0,2.47,-0.5200000000000002,28830
+1480680619,Columbia Road Northwest,secondary,left,0.65,2.75,False,1.0,0.0,0.0,4.604,-3.954,39194
+1480680619,Columbia Road Northwest,secondary,right,1.25,9.7,False,1.0,0.0,0.0,1.838,-0.5880000000000001,28858
+1480680619,Columbia Road Northwest,secondary,right,0.8,9.95,False,1.0,0.0,0.0,2.025,-1.2249999999999999,28861
+1480680619,Columbia Road Northwest,secondary,right,2.35,10.05,False,1.0,0.0,0.17396269492081398,1.803,0.5470000000000002,28868
+1480680619,Columbia Road Northwest,secondary,right,2.15,10.4,False,1.0,0.0,0.385304427355719,2.025,0.125,28872
+1480680619,Columbia Road Northwest,secondary,right,1.5,10.2,False,1.0,0.0,0.0,1.803,-0.30299999999999994,28879
+1480680619,Columbia Road Northwest,secondary,right,0.9,10.85,False,1.0,0.0,0.017278678783272158,1.972,-1.072,28881
+1480680620,Columbia Road Northwest,secondary,right,2.2,17.0,False,1.0,0.0,0.0,2.693,-0.4929999999999999,30207
+1480680620,Columbia Road Northwest,secondary,right,4.55,10.35,False,1.0,0.0,0.0,2.484,2.066,30057
+1480680620,Columbia Road Northwest,secondary,right,2.8,9.85,False,1.0,0.0,0.0,1.942,0.8579999999999999,30061
+1480680620,Columbia Road Northwest,secondary,right,0.85,9.05,False,1.0,0.0,0.0,2.571,-1.721,30065
+1480680620,Columbia Road Northwest,secondary,right,3.95,8.6,False,1.0,0.0,0.0,3.859,0.09100000000000019,30066
+1480680620,Columbia Road Northwest,secondary,right,4.45,8.15,False,1.0,0.0,0.0,3.859,0.5910000000000002,30066
+1480680620,Columbia Road Northwest,secondary,right,1.8,10.6,False,1.0,0.0,0.1537157204259858,2.332,-0.5319999999999998,30068
+1480680620,Columbia Road Northwest,secondary,right,4.55,7.85,False,1.0,0.0,0.0,2.864,1.686,30070
+1480680620,Columbia Road Northwest,secondary,right,4.2,7.9,False,1.0,0.0,0.0,2.256,1.9440000000000004,30073
+1480680620,Columbia Road Northwest,secondary,right,2.65,9.45,False,1.0,0.0,0.0,2.283,0.367,30076
+1480680620,Columbia Road Northwest,secondary,right,4.1,9.5,False,1.0,0.0,0.0,4.219,-0.11900000000000066,30075
+1480680620,Columbia Road Northwest,secondary,right,3.5,7.95,False,1.0,0.0,0.0,2.668,0.8319999999999999,30080
+1480680620,Columbia Road Northwest,secondary,right,3.9,7.45,False,1.0,0.0,0.0,4.011,-0.11100000000000021,30081
+1480680620,Columbia Road Northwest,secondary,right,3.6,7.7,False,1.0,0.0,0.0,3.454,0.1459999999999999,30083
+1480680620,Columbia Road Northwest,secondary,right,2.1,7.6,False,1.0,0.0,0.0,3.689,-1.589,30084
+1480680621,Columbia Road Northwest,secondary,right,0.55,10.2,False,1.0,0.0,0.056103002896609536,2.002,-1.4519999999999997,9568
+1480680621,Columbia Road Northwest,secondary,right,3.3,8.95,False,1.0,0.0,0.0,1.746,1.5539999999999998,9608
+1527538903,19th Street Northwest,residential,right,3.6,6.85,True,1.0,0.0,0.0,1.746,1.854,9608

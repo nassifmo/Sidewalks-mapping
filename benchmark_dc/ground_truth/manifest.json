@@ -1,0 +1,96 @@
+{
+  "bbox": [
+    -77.048,
+    38.914,
+    -77.036,
+    38.926
+  ],
+  "downloaded": "2026-11-06",
+  "layers": {
+    "dc_sidewalks_2023": {
+      "source": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Planimetrics_2023/MapServer/11",
+      "use": "sidewalk polygons -> location, width, length",
+      "count": 926
+    },
+    "dc_curb_2023": {
+      "source": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Planimetrics_2023/MapServer/3",
+      "use": "curb lines -> curb presence, sidewalk outer edge",
+      "count": 1211
+    },
+    "dc_buildings_2023": {
+      "source": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Planimetrics_2023/MapServer/1",
+      "use": "building footprints -> sidewalk inner edge",
+      "count": 2519
+    },
+    "dc_roads_2023": {
+      "source": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Planimetrics_2023/MapServer/10",
+      "use": "road polygons",
+      "count": 625
+    },
+    "dc_obscured_areas_2023": {
+      "source": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Planimetrics_2023/MapServer/7",
+      "use": "areas where the official mapping itself is uncertain (exclude from scoring)",
+      "count": 0
+    },
+    "dc_street_blockfaces": {
+      "source": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Transportation_WebMercator/MapServer/164",
+      "use": "block faces -> per-side evaluation units",
+      "count": 858
+    },
+    "dc_street_trees": {
+      "source": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DDOT/UFATrees2/MapServer/0",
+      "use": "tree",
+      "count": 3395
+    },
+    "dc_street_lights": {
+      "source": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Transportation_Signs_Signals_Lights_WebMercator/MapServer/90",
+      "use": "street_light",
+      "count": 1132
+    },
+    "dc_traffic_poles": {
+      "source": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Transportation_Signs_Signals_Lights_WebMercator/MapServer/94",
+      "use": "utility_pole / sign_post",
+      "count": 537
+    },
+    "dc_signal_cabinets": {
+      "source": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Transportation_Signs_Signals_Lights_WebMercator/MapServer/27",
+      "use": "cabinet",
+      "count": 22
+    },
+    "dc_sign_supports": {
+      "source": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DDOT/Signworks/MapServer/0",
+      "use": "sign_post",
+      "count": 3156
+    },
+    "dc_parking_meters": {
+      "source": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DDOT/DdotAssets/MapServer/7",
+      "use": "parking meter (post)",
+      "count": 83
+    },
+    "dc_ada_barriers": {
+      "source": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Transportation_ADA_WebMercator/MapServer/1",
+      "use": "barriers in the public right of way",
+      "count": 261
+    },
+    "dc_ada_curb_ramps": {
+      "source": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Transportation_ADA_WebMercator/MapServer/3",
+      "use": "curb ramps",
+      "count": 618
+    },
+    "dc_ada_driveways": {
+      "source": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Transportation_ADA_WebMercator/MapServer/4",
+      "use": "driveways",
+      "count": 349
+    },
+    "dc_bus_stops": {
+      "source": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Transportation_ADA_WebMercator/MapServer/2",
+      "use": "bus stops",
+      "count": 46
+    },
+    "project_sidewalk_labels": {
+      "source": "https://sidewalk-dc.cs.washington.edu/v3/api/rawLabels",
+      "use": "obstacles, surface problems, curb ramps, missing sidewalks",
+      "count": 2895
+    }
+  }
+}

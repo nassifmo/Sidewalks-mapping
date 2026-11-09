@@ -1,0 +1,114 @@
+{
+  "location": {
+    "ai_samples": 140,
+    "on_official_sidewalk_pct": 27.9,
+    "within_1m_pct": 52.1,
+    "within_3m_pct": 89.3,
+    "median_offset_m": 0.86
+  },
+  "width_all": {
+    "n": 59,
+    "bias_m": 0.271,
+    "mae_m": 0.613,
+    "rmse_m": 0.823,
+    "median_abs_m": 0.39,
+    "within_0.25m_pct": 45.8,
+    "within_0.5m_pct": 54.2
+  },
+  "width_matched_share_pct": 42.1,
+  "width_by_distance": {},
+  "width_by_filled": {
+    "filled 0.9-1.01": {
+      "n": 59,
+      "bias_m": 0.271,
+      "mae_m": 0.613,
+      "rmse_m": 0.823,
+      "median_abs_m": 0.39,
+      "within_0.25m_pct": 45.8,
+      "within_0.5m_pct": 54.2
+    }
+  },
+  "width_aggregated_per_location": {
+    "n": 58,
+    "bias_m": 0.245,
+    "mae_m": 0.593,
+    "rmse_m": 0.797,
+    "median_abs_m": 0.389,
+    "within_0.25m_pct": 46.6,
+    "within_0.5m_pct": 55.2
+  },
+  "flag_under_1.2m": {
+    "gt_narrow": 6,
+    "sensitivity_pct": 0.0,
+    "precision_pct": 0.0
+  },
+  "width_same_station": {
+    "n": 89,
+    "bias_m": 0.161,
+    "mae_m": 0.529,
+    "rmse_m": 0.709,
+    "median_abs_m": 0.33,
+    "within_0.25m_pct": 41.6,
+    "within_0.5m_pct": 58.4,
+    "transects_with_official_sidewalk": 89,
+    "transects_total": 140,
+    "median_lateral_shift_m": 1.43
+  },
+  "width_same_station_by_method": {
+    "edges_bridged": {
+      "n": 21,
+      "bias_m": 0.375,
+      "mae_m": 0.499,
+      "rmse_m": 0.721,
+      "median_abs_m": 0.4,
+      "within_0.25m_pct": 47.6,
+      "within_0.5m_pct": 66.7
+    },
+    "edges_seen": {
+      "n": 68,
+      "bias_m": 0.095,
+      "mae_m": 0.538,
+      "rmse_m": 0.705,
+      "median_abs_m": 0.33,
+      "within_0.25m_pct": 39.7,
+      "within_0.5m_pct": 55.9
+    }
+  },
+  "objects": {
+    "utility_pole": {
+      "ai_objects_dedup": 96,
+      "precision_pct": 27.1,
+      "official_assets_in_view": 323,
+      "recall_pct": 9.9
+    },
+    "street_light": {
+      "ai_objects_dedup": 1,
+      "precision_pct": 0.0,
+      "official_assets_in_view": 124,
+      "recall_pct": 0.0
+    },
+    "sign_post": {
+      "ai_objects": 0,
+      "note": "nothing to match"
+    },
+    "cabinet": {
+      "ai_objects_dedup": 6,
+      "precision_pct": 0.0,
+      "official_assets_in_view": 1,
+      "recall_pct": 0.0
+    }
+  },
+  "objects_without_answer_key": {
+    "parked_car": 214,
+    "barrier": 55,
+    "bin": 27,
+    "bench": 10,
+    "bicycle": 9,
+    "parked_motorcycle": 9,
+    "fire_hydrant": 6,
+    "bike_rack": 5,
+    "truck": 3,
+    "kiosk": 2,
+    "billboard": 1
+  }
+}

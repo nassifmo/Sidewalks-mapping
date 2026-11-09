@@ -1,0 +1,2348 @@
+{
+ "LEBANON": {
+  "motorway": {
+   "n": 623,
+   "km": 441.4
+  },
+  "motorway_link": {
+   "n": 1051,
+   "km": 121.1
+  },
+  "trunk": {
+   "n": 1192,
+   "km": 872.7
+  },
+  "trunk_link": {
+   "n": 726,
+   "km": 43.9
+  },
+  "primary": {
+   "n": 1243,
+   "km": 1021.5
+  },
+  "primary_link": {
+   "n": 208,
+   "km": 9.3
+  },
+  "secondary": {
+   "n": 2788,
+   "km": 2179.2
+  },
+  "secondary_link": {
+   "n": 279,
+   "km": 8.5
+  },
+  "tertiary": {
+   "n": 5429,
+   "km": 3818.8
+  },
+  "tertiary_link": {
+   "n": 293,
+   "km": 8.0
+  },
+  "residential": {
+   "n": 88391,
+   "km": 20406.7
+  },
+  "unclassified": {
+   "n": 12594,
+   "km": 7756.1
+  },
+  "living_street": {
+   "n": 157,
+   "km": 20.4
+  },
+  "service": {
+   "n": 15991,
+   "km": 2015.8
+  },
+  "pedestrian": {
+   "n": 781,
+   "km": 65.7
+  },
+  "footway": {
+   "n": 1956,
+   "km": 188.4
+  },
+  "steps": {
+   "n": 426,
+   "km": 11.0
+  },
+  "path": {
+   "n": 3491,
+   "km": 976.6
+  },
+  "track": {
+   "n": 21669,
+   "km": 7150.0
+  },
+  "road": {
+   "n": 7,
+   "km": 0.3
+  },
+  "cycleway": {
+   "n": 2,
+   "km": 0.3
+  },
+  "tag:sidewalk=*": {
+   "n": 73,
+   "km": 19.9
+  },
+  "tag:sidewalk:side=*": {
+   "n": 138,
+   "km": 147.3
+  },
+  "footway=sidewalk": {
+   "n": 32,
+   "km": 7.8
+  },
+  "footway=crossing": {
+   "n": 121,
+   "km": 1.9
+  }
+ },
+ "GOV:Beirut Governorate": {
+  "motorway": {
+   "n": 117,
+   "km": 33.5
+  },
+  "motorway_link": {
+   "n": 92,
+   "km": 9.1
+  },
+  "trunk": {
+   "n": 239,
+   "km": 41.5
+  },
+  "trunk_link": {
+   "n": 159,
+   "km": 13.0
+  },
+  "primary": {
+   "n": 68,
+   "km": 11.2
+  },
+  "primary_link": {
+   "n": 24,
+   "km": 2.5
+  },
+  "secondary": {
+   "n": 211,
+   "km": 35.4
+  },
+  "secondary_link": {
+   "n": 44,
+   "km": 1.4
+  },
+  "tertiary": {
+   "n": 460,
+   "km": 77.1
+  },
+  "tertiary_link": {
+   "n": 35,
+   "km": 1.3
+  },
+  "residential": {
+   "n": 1789,
+   "km": 214.9
+  },
+  "unclassified": {
+   "n": 129,
+   "km": 21.4
+  },
+  "living_street": {
+   "n": 5,
+   "km": 0.4
+  },
+  "service": {
+   "n": 911,
+   "km": 76.2
+  },
+  "pedestrian": {
+   "n": 662,
+   "km": 49.2
+  },
+  "footway": {
+   "n": 361,
+   "km": 19.8
+  },
+  "steps": {
+   "n": 188,
+   "km": 4.8
+  },
+  "path": {
+   "n": 37,
+   "km": 4.5
+  },
+  "track": {
+   "n": 1,
+   "km": 0.1
+  },
+  "road": {
+   "n": 0,
+   "km": 0.0
+  },
+  "cycleway": {
+   "n": 1,
+   "km": 0.0
+  },
+  "tag:sidewalk=*": {
+   "n": 2,
+   "km": 0.2
+  },
+  "tag:sidewalk:side=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway=sidewalk": {
+   "n": 8,
+   "km": 1.8
+  },
+  "footway=crossing": {
+   "n": 72,
+   "km": 1.0
+  }
+ },
+ "GOV:North Governorate": {
+  "motorway": {
+   "n": 71,
+   "km": 76.5
+  },
+  "motorway_link": {
+   "n": 104,
+   "km": 15.0
+  },
+  "trunk": {
+   "n": 74,
+   "km": 74.6
+  },
+  "trunk_link": {
+   "n": 58,
+   "km": 3.3
+  },
+  "primary": {
+   "n": 299,
+   "km": 252.4
+  },
+  "primary_link": {
+   "n": 77,
+   "km": 2.6
+  },
+  "secondary": {
+   "n": 400,
+   "km": 357.2
+  },
+  "secondary_link": {
+   "n": 26,
+   "km": 0.8
+  },
+  "tertiary": {
+   "n": 539,
+   "km": 426.7
+  },
+  "tertiary_link": {
+   "n": 20,
+   "km": 0.5
+  },
+  "residential": {
+   "n": 9671,
+   "km": 2247.5
+  },
+  "unclassified": {
+   "n": 987,
+   "km": 800.0
+  },
+  "living_street": {
+   "n": 10,
+   "km": 1.2
+  },
+  "service": {
+   "n": 1485,
+   "km": 209.1
+  },
+  "pedestrian": {
+   "n": 46,
+   "km": 4.5
+  },
+  "footway": {
+   "n": 101,
+   "km": 14.2
+  },
+  "steps": {
+   "n": 11,
+   "km": 0.4
+  },
+  "path": {
+   "n": 278,
+   "km": 108.6
+  },
+  "track": {
+   "n": 1209,
+   "km": 546.1
+  },
+  "road": {
+   "n": 0,
+   "km": 0.0
+  },
+  "cycleway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk=*": {
+   "n": 26,
+   "km": 8.3
+  },
+  "tag:sidewalk:side=*": {
+   "n": 28,
+   "km": 35.8
+  },
+  "footway=sidewalk": {
+   "n": 3,
+   "km": 0.5
+  },
+  "footway=crossing": {
+   "n": 3,
+   "km": 0.2
+  }
+ },
+ "GOV:Beqaa Governorate": {
+  "motorway": {
+   "n": 15,
+   "km": 28.1
+  },
+  "motorway_link": {
+   "n": 24,
+   "km": 3.4
+  },
+  "trunk": {
+   "n": 118,
+   "km": 147.7
+  },
+  "trunk_link": {
+   "n": 74,
+   "km": 3.4
+  },
+  "primary": {
+   "n": 39,
+   "km": 66.5
+  },
+  "primary_link": {
+   "n": 1,
+   "km": 0.1
+  },
+  "secondary": {
+   "n": 159,
+   "km": 170.3
+  },
+  "secondary_link": {
+   "n": 17,
+   "km": 0.4
+  },
+  "tertiary": {
+   "n": 426,
+   "km": 440.8
+  },
+  "tertiary_link": {
+   "n": 12,
+   "km": 0.3
+  },
+  "residential": {
+   "n": 8583,
+   "km": 2169.3
+  },
+  "unclassified": {
+   "n": 1559,
+   "km": 1099.9
+  },
+  "living_street": {
+   "n": 19,
+   "km": 3.2
+  },
+  "service": {
+   "n": 1838,
+   "km": 239.3
+  },
+  "pedestrian": {
+   "n": 6,
+   "km": 1.9
+  },
+  "footway": {
+   "n": 90,
+   "km": 11.2
+  },
+  "steps": {
+   "n": 27,
+   "km": 1.0
+  },
+  "path": {
+   "n": 114,
+   "km": 31.8
+  },
+  "track": {
+   "n": 4325,
+   "km": 1308.0
+  },
+  "road": {
+   "n": 0,
+   "km": 0.0
+  },
+  "cycleway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk:side=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway=sidewalk": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway=crossing": {
+   "n": 0,
+   "km": 0.0
+  }
+ },
+ "GOV:Mount Lebanon Governorate": {
+  "motorway": {
+   "n": 285,
+   "km": 188.5
+  },
+  "motorway_link": {
+   "n": 533,
+   "km": 61.4
+  },
+  "trunk": {
+   "n": 327,
+   "km": 164.2
+  },
+  "trunk_link": {
+   "n": 202,
+   "km": 16.6
+  },
+  "primary": {
+   "n": 123,
+   "km": 83.2
+  },
+  "primary_link": {
+   "n": 18,
+   "km": 2.2
+  },
+  "secondary": {
+   "n": 828,
+   "km": 629.0
+  },
+  "secondary_link": {
+   "n": 88,
+   "km": 2.8
+  },
+  "tertiary": {
+   "n": 1943,
+   "km": 848.1
+  },
+  "tertiary_link": {
+   "n": 123,
+   "km": 3.9
+  },
+  "residential": {
+   "n": 20832,
+   "km": 4175.7
+  },
+  "unclassified": {
+   "n": 3123,
+   "km": 1228.1
+  },
+  "living_street": {
+   "n": 45,
+   "km": 3.1
+  },
+  "service": {
+   "n": 4849,
+   "km": 625.6
+  },
+  "pedestrian": {
+   "n": 38,
+   "km": 5.5
+  },
+  "footway": {
+   "n": 609,
+   "km": 51.5
+  },
+  "steps": {
+   "n": 147,
+   "km": 3.8
+  },
+  "path": {
+   "n": 901,
+   "km": 169.6
+  },
+  "track": {
+   "n": 5735,
+   "km": 1481.1
+  },
+  "road": {
+   "n": 1,
+   "km": 0.0
+  },
+  "cycleway": {
+   "n": 1,
+   "km": 0.3
+  },
+  "tag:sidewalk=*": {
+   "n": 33,
+   "km": 7.4
+  },
+  "tag:sidewalk:side=*": {
+   "n": 20,
+   "km": 20.7
+  },
+  "footway=sidewalk": {
+   "n": 5,
+   "km": 0.6
+  },
+  "footway=crossing": {
+   "n": 28,
+   "km": 0.6
+  }
+ },
+ "GOV:South Governorate": {
+  "motorway": {
+   "n": 48,
+   "km": 56.4
+  },
+  "motorway_link": {
+   "n": 83,
+   "km": 11.5
+  },
+  "trunk": {
+   "n": 141,
+   "km": 146.4
+  },
+  "trunk_link": {
+   "n": 96,
+   "km": 3.9
+  },
+  "primary": {
+   "n": 197,
+   "km": 247.0
+  },
+  "primary_link": {
+   "n": 31,
+   "km": 0.6
+  },
+  "secondary": {
+   "n": 292,
+   "km": 229.1
+  },
+  "secondary_link": {
+   "n": 27,
+   "km": 1.4
+  },
+  "tertiary": {
+   "n": 447,
+   "km": 405.0
+  },
+  "tertiary_link": {
+   "n": 39,
+   "km": 1.2
+  },
+  "residential": {
+   "n": 10865,
+   "km": 2635.5
+  },
+  "unclassified": {
+   "n": 1485,
+   "km": 999.4
+  },
+  "living_street": {
+   "n": 34,
+   "km": 5.7
+  },
+  "service": {
+   "n": 1902,
+   "km": 259.7
+  },
+  "pedestrian": {
+   "n": 9,
+   "km": 2.8
+  },
+  "footway": {
+   "n": 390,
+   "km": 33.6
+  },
+  "steps": {
+   "n": 35,
+   "km": 0.4
+  },
+  "path": {
+   "n": 77,
+   "km": 13.0
+  },
+  "track": {
+   "n": 1269,
+   "km": 513.5
+  },
+  "road": {
+   "n": 1,
+   "km": 0.0
+  },
+  "cycleway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk=*": {
+   "n": 11,
+   "km": 3.8
+  },
+  "tag:sidewalk:side=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway=sidewalk": {
+   "n": 15,
+   "km": 4.7
+  },
+  "footway=crossing": {
+   "n": 19,
+   "km": 0.2
+  }
+ },
+ "GOV:Nabatieh Governorate": {
+  "motorway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "motorway_link": {
+   "n": 0,
+   "km": 0.0
+  },
+  "trunk": {
+   "n": 73,
+   "km": 127.3
+  },
+  "trunk_link": {
+   "n": 38,
+   "km": 0.5
+  },
+  "primary": {
+   "n": 188,
+   "km": 194.7
+  },
+  "primary_link": {
+   "n": 21,
+   "km": 0.5
+  },
+  "secondary": {
+   "n": 174,
+   "km": 194.9
+  },
+  "secondary_link": {
+   "n": 12,
+   "km": 0.3
+  },
+  "tertiary": {
+   "n": 460,
+   "km": 524.2
+  },
+  "tertiary_link": {
+   "n": 34,
+   "km": 0.4
+  },
+  "residential": {
+   "n": 11791,
+   "km": 2901.9
+  },
+  "unclassified": {
+   "n": 1416,
+   "km": 1140.6
+  },
+  "living_street": {
+   "n": 19,
+   "km": 2.9
+  },
+  "service": {
+   "n": 1549,
+   "km": 177.6
+  },
+  "pedestrian": {
+   "n": 2,
+   "km": 0.1
+  },
+  "footway": {
+   "n": 20,
+   "km": 1.7
+  },
+  "steps": {
+   "n": 2,
+   "km": 0.0
+  },
+  "path": {
+   "n": 150,
+   "km": 37.8
+  },
+  "track": {
+   "n": 1142,
+   "km": 462.3
+  },
+  "road": {
+   "n": 0,
+   "km": 0.0
+  },
+  "cycleway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk:side=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway=sidewalk": {
+   "n": 1,
+   "km": 0.3
+  },
+  "footway=crossing": {
+   "n": 0,
+   "km": 0.0
+  }
+ },
+ "GOV:Akkar Governorate": {
+  "motorway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "motorway_link": {
+   "n": 0,
+   "km": 0.0
+  },
+  "trunk": {
+   "n": 30,
+   "km": 22.6
+  },
+  "trunk_link": {
+   "n": 11,
+   "km": 0.4
+  },
+  "primary": {
+   "n": 42,
+   "km": 51.2
+  },
+  "primary_link": {
+   "n": 2,
+   "km": 0.1
+  },
+  "secondary": {
+   "n": 43,
+   "km": 135.2
+  },
+  "secondary_link": {
+   "n": 8,
+   "km": 0.1
+  },
+  "tertiary": {
+   "n": 187,
+   "km": 329.7
+  },
+  "tertiary_link": {
+   "n": 1,
+   "km": 0.0
+  },
+  "residential": {
+   "n": 6995,
+   "km": 1756.0
+  },
+  "unclassified": {
+   "n": 1730,
+   "km": 773.5
+  },
+  "living_street": {
+   "n": 10,
+   "km": 1.6
+  },
+  "service": {
+   "n": 1231,
+   "km": 145.4
+  },
+  "pedestrian": {
+   "n": 1,
+   "km": 0.1
+  },
+  "footway": {
+   "n": 242,
+   "km": 39.8
+  },
+  "steps": {
+   "n": 0,
+   "km": 0.0
+  },
+  "path": {
+   "n": 345,
+   "km": 65.5
+  },
+  "track": {
+   "n": 2650,
+   "km": 763.1
+  },
+  "road": {
+   "n": 0,
+   "km": 0.0
+  },
+  "cycleway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk:side=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway=sidewalk": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway=crossing": {
+   "n": 0,
+   "km": 0.0
+  }
+ },
+ "GOV:Baalbek-Hermel Governorate": {
+  "motorway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "motorway_link": {
+   "n": 0,
+   "km": 0.0
+  },
+  "trunk": {
+   "n": 118,
+   "km": 209.5
+  },
+  "trunk_link": {
+   "n": 64,
+   "km": 1.2
+  },
+  "primary": {
+   "n": 44,
+   "km": 57.4
+  },
+  "primary_link": {
+   "n": 1,
+   "km": 0.0
+  },
+  "secondary": {
+   "n": 75,
+   "km": 125.9
+  },
+  "secondary_link": {
+   "n": 12,
+   "km": 0.1
+  },
+  "tertiary": {
+   "n": 349,
+   "km": 645.2
+  },
+  "tertiary_link": {
+   "n": 18,
+   "km": 0.4
+  },
+  "residential": {
+   "n": 9471,
+   "km": 2671.8
+  },
+  "unclassified": {
+   "n": 1237,
+   "km": 1445.6
+  },
+  "living_street": {
+   "n": 6,
+   "km": 1.2
+  },
+  "service": {
+   "n": 449,
+   "km": 76.6
+  },
+  "pedestrian": {
+   "n": 4,
+   "km": 0.4
+  },
+  "footway": {
+   "n": 33,
+   "km": 4.7
+  },
+  "steps": {
+   "n": 6,
+   "km": 0.1
+  },
+  "path": {
+   "n": 1203,
+   "km": 436.1
+  },
+  "track": {
+   "n": 3103,
+   "km": 1513.7
+  },
+  "road": {
+   "n": 4,
+   "km": 0.2
+  },
+  "cycleway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk:side=*": {
+   "n": 11,
+   "km": 16.9
+  },
+  "footway=sidewalk": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway=crossing": {
+   "n": 0,
+   "km": 0.0
+  }
+ },
+ "GOV:Keserwan-Jbeil Governorate": {
+  "motorway": {
+   "n": 104,
+   "km": 72.2
+  },
+  "motorway_link": {
+   "n": 219,
+   "km": 21.2
+  },
+  "trunk": {
+   "n": 92,
+   "km": 63.6
+  },
+  "trunk_link": {
+   "n": 21,
+   "km": 1.1
+  },
+  "primary": {
+   "n": 259,
+   "km": 164.7
+  },
+  "primary_link": {
+   "n": 33,
+   "km": 0.8
+  },
+  "secondary": {
+   "n": 631,
+   "km": 437.4
+  },
+  "secondary_link": {
+   "n": 45,
+   "km": 1.2
+  },
+  "tertiary": {
+   "n": 666,
+   "km": 306.9
+  },
+  "tertiary_link": {
+   "n": 12,
+   "km": 0.1
+  },
+  "residential": {
+   "n": 8585,
+   "km": 1750.5
+  },
+  "unclassified": {
+   "n": 1042,
+   "km": 474.3
+  },
+  "living_street": {
+   "n": 9,
+   "km": 1.2
+  },
+  "service": {
+   "n": 1805,
+   "km": 216.4
+  },
+  "pedestrian": {
+   "n": 13,
+   "km": 1.3
+  },
+  "footway": {
+   "n": 109,
+   "km": 11.6
+  },
+  "steps": {
+   "n": 10,
+   "km": 0.3
+  },
+  "path": {
+   "n": 400,
+   "km": 136.4
+  },
+  "track": {
+   "n": 2387,
+   "km": 746.5
+  },
+  "road": {
+   "n": 1,
+   "km": 0.0
+  },
+  "cycleway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk=*": {
+   "n": 1,
+   "km": 0.2
+  },
+  "tag:sidewalk:side=*": {
+   "n": 81,
+   "km": 81.6
+  },
+  "footway=sidewalk": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway=crossing": {
+   "n": 0,
+   "km": 0.0
+  }
+ },
+ "CITY:Beirut (admin)": {
+  "motorway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "motorway_link": {
+   "n": 0,
+   "km": 0.0
+  },
+  "trunk": {
+   "n": 0,
+   "km": 0.0
+  },
+  "trunk_link": {
+   "n": 0,
+   "km": 0.0
+  },
+  "primary": {
+   "n": 0,
+   "km": 0.0
+  },
+  "primary_link": {
+   "n": 0,
+   "km": 0.0
+  },
+  "secondary": {
+   "n": 0,
+   "km": 0.0
+  },
+  "secondary_link": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tertiary": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tertiary_link": {
+   "n": 0,
+   "km": 0.0
+  },
+  "residential": {
+   "n": 0,
+   "km": 0.0
+  },
+  "unclassified": {
+   "n": 0,
+   "km": 0.0
+  },
+  "living_street": {
+   "n": 0,
+   "km": 0.0
+  },
+  "service": {
+   "n": 0,
+   "km": 0.0
+  },
+  "pedestrian": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "steps": {
+   "n": 0,
+   "km": 0.0
+  },
+  "path": {
+   "n": 0,
+   "km": 0.0
+  },
+  "track": {
+   "n": 0,
+   "km": 0.0
+  },
+  "road": {
+   "n": 0,
+   "km": 0.0
+  },
+  "cycleway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk:side=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway=sidewalk": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway=crossing": {
+   "n": 0,
+   "km": 0.0
+  }
+ },
+ "CITY:Greater Beirut r=8km": {
+  "motorway": {
+   "n": 230,
+   "km": 84.8
+  },
+  "motorway_link": {
+   "n": 341,
+   "km": 37.0
+  },
+  "trunk": {
+   "n": 402,
+   "km": 96.1
+  },
+  "trunk_link": {
+   "n": 302,
+   "km": 25.9
+  },
+  "primary": {
+   "n": 115,
+   "km": 22.4
+  },
+  "primary_link": {
+   "n": 37,
+   "km": 4.6
+  },
+  "secondary": {
+   "n": 444,
+   "km": 98.2
+  },
+  "secondary_link": {
+   "n": 99,
+   "km": 3.4
+  },
+  "tertiary": {
+   "n": 1340,
+   "km": 258.8
+  },
+  "tertiary_link": {
+   "n": 99,
+   "km": 3.6
+  },
+  "residential": {
+   "n": 5456,
+   "km": 716.0
+  },
+  "unclassified": {
+   "n": 492,
+   "km": 94.9
+  },
+  "living_street": {
+   "n": 38,
+   "km": 3.1
+  },
+  "service": {
+   "n": 2235,
+   "km": 234.7
+  },
+  "pedestrian": {
+   "n": 683,
+   "km": 52.9
+  },
+  "footway": {
+   "n": 668,
+   "km": 41.0
+  },
+  "steps": {
+   "n": 250,
+   "km": 5.8
+  },
+  "path": {
+   "n": 72,
+   "km": 6.7
+  },
+  "track": {
+   "n": 21,
+   "km": 3.4
+  },
+  "road": {
+   "n": 0,
+   "km": 0.0
+  },
+  "cycleway": {
+   "n": 2,
+   "km": 0.3
+  },
+  "tag:sidewalk=*": {
+   "n": 2,
+   "km": 0.2
+  },
+  "tag:sidewalk:side=*": {
+   "n": 8,
+   "km": 4.8
+  },
+  "footway=sidewalk": {
+   "n": 9,
+   "km": 2.0
+  },
+  "footway=crossing": {
+   "n": 94,
+   "km": 1.3
+  }
+ },
+ "CITY:Tripoli r=5km": {
+  "motorway": {
+   "n": 37,
+   "km": 34.0
+  },
+  "motorway_link": {
+   "n": 41,
+   "km": 6.8
+  },
+  "trunk": {
+   "n": 49,
+   "km": 38.3
+  },
+  "trunk_link": {
+   "n": 37,
+   "km": 0.8
+  },
+  "primary": {
+   "n": 51,
+   "km": 27.4
+  },
+  "primary_link": {
+   "n": 24,
+   "km": 0.6
+  },
+  "secondary": {
+   "n": 54,
+   "km": 30.3
+  },
+  "secondary_link": {
+   "n": 2,
+   "km": 0.1
+  },
+  "tertiary": {
+   "n": 144,
+   "km": 47.9
+  },
+  "tertiary_link": {
+   "n": 17,
+   "km": 0.4
+  },
+  "residential": {
+   "n": 1944,
+   "km": 336.5
+  },
+  "unclassified": {
+   "n": 157,
+   "km": 73.5
+  },
+  "living_street": {
+   "n": 0,
+   "km": 0.0
+  },
+  "service": {
+   "n": 391,
+   "km": 63.1
+  },
+  "pedestrian": {
+   "n": 37,
+   "km": 4.0
+  },
+  "footway": {
+   "n": 32,
+   "km": 5.9
+  },
+  "steps": {
+   "n": 3,
+   "km": 0.2
+  },
+  "path": {
+   "n": 3,
+   "km": 0.1
+  },
+  "track": {
+   "n": 18,
+   "km": 3.8
+  },
+  "road": {
+   "n": 0,
+   "km": 0.0
+  },
+  "cycleway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk:side=*": {
+   "n": 3,
+   "km": 2.2
+  },
+  "footway=sidewalk": {
+   "n": 2,
+   "km": 0.2
+  },
+  "footway=crossing": {
+   "n": 2,
+   "km": 0.2
+  }
+ },
+ "CITY:Saida r=3km": {
+  "motorway": {
+   "n": 6,
+   "km": 1.5
+  },
+  "motorway_link": {
+   "n": 1,
+   "km": 0.1
+  },
+  "trunk": {
+   "n": 40,
+   "km": 25.9
+  },
+  "trunk_link": {
+   "n": 45,
+   "km": 2.7
+  },
+  "primary": {
+   "n": 67,
+   "km": 21.2
+  },
+  "primary_link": {
+   "n": 19,
+   "km": 0.3
+  },
+  "secondary": {
+   "n": 50,
+   "km": 18.5
+  },
+  "secondary_link": {
+   "n": 8,
+   "km": 0.2
+  },
+  "tertiary": {
+   "n": 96,
+   "km": 23.1
+  },
+  "tertiary_link": {
+   "n": 9,
+   "km": 0.1
+  },
+  "residential": {
+   "n": 700,
+   "km": 127.4
+  },
+  "unclassified": {
+   "n": 77,
+   "km": 21.5
+  },
+  "living_street": {
+   "n": 2,
+   "km": 0.1
+  },
+  "service": {
+   "n": 370,
+   "km": 31.5
+  },
+  "pedestrian": {
+   "n": 8,
+   "km": 2.6
+  },
+  "footway": {
+   "n": 280,
+   "km": 15.7
+  },
+  "steps": {
+   "n": 27,
+   "km": 0.3
+  },
+  "path": {
+   "n": 6,
+   "km": 0.5
+  },
+  "track": {
+   "n": 30,
+   "km": 6.3
+  },
+  "road": {
+   "n": 0,
+   "km": 0.0
+  },
+  "cycleway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk=*": {
+   "n": 1,
+   "km": 0.4
+  },
+  "tag:sidewalk:side=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway=sidewalk": {
+   "n": 15,
+   "km": 4.7
+  },
+  "footway=crossing": {
+   "n": 19,
+   "km": 0.2
+  }
+ },
+ "CITY:Jounieh r=3km": {
+  "motorway": {
+   "n": 36,
+   "km": 14.2
+  },
+  "motorway_link": {
+   "n": 60,
+   "km": 6.8
+  },
+  "trunk": {
+   "n": 16,
+   "km": 6.0
+  },
+  "trunk_link": {
+   "n": 3,
+   "km": 0.3
+  },
+  "primary": {
+   "n": 17,
+   "km": 11.6
+  },
+  "primary_link": {
+   "n": 10,
+   "km": 0.2
+  },
+  "secondary": {
+   "n": 173,
+   "km": 40.9
+  },
+  "secondary_link": {
+   "n": 20,
+   "km": 0.6
+  },
+  "tertiary": {
+   "n": 211,
+   "km": 39.2
+  },
+  "tertiary_link": {
+   "n": 6,
+   "km": 0.0
+  },
+  "residential": {
+   "n": 498,
+   "km": 85.4
+  },
+  "unclassified": {
+   "n": 20,
+   "km": 4.7
+  },
+  "living_street": {
+   "n": 2,
+   "km": 0.5
+  },
+  "service": {
+   "n": 233,
+   "km": 24.5
+  },
+  "pedestrian": {
+   "n": 2,
+   "km": 0.6
+  },
+  "footway": {
+   "n": 23,
+   "km": 1.9
+  },
+  "steps": {
+   "n": 1,
+   "km": 0.0
+  },
+  "path": {
+   "n": 2,
+   "km": 0.6
+  },
+  "track": {
+   "n": 5,
+   "km": 0.9
+  },
+  "road": {
+   "n": 0,
+   "km": 0.0
+  },
+  "cycleway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk:side=*": {
+   "n": 14,
+   "km": 12.9
+  },
+  "footway=sidewalk": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway=crossing": {
+   "n": 0,
+   "km": 0.0
+  }
+ },
+ "CITY:Zahle r=3km": {
+  "motorway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "motorway_link": {
+   "n": 0,
+   "km": 0.0
+  },
+  "trunk": {
+   "n": 40,
+   "km": 27.5
+  },
+  "trunk_link": {
+   "n": 31,
+   "km": 2.1
+  },
+  "primary": {
+   "n": 0,
+   "km": 0.0
+  },
+  "primary_link": {
+   "n": 0,
+   "km": 0.0
+  },
+  "secondary": {
+   "n": 20,
+   "km": 16.3
+  },
+  "secondary_link": {
+   "n": 6,
+   "km": 0.2
+  },
+  "tertiary": {
+   "n": 79,
+   "km": 30.5
+  },
+  "tertiary_link": {
+   "n": 8,
+   "km": 0.3
+  },
+  "residential": {
+   "n": 1094,
+   "km": 214.5
+  },
+  "unclassified": {
+   "n": 177,
+   "km": 56.2
+  },
+  "living_street": {
+   "n": 1,
+   "km": 0.1
+  },
+  "service": {
+   "n": 187,
+   "km": 17.9
+  },
+  "pedestrian": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway": {
+   "n": 4,
+   "km": 0.3
+  },
+  "steps": {
+   "n": 22,
+   "km": 0.9
+  },
+  "path": {
+   "n": 8,
+   "km": 1.4
+  },
+  "track": {
+   "n": 370,
+   "km": 52.7
+  },
+  "road": {
+   "n": 0,
+   "km": 0.0
+  },
+  "cycleway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk:side=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway=sidewalk": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway=crossing": {
+   "n": 0,
+   "km": 0.0
+  }
+ },
+ "CITY:Tyre r=2.5km": {
+  "motorway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "motorway_link": {
+   "n": 0,
+   "km": 0.0
+  },
+  "trunk": {
+   "n": 16,
+   "km": 6.8
+  },
+  "trunk_link": {
+   "n": 2,
+   "km": 0.1
+  },
+  "primary": {
+   "n": 6,
+   "km": 10.1
+  },
+  "primary_link": {
+   "n": 1,
+   "km": 0.0
+  },
+  "secondary": {
+   "n": 68,
+   "km": 15.9
+  },
+  "secondary_link": {
+   "n": 5,
+   "km": 0.2
+  },
+  "tertiary": {
+   "n": 25,
+   "km": 6.4
+  },
+  "tertiary_link": {
+   "n": 4,
+   "km": 0.1
+  },
+  "residential": {
+   "n": 235,
+   "km": 40.0
+  },
+  "unclassified": {
+   "n": 23,
+   "km": 8.1
+  },
+  "living_street": {
+   "n": 3,
+   "km": 0.3
+  },
+  "service": {
+   "n": 130,
+   "km": 17.3
+  },
+  "pedestrian": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway": {
+   "n": 65,
+   "km": 11.1
+  },
+  "steps": {
+   "n": 1,
+   "km": 0.0
+  },
+  "path": {
+   "n": 3,
+   "km": 0.4
+  },
+  "track": {
+   "n": 15,
+   "km": 4.8
+  },
+  "road": {
+   "n": 0,
+   "km": 0.0
+  },
+  "cycleway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk:side=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway=sidewalk": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway=crossing": {
+   "n": 0,
+   "km": 0.0
+  }
+ },
+ "CITY:Byblos r=2km": {
+  "motorway": {
+   "n": 10,
+   "km": 11.8
+  },
+  "motorway_link": {
+   "n": 33,
+   "km": 3.6
+  },
+  "trunk": {
+   "n": 0,
+   "km": 0.0
+  },
+  "trunk_link": {
+   "n": 0,
+   "km": 0.0
+  },
+  "primary": {
+   "n": 61,
+   "km": 17.0
+  },
+  "primary_link": {
+   "n": 6,
+   "km": 0.2
+  },
+  "secondary": {
+   "n": 43,
+   "km": 26.3
+  },
+  "secondary_link": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tertiary": {
+   "n": 36,
+   "km": 14.8
+  },
+  "tertiary_link": {
+   "n": 1,
+   "km": 0.0
+  },
+  "residential": {
+   "n": 416,
+   "km": 71.8
+  },
+  "unclassified": {
+   "n": 31,
+   "km": 9.5
+  },
+  "living_street": {
+   "n": 0,
+   "km": 0.0
+  },
+  "service": {
+   "n": 139,
+   "km": 13.5
+  },
+  "pedestrian": {
+   "n": 10,
+   "km": 0.6
+  },
+  "footway": {
+   "n": 36,
+   "km": 3.5
+  },
+  "steps": {
+   "n": 3,
+   "km": 0.1
+  },
+  "path": {
+   "n": 16,
+   "km": 2.0
+  },
+  "track": {
+   "n": 50,
+   "km": 7.7
+  },
+  "road": {
+   "n": 1,
+   "km": 0.0
+  },
+  "cycleway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk:side=*": {
+   "n": 10,
+   "km": 3.5
+  },
+  "footway=sidewalk": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway=crossing": {
+   "n": 0,
+   "km": 0.0
+  }
+ },
+ "CITY:Nabatieh r=2.5km": {
+  "motorway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "motorway_link": {
+   "n": 0,
+   "km": 0.0
+  },
+  "trunk": {
+   "n": 9,
+   "km": 43.7
+  },
+  "trunk_link": {
+   "n": 4,
+   "km": 0.1
+  },
+  "primary": {
+   "n": 30,
+   "km": 10.9
+  },
+  "primary_link": {
+   "n": 9,
+   "km": 0.3
+  },
+  "secondary": {
+   "n": 19,
+   "km": 9.9
+  },
+  "secondary_link": {
+   "n": 1,
+   "km": 0.0
+  },
+  "tertiary": {
+   "n": 55,
+   "km": 17.6
+  },
+  "tertiary_link": {
+   "n": 0,
+   "km": 0.0
+  },
+  "residential": {
+   "n": 694,
+   "km": 157.3
+  },
+  "unclassified": {
+   "n": 53,
+   "km": 30.3
+  },
+  "living_street": {
+   "n": 0,
+   "km": 0.0
+  },
+  "service": {
+   "n": 88,
+   "km": 8.6
+  },
+  "pedestrian": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "steps": {
+   "n": 0,
+   "km": 0.0
+  },
+  "path": {
+   "n": 3,
+   "km": 0.3
+  },
+  "track": {
+   "n": 19,
+   "km": 3.6
+  },
+  "road": {
+   "n": 0,
+   "km": 0.0
+  },
+  "cycleway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk:side=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway=sidewalk": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway=crossing": {
+   "n": 0,
+   "km": 0.0
+  }
+ },
+ "CITY:Baalbek r=2.5km": {
+  "motorway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "motorway_link": {
+   "n": 0,
+   "km": 0.0
+  },
+  "trunk": {
+   "n": 0,
+   "km": 0.0
+  },
+  "trunk_link": {
+   "n": 0,
+   "km": 0.0
+  },
+  "primary": {
+   "n": 0,
+   "km": 0.0
+  },
+  "primary_link": {
+   "n": 0,
+   "km": 0.0
+  },
+  "secondary": {
+   "n": 22,
+   "km": 12.0
+  },
+  "secondary_link": {
+   "n": 5,
+   "km": 0.1
+  },
+  "tertiary": {
+   "n": 49,
+   "km": 20.0
+  },
+  "tertiary_link": {
+   "n": 6,
+   "km": 0.2
+  },
+  "residential": {
+   "n": 754,
+   "km": 167.1
+  },
+  "unclassified": {
+   "n": 68,
+   "km": 36.6
+  },
+  "living_street": {
+   "n": 0,
+   "km": 0.0
+  },
+  "service": {
+   "n": 28,
+   "km": 2.9
+  },
+  "pedestrian": {
+   "n": 4,
+   "km": 0.4
+  },
+  "footway": {
+   "n": 17,
+   "km": 1.9
+  },
+  "steps": {
+   "n": 4,
+   "km": 0.1
+  },
+  "path": {
+   "n": 7,
+   "km": 0.9
+  },
+  "track": {
+   "n": 6,
+   "km": 4.0
+  },
+  "road": {
+   "n": 0,
+   "km": 0.0
+  },
+  "cycleway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk:side=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway=sidewalk": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway=crossing": {
+   "n": 0,
+   "km": 0.0
+  }
+ },
+ "CITY:Batroun r=1.5km": {
+  "motorway": {
+   "n": 8,
+   "km": 10.8
+  },
+  "motorway_link": {
+   "n": 21,
+   "km": 2.4
+  },
+  "trunk": {
+   "n": 0,
+   "km": 0.0
+  },
+  "trunk_link": {
+   "n": 0,
+   "km": 0.0
+  },
+  "primary": {
+   "n": 21,
+   "km": 7.0
+  },
+  "primary_link": {
+   "n": 1,
+   "km": 0.0
+  },
+  "secondary": {
+   "n": 5,
+   "km": 2.4
+  },
+  "secondary_link": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tertiary": {
+   "n": 6,
+   "km": 2.4
+  },
+  "tertiary_link": {
+   "n": 0,
+   "km": 0.0
+  },
+  "residential": {
+   "n": 223,
+   "km": 35.8
+  },
+  "unclassified": {
+   "n": 4,
+   "km": 2.4
+  },
+  "living_street": {
+   "n": 0,
+   "km": 0.0
+  },
+  "service": {
+   "n": 62,
+   "km": 4.8
+  },
+  "pedestrian": {
+   "n": 9,
+   "km": 0.5
+  },
+  "footway": {
+   "n": 6,
+   "km": 0.2
+  },
+  "steps": {
+   "n": 1,
+   "km": 0.0
+  },
+  "path": {
+   "n": 5,
+   "km": 0.8
+  },
+  "track": {
+   "n": 5,
+   "km": 0.5
+  },
+  "road": {
+   "n": 0,
+   "km": 0.0
+  },
+  "cycleway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk:side=*": {
+   "n": 2,
+   "km": 0.3
+  },
+  "footway=sidewalk": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway=crossing": {
+   "n": 0,
+   "km": 0.0
+  }
+ },
+ "CITY:Aley r=2km": {
+  "motorway": {
+   "n": 4,
+   "km": 9.6
+  },
+  "motorway_link": {
+   "n": 20,
+   "km": 1.6
+  },
+  "trunk": {
+   "n": 0,
+   "km": 0.0
+  },
+  "trunk_link": {
+   "n": 0,
+   "km": 0.0
+  },
+  "primary": {
+   "n": 12,
+   "km": 5.0
+  },
+  "primary_link": {
+   "n": 1,
+   "km": 0.0
+  },
+  "secondary": {
+   "n": 16,
+   "km": 35.1
+  },
+  "secondary_link": {
+   "n": 2,
+   "km": 0.0
+  },
+  "tertiary": {
+   "n": 15,
+   "km": 10.7
+  },
+  "tertiary_link": {
+   "n": 0,
+   "km": 0.0
+  },
+  "residential": {
+   "n": 663,
+   "km": 129.8
+  },
+  "unclassified": {
+   "n": 37,
+   "km": 15.5
+  },
+  "living_street": {
+   "n": 0,
+   "km": 0.0
+  },
+  "service": {
+   "n": 73,
+   "km": 7.6
+  },
+  "pedestrian": {
+   "n": 1,
+   "km": 0.2
+  },
+  "footway": {
+   "n": 1,
+   "km": 0.1
+  },
+  "steps": {
+   "n": 0,
+   "km": 0.0
+  },
+  "path": {
+   "n": 13,
+   "km": 1.0
+  },
+  "track": {
+   "n": 120,
+   "km": 8.5
+  },
+  "road": {
+   "n": 0,
+   "km": 0.0
+  },
+  "cycleway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk:side=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway=sidewalk": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway=crossing": {
+   "n": 0,
+   "km": 0.0
+  }
+ },
+ "CITY:Chtaura r=1.5km": {
+  "motorway": {
+   "n": 1,
+   "km": 4.3
+  },
+  "motorway_link": {
+   "n": 1,
+   "km": 0.1
+  },
+  "trunk": {
+   "n": 15,
+   "km": 26.0
+  },
+  "trunk_link": {
+   "n": 2,
+   "km": 0.0
+  },
+  "primary": {
+   "n": 1,
+   "km": 2.4
+  },
+  "primary_link": {
+   "n": 0,
+   "km": 0.0
+  },
+  "secondary": {
+   "n": 11,
+   "km": 12.9
+  },
+  "secondary_link": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tertiary": {
+   "n": 19,
+   "km": 16.0
+  },
+  "tertiary_link": {
+   "n": 0,
+   "km": 0.0
+  },
+  "residential": {
+   "n": 219,
+   "km": 50.5
+  },
+  "unclassified": {
+   "n": 28,
+   "km": 12.2
+  },
+  "living_street": {
+   "n": 0,
+   "km": 0.0
+  },
+  "service": {
+   "n": 71,
+   "km": 7.6
+  },
+  "pedestrian": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway": {
+   "n": 9,
+   "km": 0.3
+  },
+  "steps": {
+   "n": 0,
+   "km": 0.0
+  },
+  "path": {
+   "n": 4,
+   "km": 0.5
+  },
+  "track": {
+   "n": 58,
+   "km": 10.3
+  },
+  "road": {
+   "n": 0,
+   "km": 0.0
+  },
+  "cycleway": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "tag:sidewalk:side=*": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway=sidewalk": {
+   "n": 0,
+   "km": 0.0
+  },
+  "footway=crossing": {
+   "n": 0,
+   "km": 0.0
+  }
+ }
+}

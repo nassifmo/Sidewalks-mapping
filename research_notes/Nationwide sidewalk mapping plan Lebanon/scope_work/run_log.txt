@@ -1,0 +1,38 @@
+err https://overpass-api.de/api/interpreter HTTP Error 502: Bad Gateway
+err https://overpass-api.de/api/interpreter HTTP Error 502: Bad Gateway
+governorates [(316552, 'Beirut Governorate', '4'), (318161, 'North Governorate', '4'), (318174, 'Beqaa Governorate', '4'), (318194, 'Mount Lebanon Governorate', '4'), (318236, 'South Governorate', '4'), (318309, 'Nabatieh Governorate', '4'), (7231014, 'Akkar Governorate', '4'), (7231015, 'Baalbek-Hermel Governorate', '4'), (12903506, 'Keserwan-Jbeil Governorate', '4')] https://overpass-api.de/api/interpreter
+national done https://overpass-api.de/api/interpreter
+gov done Beirut Governorate https://overpass-api.de/api/interpreter
+gov done North Governorate https://overpass-api.de/api/interpreter
+err https://overpass-api.de/api/interpreter HTTP Error 502: Bad Gateway
+gov done Beqaa Governorate https://overpass-api.de/api/interpreter
+gov done Mount Lebanon Governorate https://overpass-api.de/api/interpreter
+err https://overpass-api.de/api/interpreter HTTP Error 502: Bad Gateway
+gov done South Governorate https://overpass-api.de/api/interpreter
+gov done Nabatieh Governorate https://overpass-api.de/api/interpreter
+gov done Akkar Governorate https://overpass-api.de/api/interpreter
+err https://overpass-api.de/api/interpreter HTTP Error 502: Bad Gateway
+err https://overpass-api.de/api/interpreter HTTP Error 502: Bad Gateway
+gov done Baalbek-Hermel Governorate https://overpass-api.de/api/interpreter
+err https://overpass-api.de/api/interpreter HTTP Error 502: Bad Gateway
+gov done Keserwan-Jbeil Governorate https://overpass-api.de/api/interpreter
+city done Beirut (admin) https://overpass-api.de/api/interpreter
+city done Greater Beirut r=8km https://overpass-api.de/api/interpreter
+err https://overpass-api.de/api/interpreter HTTP Error 502: Bad Gateway
+city done Tripoli r=5km https://overpass-api.de/api/interpreter
+err https://overpass-api.de/api/interpreter HTTP Error 502: Bad Gateway
+err https://overpass-api.de/api/interpreter HTTP Error 502: Bad Gateway
+err https://overpass-api.de/api/interpreter HTTP Error 502: Bad Gateway
+city done Saida r=3km https://overpass-api.de/api/interpreter
+city done Jounieh r=3km https://overpass-api.de/api/interpreter
+city done Zahle r=3km https://overpass-api.de/api/interpreter
+city done Tyre r=2.5km https://overpass-api.de/api/interpreter
+city done Byblos r=2km https://overpass-api.de/api/interpreter
+city done Nabatieh r=2.5km https://overpass-api.de/api/interpreter
+city done Baalbek r=2.5km https://overpass-api.de/api/interpreter
+err https://overpass-api.de/api/interpreter HTTP Error 504: Gateway Timeout
+err https://overpass-api.de/api/interpreter HTTP Error 502: Bad Gateway
+city done Batroun r=1.5km https://overpass-api.de/api/interpreter
+city done Aley r=2km https://overpass-api.de/api/interpreter
+city done Chtaura r=1.5km https://overpass-api.de/api/interpreter
+ALL DONE

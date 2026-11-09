@@ -1,0 +1,588 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="Beirut sidewalk pilot" version="3.34.0-Prizren" saveUserFull="" saveUser="" saveDateTime="">
+  <homePath path=""/>
+  <title>Beirut sidewalk pilot</title>
+  <transaction mode="Disabled"/>
+  <projectFlags set=""/>
+  <projectCrs><spatialrefsys nativeFormat="Wkt">
+  <wkt>PROJCRS["WGS 84 / UTM zone 36N",BASEGEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],MEMBER["World Geodetic System 1984 (G2296)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["UTM zone 36N",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",33,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Navigation and medium accuracy spatial referencing."],AREA["Between 30°E and 36°E, northern hemisphere between equator and 84°N, onshore and offshore. Belarus. Cyprus. Egypt. Ethiopia. Finland. Israel. Jordan. Kenya. Lebanon. Moldova. Norway. Russian Federation. Saudi Arabia. Sudan. Syria. Türkiye (Turkey). Uganda. Ukraine."],BBOX[0,30,84,36]],ID["EPSG",32636]]</wkt>
+  <proj4>+proj=utm +zone=36 +datum=WGS84 +units=m +no_defs +type=crs</proj4>
+  <authid>EPSG:32636</authid>
+  <description>WGS 84 / UTM zone 36N</description>
+  <projectionacronym>utm</projectionacronym>
+  <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+  <geographicflag>false</geographicflag>
+</spatialrefsys></projectCrs>
+  <layer-tree-group><customproperties><Option/></customproperties><layer-tree-group name="0. AI results (automatic)" checked="Qt::Checked" expanded="1" groupLayer=""><customproperties><Option/></customproperties><layer-tree-layer id="AI_objects_on/near_sidewalks_59c223c9" name="AI objects on/near sidewalks" source="./ai_results/objects.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="Widths,_edge_method,_on-foot_photos_(most_reliable)_27f1d658" name="Widths, edge method, on-foot photos (most reliable)" source="./ai_results/width_edges.geojson|subset=&quot;source&quot; = 'on-foot'" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="Widths,_edge_method,_car_360_photos_(scale_uncertain)_13a20f9e" name="Widths, edge method, car 360 photos (scale uncertain)" source="./ai_results/width_edges.geojson|subset=&quot;source&quot; &lt;&gt; 'on-foot'" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="AI_sidewalk_widths_(every_2_m)_7e64387e" name="AI sidewalk widths (every 2 m)" source="./ai_results/width_transects.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="AI_sidewalk_outlines_8cce25b3" name="AI sidewalk outlines" source="./ai_results/sidewalks_ai.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="ai_map_48289371" name="AI ground map (sidewalk / road / grass)" source="./ai_results/sidewalk_map.tif" providerKey="gdal" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer></layer-tree-group><layer-tree-group name="1. Survey layers (edit these)" checked="Qt::Checked" expanded="1" groupLayer=""><customproperties><Option/></customproperties><layer-tree-layer id="obstructions_ff2ad03a" name="obstructions" source="./survey/sidewalk_survey.gpkg|layername=obstructions" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="width_measurements_1f78f704" name="width_measurements" source="./survey/sidewalk_survey.gpkg|layername=width_measurements" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="sidewalks_50db43ee" name="sidewalks" source="./survey/sidewalk_survey.gpkg|layername=sidewalks" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer></layer-tree-group><layer-tree-group name="2. Mapillary street photos" checked="Qt::Checked" expanded="1" groupLayer=""><customproperties><Option/></customproperties><layer-tree-layer id="Mapillary_detected_objects_178a744a" name="Mapillary detected objects" source="./data/mapillary_map_features.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="Mapillary_photo_points_db4fde27" name="Mapillary photo points" source="./data/mapillary_images.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer></layer-tree-group><layer-tree-group name="3. Reference data" checked="Qt::Checked" expanded="1" groupLayer=""><customproperties><Option/></customproperties><layer-tree-layer id="OSM_street_features_(lamps,_trees,_crossings,_shops)_9fc885a5" name="OSM street features (lamps, trees, crossings, shops)" source="./data/osm_street_features.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="OSM_streets_a029f713" name="OSM streets" source="./data/osm_streets.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="HeiGIT_road_width_(arterials)_2ccaf4b7" name="HeiGIT road width (arterials)" source="./data/heigit_road_width.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="Microsoft_building_footprints_(2026)_7f861558" name="Microsoft building footprints (2026)" source="./data/ms_buildings.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="OSM_buildings_19f710ea" name="OSM buildings" source="./data/osm_buildings.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer></layer-tree-group><layer-tree-group name="4. Imagery" checked="Qt::Checked" expanded="1" groupLayer=""><customproperties><Option/></customproperties><layer-tree-layer id="drone_ortho_3cf6304b" name="Drone orthophoto 12 cm – Beirut port, 4 Aug 2020 (CC BY, OpenAerialMap)" source="./imagery/beirut_port_2020-08-04_12cm.tif" providerKey="gdal" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="Esri_World_Imagery_–_current_ea428936" name="Esri World Imagery – current (Beirut: Aug–Nov 2024, 0.46–0.5 m)" source="type=xyz&amp;url=https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/%7Bz%7D/%7By%7D/%7Bx%7D&amp;zmax=19&amp;zmin=0" providerKey="wms" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="Esri_Wayback_2018-06_release_6bbb121f" name="Esri Wayback 2018-06 release (Beirut: Nov 2016, 0.31 m WorldView-3)" source="type=xyz&amp;url=https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/11334/%7Bz%7D/%7By%7D/%7Bx%7D&amp;zmax=19&amp;zmin=0" providerKey="wms" checked="Qt::Unchecked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="Esri_Wayback_2017-01_release_3472a330" name="Esri Wayback 2017-01 release (Beirut: Sep 2014, 0.31 m WorldView-3)" source="type=xyz&amp;url=https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/9486/%7Bz%7D/%7By%7D/%7Bx%7D&amp;zmax=19&amp;zmin=0" providerKey="wms" checked="Qt::Unchecked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="OpenStreetMap_basemap_59dc8a61" name="OpenStreetMap basemap" source="type=xyz&amp;url=https://tile.openstreetmap.org/%7Bz%7D/%7By%7D/%7Bx%7D.png&amp;zmax=19&amp;zmin=0" providerKey="wms" checked="Qt::Unchecked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer></layer-tree-group></layer-tree-group>
+  <snapping-settings enabled="1" mode="2" type="1" tolerance="12" unit="1" intersection-snapping="0" self-snapping="0" scaleDependencyMode="0" minScale="0" maxScale="0"><individual-layer-settings/></snapping-settings>
+  <relations/>
+  <mapcanvas name="theMapCanvas" annotationsVisible="1">
+    <units>meters</units>
+    <extent><xmin>731951.0</xmin><ymin>3752125.6</ymin><xmax>733928.7</xmax><ymax>3754504.8</ymax></extent>
+    <rotation>0</rotation>
+    <destinationsrs><spatialrefsys nativeFormat="Wkt">
+  <wkt>PROJCRS["WGS 84 / UTM zone 36N",BASEGEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],MEMBER["World Geodetic System 1984 (G2296)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["UTM zone 36N",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",33,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Navigation and medium accuracy spatial referencing."],AREA["Between 30°E and 36°E, northern hemisphere between equator and 84°N, onshore and offshore. Belarus. Cyprus. Egypt. Ethiopia. Finland. Israel. Jordan. Kenya. Lebanon. Moldova. Norway. Russian Federation. Saudi Arabia. Sudan. Syria. Türkiye (Turkey). Uganda. Ukraine."],BBOX[0,30,84,36]],ID["EPSG",32636]]</wkt>
+  <proj4>+proj=utm +zone=36 +datum=WGS84 +units=m +no_defs +type=crs</proj4>
+  <authid>EPSG:32636</authid>
+  <description>WGS 84 / UTM zone 36N</description>
+  <projectionacronym>utm</projectionacronym>
+  <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+  <geographicflag>false</geographicflag>
+</spatialrefsys></destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <expressionContextScope/>
+  </mapcanvas>
+  <projectlayers>
+<maplayer type="vector" geometry="Point" wkbType="Point" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
+  <id>AI_objects_on/near_sidewalks_59c223c9</id>
+  <datasource>./ai_results/objects.geojson</datasource>
+  <layername>AI objects on/near sidewalks</layername>
+  <srs><spatialrefsys nativeFormat="Wkt">
+  <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],MEMBER["World Geodetic System 1984 (G2296)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+  <proj4>+proj=longlat +datum=WGS84 +no_defs +type=crs</proj4>
+  <authid>EPSG:4326</authid>
+  <description>WGS 84</description>
+  <projectionacronym>longlat</projectionacronym>
+  <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+  <geographicflag>true</geographicflag>
+</spatialrefsys></srs>
+  <provider encoding="UTF-8">ogr</provider>
+  <renderer-v2 type="singleSymbol" symbollevels="0" enableorderby="0" forceraster="0" referencescale="-1">
+  <symbols>
+    <symbol type="marker" name="0" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0">
+      <data_defined_properties><Option type="Map"><Option name="name" value="" type="QString"/><Option name="properties"/><Option name="type" value="collection" type="QString"/></Option></data_defined_properties>
+      <layer class="SimpleMarker" enabled="1" locked="0" pass="0">
+        <Option type="Map"><Option name="name" value="triangle" type="QString"/><Option name="color" value="255,0,200,255" type="QString"/><Option name="outline_color" value="255,255,255,255" type="QString"/><Option name="outline_width" value="0.2" type="QString"/><Option name="outline_width_unit" value="MM" type="QString"/><Option name="size" value="2.4" type="QString"/><Option name="size_unit" value="MM" type="QString"/><Option name="outline_style" value="solid" type="QString"/></Option>
+      </layer>
+    </symbol>
+  </symbols>
+  <rotation/><sizescale/>
+</renderer-v2>
+  
+  
+  <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
+</maplayer>
+<maplayer type="vector" geometry="Line" wkbType="LineString" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
+  <id>Widths,_edge_method,_on-foot_photos_(most_reliable)_27f1d658</id>
+  <datasource>./ai_results/width_edges.geojson|subset="source" = 'on-foot'</datasource>
+  <layername>Widths, edge method, on-foot photos (most reliable)</layername>
+  <srs><spatialrefsys nativeFormat="Wkt">
+  <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],MEMBER["World Geodetic System 1984 (G2296)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+  <proj4>+proj=longlat +datum=WGS84 +no_defs +type=crs</proj4>
+  <authid>EPSG:4326</authid>
+  <description>WGS 84</description>
+  <projectionacronym>longlat</projectionacronym>
+  <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+  <geographicflag>true</geographicflag>
+</spatialrefsys></srs>
+  <provider encoding="UTF-8">ogr</provider>
+  <renderer-v2 type="graduatedSymbol" attr="width_m" graduatedMethod="GraduatedColor" symbollevels="0" enableorderby="0" forceraster="0" referencescale="-1"><ranges><range lower="0" upper="1.2" symbol="0" label="&lt; 1.2 m" render="true"/><range lower="1.2" upper="1.5" symbol="1" label="1.2–1.5 m" render="true"/><range lower="1.5" upper="2.0" symbol="2" label="1.5–2.0 m" render="true"/><range lower="2.0" upper="99" symbol="3" label="&gt; 2.0 m" render="true"/></ranges><symbols><symbol type="line" name="0" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0"><layer class="SimpleLine" enabled="1" locked="0" pass="0"><Option type="Map"><Option name="line_color" value="215,25,28,255" type="QString"/><Option name="line_width" value="1.0" type="QString"/><Option name="line_width_unit" value="MM" type="QString"/><Option name="line_style" value="solid" type="QString"/><Option name="capstyle" value="flat" type="QString"/></Option></layer></symbol><symbol type="line" name="1" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0"><layer class="SimpleLine" enabled="1" locked="0" pass="0"><Option type="Map"><Option name="line_color" value="253,174,97,255" type="QString"/><Option name="line_width" value="1.0" type="QString"/><Option name="line_width_unit" value="MM" type="QString"/><Option name="line_style" value="solid" type="QString"/><Option name="capstyle" value="flat" type="QString"/></Option></layer></symbol><symbol type="line" name="2" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0"><layer class="SimpleLine" enabled="1" locked="0" pass="0"><Option type="Map"><Option name="line_color" value="255,255,140,255" type="QString"/><Option name="line_width" value="1.0" type="QString"/><Option name="line_width_unit" value="MM" type="QString"/><Option name="line_style" value="solid" type="QString"/><Option name="capstyle" value="flat" type="QString"/></Option></layer></symbol><symbol type="line" name="3" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0"><layer class="SimpleLine" enabled="1" locked="0" pass="0"><Option type="Map"><Option name="line_color" value="26,150,65,255" type="QString"/><Option name="line_width" value="1.0" type="QString"/><Option name="line_width_unit" value="MM" type="QString"/><Option name="line_style" value="solid" type="QString"/><Option name="capstyle" value="flat" type="QString"/></Option></layer></symbol></symbols><mode name="manual"/><rotation/><sizescale/></renderer-v2>
+  
+  
+  <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
+</maplayer>
+<maplayer type="vector" geometry="Line" wkbType="LineString" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
+  <id>Widths,_edge_method,_car_360_photos_(scale_uncertain)_13a20f9e</id>
+  <datasource>./ai_results/width_edges.geojson|subset="source" &lt;&gt; 'on-foot'</datasource>
+  <layername>Widths, edge method, car 360 photos (scale uncertain)</layername>
+  <srs><spatialrefsys nativeFormat="Wkt">
+  <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],MEMBER["World Geodetic System 1984 (G2296)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+  <proj4>+proj=longlat +datum=WGS84 +no_defs +type=crs</proj4>
+  <authid>EPSG:4326</authid>
+  <description>WGS 84</description>
+  <projectionacronym>longlat</projectionacronym>
+  <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+  <geographicflag>true</geographicflag>
+</spatialrefsys></srs>
+  <provider encoding="UTF-8">ogr</provider>
+  <renderer-v2 type="graduatedSymbol" attr="width_m" graduatedMethod="GraduatedColor" symbollevels="0" enableorderby="0" forceraster="0" referencescale="-1"><ranges><range lower="0" upper="1.2" symbol="0" label="&lt; 1.2 m" render="true"/><range lower="1.2" upper="1.5" symbol="1" label="1.2–1.5 m" render="true"/><range lower="1.5" upper="2.0" symbol="2" label="1.5–2.0 m" render="true"/><range lower="2.0" upper="99" symbol="3" label="&gt; 2.0 m" render="true"/></ranges><symbols><symbol type="line" name="0" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0"><layer class="SimpleLine" enabled="1" locked="0" pass="0"><Option type="Map"><Option name="line_color" value="215,25,28,255" type="QString"/><Option name="line_width" value="1.0" type="QString"/><Option name="line_width_unit" value="MM" type="QString"/><Option name="line_style" value="solid" type="QString"/><Option name="capstyle" value="flat" type="QString"/></Option></layer></symbol><symbol type="line" name="1" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0"><layer class="SimpleLine" enabled="1" locked="0" pass="0"><Option type="Map"><Option name="line_color" value="253,174,97,255" type="QString"/><Option name="line_width" value="1.0" type="QString"/><Option name="line_width_unit" value="MM" type="QString"/><Option name="line_style" value="solid" type="QString"/><Option name="capstyle" value="flat" type="QString"/></Option></layer></symbol><symbol type="line" name="2" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0"><layer class="SimpleLine" enabled="1" locked="0" pass="0"><Option type="Map"><Option name="line_color" value="255,255,140,255" type="QString"/><Option name="line_width" value="1.0" type="QString"/><Option name="line_width_unit" value="MM" type="QString"/><Option name="line_style" value="solid" type="QString"/><Option name="capstyle" value="flat" type="QString"/></Option></layer></symbol><symbol type="line" name="3" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0"><layer class="SimpleLine" enabled="1" locked="0" pass="0"><Option type="Map"><Option name="line_color" value="26,150,65,255" type="QString"/><Option name="line_width" value="1.0" type="QString"/><Option name="line_width_unit" value="MM" type="QString"/><Option name="line_style" value="solid" type="QString"/><Option name="capstyle" value="flat" type="QString"/></Option></layer></symbol></symbols><mode name="manual"/><rotation/><sizescale/></renderer-v2>
+  
+  
+  <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
+</maplayer>
+<maplayer type="vector" geometry="Line" wkbType="LineString" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
+  <id>AI_sidewalk_widths_(every_2_m)_7e64387e</id>
+  <datasource>./ai_results/width_transects.geojson</datasource>
+  <layername>AI sidewalk widths (every 2 m)</layername>
+  <srs><spatialrefsys nativeFormat="Wkt">
+  <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],MEMBER["World Geodetic System 1984 (G2296)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+  <proj4>+proj=longlat +datum=WGS84 +no_defs +type=crs</proj4>
+  <authid>EPSG:4326</authid>
+  <description>WGS 84</description>
+  <projectionacronym>longlat</projectionacronym>
+  <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+  <geographicflag>true</geographicflag>
+</spatialrefsys></srs>
+  <provider encoding="UTF-8">ogr</provider>
+  <renderer-v2 type="graduatedSymbol" attr="width_m" graduatedMethod="GraduatedColor" symbollevels="0" enableorderby="0" forceraster="0" referencescale="-1"><ranges><range lower="0" upper="1.2" symbol="0" label="&lt; 1.2 m" render="true"/><range lower="1.2" upper="1.5" symbol="1" label="1.2–1.5 m" render="true"/><range lower="1.5" upper="2.0" symbol="2" label="1.5–2.0 m" render="true"/><range lower="2.0" upper="99" symbol="3" label="&gt; 2.0 m" render="true"/></ranges><symbols><symbol type="line" name="0" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0"><layer class="SimpleLine" enabled="1" locked="0" pass="0"><Option type="Map"><Option name="line_color" value="215,25,28,255" type="QString"/><Option name="line_width" value="1.0" type="QString"/><Option name="line_width_unit" value="MM" type="QString"/><Option name="line_style" value="solid" type="QString"/><Option name="capstyle" value="flat" type="QString"/></Option></layer></symbol><symbol type="line" name="1" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0"><layer class="SimpleLine" enabled="1" locked="0" pass="0"><Option type="Map"><Option name="line_color" value="253,174,97,255" type="QString"/><Option name="line_width" value="1.0" type="QString"/><Option name="line_width_unit" value="MM" type="QString"/><Option name="line_style" value="solid" type="QString"/><Option name="capstyle" value="flat" type="QString"/></Option></layer></symbol><symbol type="line" name="2" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0"><layer class="SimpleLine" enabled="1" locked="0" pass="0"><Option type="Map"><Option name="line_color" value="255,255,140,255" type="QString"/><Option name="line_width" value="1.0" type="QString"/><Option name="line_width_unit" value="MM" type="QString"/><Option name="line_style" value="solid" type="QString"/><Option name="capstyle" value="flat" type="QString"/></Option></layer></symbol><symbol type="line" name="3" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0"><layer class="SimpleLine" enabled="1" locked="0" pass="0"><Option type="Map"><Option name="line_color" value="26,150,65,255" type="QString"/><Option name="line_width" value="1.0" type="QString"/><Option name="line_width_unit" value="MM" type="QString"/><Option name="line_style" value="solid" type="QString"/><Option name="capstyle" value="flat" type="QString"/></Option></layer></symbol></symbols><mode name="manual"/><rotation/><sizescale/></renderer-v2>
+  
+  
+  <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
+</maplayer>
+<maplayer type="vector" geometry="Polygon" wkbType="Polygon" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
+  <id>AI_sidewalk_outlines_8cce25b3</id>
+  <datasource>./ai_results/sidewalks_ai.geojson</datasource>
+  <layername>AI sidewalk outlines</layername>
+  <srs><spatialrefsys nativeFormat="Wkt">
+  <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],MEMBER["World Geodetic System 1984 (G2296)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+  <proj4>+proj=longlat +datum=WGS84 +no_defs +type=crs</proj4>
+  <authid>EPSG:4326</authid>
+  <description>WGS 84</description>
+  <projectionacronym>longlat</projectionacronym>
+  <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+  <geographicflag>true</geographicflag>
+</spatialrefsys></srs>
+  <provider encoding="UTF-8">ogr</provider>
+  <renderer-v2 type="singleSymbol" symbollevels="0" enableorderby="0" forceraster="0" referencescale="-1">
+  <symbols>
+    <symbol type="fill" name="0" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0">
+      <data_defined_properties><Option type="Map"><Option name="name" value="" type="QString"/><Option name="properties"/><Option name="type" value="collection" type="QString"/></Option></data_defined_properties>
+      <layer class="SimpleFill" enabled="1" locked="0" pass="0">
+        <Option type="Map"><Option name="color" value="0,0,0,0" type="QString"/><Option name="outline_color" value="255,140,0,255" type="QString"/><Option name="outline_width" value="0.6" type="QString"/><Option name="outline_width_unit" value="MM" type="QString"/><Option name="style" value="solid" type="QString"/><Option name="outline_style" value="solid" type="QString"/><Option name="joinstyle" value="bevel" type="QString"/></Option>
+      </layer>
+    </symbol>
+  </symbols>
+  <rotation/><sizescale/>
+</renderer-v2>
+  
+  
+  <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
+</maplayer>
+<maplayer type="raster" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
+  <id>ai_map_48289371</id>
+  <datasource>./ai_results/sidewalk_map.tif</datasource>
+  <layername>AI ground map (sidewalk / road / grass)</layername>
+  <srs><spatialrefsys nativeFormat="Wkt">
+  <wkt>PROJCRS["WGS 84 / UTM zone 36N",BASEGEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],MEMBER["World Geodetic System 1984 (G2296)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["UTM zone 36N",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",33,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Navigation and medium accuracy spatial referencing."],AREA["Between 30°E and 36°E, northern hemisphere between equator and 84°N, onshore and offshore. Belarus. Cyprus. Egypt. Ethiopia. Finland. Israel. Jordan. Kenya. Lebanon. Moldova. Norway. Russian Federation. Saudi Arabia. Sudan. Syria. Türkiye (Turkey). Uganda. Ukraine."],BBOX[0,30,84,36]],ID["EPSG",32636]]</wkt>
+  <proj4>+proj=utm +zone=36 +datum=WGS84 +units=m +no_defs +type=crs</proj4>
+  <authid>EPSG:32636</authid>
+  <description>WGS 84 / UTM zone 36N</description>
+  <projectionacronym>utm</projectionacronym>
+  <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+  <geographicflag>false</geographicflag>
+</spatialrefsys></srs>
+  <provider>gdal</provider>
+  <pipe>
+    <rasterrenderer type="paletted" band="1" opacity="0.6" alphaBand="-1" nodataColor=""><rasterTransparency/><minMaxOrigin><limits>None</limits><extent>WholeRaster</extent><statAccuracy>Estimated</statAccuracy><cumulativeCutLower>0.02</cumulativeCutLower><cumulativeCutUpper>0.98</cumulativeCutUpper><stdDevFactor>2</stdDevFactor></minMaxOrigin><colorPalette><paletteEntry value="1" color="#ffaa00" label="sidewalk" alpha="255"/><paletteEntry value="2" color="#7f7fff" label="road" alpha="255"/><paletteEntry value="3" color="#7fcf6f" label="grass / soil" alpha="255"/></colorPalette></rasterrenderer>
+    <brightnesscontrast brightness="0" contrast="0" gamma="1"/>
+    <huesaturation saturation="0" grayscaleMode="0" invertColors="0" colorizeOn="0" colorizeRed="255" colorizeGreen="128" colorizeBlue="128" colorizeStrength="100"/>
+    <rasterresampler maxOversampling="2"/>
+    <resamplingStage>resamplingFilter</resamplingStage>
+  </pipe>
+  <blendMode>0</blendMode>
+</maplayer>
+<maplayer type="vector" geometry="Point" wkbType="Point" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
+  <id>obstructions_ff2ad03a</id>
+  <datasource>./survey/sidewalk_survey.gpkg|layername=obstructions</datasource>
+  <layername>obstructions</layername>
+  <srs><spatialrefsys nativeFormat="Wkt">
+  <wkt>PROJCRS["WGS 84 / UTM zone 36N",BASEGEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],MEMBER["World Geodetic System 1984 (G2296)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["UTM zone 36N",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",33,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Navigation and medium accuracy spatial referencing."],AREA["Between 30°E and 36°E, northern hemisphere between equator and 84°N, onshore and offshore. Belarus. Cyprus. Egypt. Ethiopia. Finland. Israel. Jordan. Kenya. Lebanon. Moldova. Norway. Russian Federation. Saudi Arabia. Sudan. Syria. Türkiye (Turkey). Uganda. Ukraine."],BBOX[0,30,84,36]],ID["EPSG",32636]]</wkt>
+  <proj4>+proj=utm +zone=36 +datum=WGS84 +units=m +no_defs +type=crs</proj4>
+  <authid>EPSG:32636</authid>
+  <description>WGS 84 / UTM zone 36N</description>
+  <projectionacronym>utm</projectionacronym>
+  <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+  <geographicflag>false</geographicflag>
+</spatialrefsys></srs>
+  <provider encoding="UTF-8">ogr</provider>
+  <renderer-v2 type="singleSymbol" symbollevels="0" enableorderby="0" forceraster="0" referencescale="-1">
+  <symbols>
+    <symbol type="marker" name="0" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0">
+      <data_defined_properties><Option type="Map"><Option name="name" value="" type="QString"/><Option name="properties"/><Option name="type" value="collection" type="QString"/></Option></data_defined_properties>
+      <layer class="SimpleMarker" enabled="1" locked="0" pass="0">
+        <Option type="Map"><Option name="name" value="diamond" type="QString"/><Option name="color" value="230,30,30,255" type="QString"/><Option name="outline_color" value="255,255,255,255" type="QString"/><Option name="outline_width" value="0.2" type="QString"/><Option name="outline_width_unit" value="MM" type="QString"/><Option name="size" value="3.2" type="QString"/><Option name="size_unit" value="MM" type="QString"/><Option name="outline_style" value="solid" type="QString"/></Option>
+      </layer>
+    </symbol>
+  </symbols>
+  <rotation/><sizescale/>
+</renderer-v2>
+  <fieldConfiguration><field name="ob_id"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="sw_id"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="ob_type"><editWidget type="ValueMap"><config><Option type="Map"><Option name="map" type="List"><Option type="Map"><Option name="Parked car" value="parked_car" type="QString"/></Option><Option type="Map"><Option name="Parked motorcycle / scooter" value="parked_motorcycle" type="QString"/></Option><Option type="Map"><Option name="Generator" value="generator" type="QString"/></Option><Option type="Map"><Option name="Street vendor / stall" value="vendor" type="QString"/></Option><Option type="Map"><Option name="Shop goods on display" value="shop_display" type="QString"/></Option><Option type="Map"><Option name="Café / restaurant tables &amp; chairs" value="cafe_furniture" type="QString"/></Option><Option type="Map"><Option name="Kiosk" value="kiosk" type="QString"/></Option><Option type="Map"><Option name="Utility / electricity pole" value="utility_pole" type="QString"/></Option><Option type="Map"><Option name="Street light" value="street_light" type="QString"/></Option><Option type="Map"><Option name="Tree / tree pit" value="tree" type="QString"/></Option><Option type="Map"><Option name="Sign post" value="sign_post" type="QString"/></Option><Option type="Map"><Option name="Bollard" value="bollard" type="QString"/></Option><Option type="Map"><Option name="Planter / flower box" value="planter" type="QString"/></Option><Option type="Map"><Option name="Bin / dumpster" value="bin" type="QString"/></Option><Option type="Map"><Option name="Electrical cabinet / meter box" value="cabinet" type="QString"/></Option><Option type="Map"><Option name="Hanging wires / cables (low)" value="wires" type="QString"/></Option><Option type="Map"><Option name="Steps / ramp into a building" value="private_steps" type="QString"/></Option><Option type="Map"><Option name="Barrier / fence / valet sign" value="barrier" type="QString"/></Option><Option type="Map"><Option name="Construction / scaffolding" value="construction" type="QString"/></Option><Option type="Map"><Option name="Hole / broken pavement" value="damage" type="QString"/></Option><Option type="Map"><Option name="Other" value="other" type="QString"/></Option></Option></Option></config></editWidget></field><field name="permanence"><editWidget type="ValueMap"><config><Option type="Map"><Option name="map" type="List"><Option type="Map"><Option name="Permanent (fixed)" value="permanent" type="QString"/></Option><Option type="Map"><Option name="Temporary / movable" value="temporary" type="QString"/></Option></Option></Option></config></editWidget></field><field name="occupied_width_m"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="clear_width_left_m"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="mapillary_image_id"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="observed_date"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="observed_time"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="time_of_day"><editWidget type="ValueMap"><config><Option type="Map"><Option name="map" type="List"><Option type="Map"><Option name="Morning (05–11)" value="morning" type="QString"/></Option><Option type="Map"><Option name="Midday (11–14)" value="midday" type="QString"/></Option><Option type="Map"><Option name="Afternoon (14–18)" value="afternoon" type="QString"/></Option><Option type="Map"><Option name="Evening (18–21)" value="evening" type="QString"/></Option><Option type="Map"><Option name="Night (21–05)" value="night" type="QString"/></Option></Option></Option></config></editWidget></field><field name="data_method"><editWidget type="ValueMap"><config><Option type="Map"><Option name="map" type="List"><Option type="Map"><Option name="Traced/measured by hand on imagery" value="manual_imagery" type="QString"/></Option><Option type="Map"><Option name="Coded by hand from Mapillary photo" value="manual_mapillary" type="QString"/></Option><Option type="Map"><Option name="Field visit (tape / laser / LiDAR)" value="field" type="QString"/></Option><Option type="Map"><Option name="Automatic (model output)" value="auto_model" type="QString"/></Option></Option></Option></config></editWidget></field><field name="model_version"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="confidence"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="validation_status"><editWidget type="ValueMap"><config><Option type="Map"><Option name="map" type="List"><Option type="Map"><Option name="Not checked yet" value="unchecked" type="QString"/></Option><Option type="Map"><Option name="Checked – correct" value="validated" type="QString"/></Option><Option type="Map"><Option name="Checked – corrected" value="corrected" type="QString"/></Option><Option type="Map"><Option name="Checked – rejected" value="rejected" type="QString"/></Option></Option></Option></config></editWidget></field><field name="validated_by"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="validated_date"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="mapper"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="date_mapped"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="notes"><editWidget type="TextEdit"><config><Option/></config></editWidget></field></fieldConfiguration><aliases><alias field="ob_id" index="0" name=""/><alias field="sw_id" index="1" name="Sidewalk ID"/><alias field="ob_type" index="2" name="Obstruction type"/><alias field="permanence" index="3" name=""/><alias field="occupied_width_m" index="4" name="Width taken by object (m)"/><alias field="clear_width_left_m" index="5" name="Clear width left beside object (m)"/><alias field="mapillary_image_id" index="6" name=""/><alias field="observed_date" index="7" name="Observed date (photo capture or visit)"/><alias field="observed_time" index="8" name="Observed time HH:MM (photo capture or visit)"/><alias field="time_of_day" index="9" name="Time of day (auto from time)"/><alias field="data_method" index="10" name="How produced"/><alias field="model_version" index="11" name="Model version (if automatic)"/><alias field="confidence" index="12" name="Confidence (0–1)"/><alias field="validation_status" index="13" name="Validation status"/><alias field="validated_by" index="14" name="Validated by"/><alias field="validated_date" index="15" name="Validated date"/><alias field="mapper" index="16" name=""/><alias field="date_mapped" index="17" name=""/><alias field="notes" index="18" name=""/></aliases><defaults><default field="ob_id" expression="left(regexp_replace(uuid(),'[{}-]',''),8)" applyOnUpdate="0"/><default field="sw_id" expression="array_first(overlay_nearest('sidewalks', &quot;sw_id&quot;, max_distance:=10))" applyOnUpdate="0"/><default field="ob_type" expression="" applyOnUpdate="0"/><default field="permanence" expression="" applyOnUpdate="0"/><default field="occupied_width_m" expression="" applyOnUpdate="0"/><default field="clear_width_left_m" expression="" applyOnUpdate="0"/><default field="mapillary_image_id" expression="" applyOnUpdate="0"/><default field="observed_date" expression="format_date(now(),'yyyy-MM-dd')" applyOnUpdate="0"/><default field="observed_time" expression="format_date(now(),'HH:mm')" applyOnUpdate="0"/><default field="time_of_day" expression="CASE WHEN &quot;observed_time&quot; IS NULL OR &quot;observed_time&quot; = '' THEN NULL WHEN to_int(left(&quot;observed_time&quot;, 2)) &lt; 5 THEN 'night' WHEN to_int(left(&quot;observed_time&quot;, 2)) &lt; 11 THEN 'morning' WHEN to_int(left(&quot;observed_time&quot;, 2)) &lt; 14 THEN 'midday' WHEN to_int(left(&quot;observed_time&quot;, 2)) &lt; 18 THEN 'afternoon' WHEN to_int(left(&quot;observed_time&quot;, 2)) &lt; 21 THEN 'evening' ELSE 'night' END" applyOnUpdate="1"/><default field="data_method" expression="'manual_mapillary'" applyOnUpdate="0"/><default field="model_version" expression="" applyOnUpdate="0"/><default field="confidence" expression="" applyOnUpdate="0"/><default field="validation_status" expression="'unchecked'" applyOnUpdate="0"/><default field="validated_by" expression="" applyOnUpdate="0"/><default field="validated_date" expression="" applyOnUpdate="0"/><default field="mapper" expression="@user_full_name" applyOnUpdate="0"/><default field="date_mapped" expression="format_date(now(),'yyyy-MM-dd')" applyOnUpdate="0"/><default field="notes" expression="" applyOnUpdate="0"/></defaults>
+  
+  <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
+</maplayer>
+<maplayer type="vector" geometry="Line" wkbType="LineString" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
+  <id>width_measurements_1f78f704</id>
+  <datasource>./survey/sidewalk_survey.gpkg|layername=width_measurements</datasource>
+  <layername>width_measurements</layername>
+  <srs><spatialrefsys nativeFormat="Wkt">
+  <wkt>PROJCRS["WGS 84 / UTM zone 36N",BASEGEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],MEMBER["World Geodetic System 1984 (G2296)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["UTM zone 36N",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",33,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Navigation and medium accuracy spatial referencing."],AREA["Between 30°E and 36°E, northern hemisphere between equator and 84°N, onshore and offshore. Belarus. Cyprus. Egypt. Ethiopia. Finland. Israel. Jordan. Kenya. Lebanon. Moldova. Norway. Russian Federation. Saudi Arabia. Sudan. Syria. Türkiye (Turkey). Uganda. Ukraine."],BBOX[0,30,84,36]],ID["EPSG",32636]]</wkt>
+  <proj4>+proj=utm +zone=36 +datum=WGS84 +units=m +no_defs +type=crs</proj4>
+  <authid>EPSG:32636</authid>
+  <description>WGS 84 / UTM zone 36N</description>
+  <projectionacronym>utm</projectionacronym>
+  <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+  <geographicflag>false</geographicflag>
+</spatialrefsys></srs>
+  <provider encoding="UTF-8">ogr</provider>
+  <renderer-v2 type="singleSymbol" symbollevels="0" enableorderby="0" forceraster="0" referencescale="-1">
+  <symbols>
+    <symbol type="line" name="0" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0">
+      <data_defined_properties><Option type="Map"><Option name="name" value="" type="QString"/><Option name="properties"/><Option name="type" value="collection" type="QString"/></Option></data_defined_properties>
+      <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+        <Option type="Map"><Option name="line_color" value="0,170,255,255" type="QString"/><Option name="line_width" value="0.8" type="QString"/><Option name="line_width_unit" value="MM" type="QString"/><Option name="line_style" value="solid" type="QString"/><Option name="capstyle" value="round" type="QString"/><Option name="joinstyle" value="round" type="QString"/></Option>
+      </layer>
+    </symbol>
+  </symbols>
+  <rotation/><sizescale/>
+</renderer-v2>
+  <fieldConfiguration><field name="wm_id"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="sw_id"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="total_width_m"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="clear_width_m"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="pinch_point"><editWidget type="ValueMap"><config><Option type="Map"><Option name="map" type="List"><Option type="Map"><Option name="Yes – narrowest point" value="yes" type="QString"/></Option><Option type="Map"><Option name="No" value="no" type="QString"/></Option></Option></Option></config></editWidget></field><field name="source_imagery"><editWidget type="ValueMap"><config><Option type="Map"><Option name="map" type="List"><Option type="Map"><Option name="Esri World Imagery (current)" value="esri_current" type="QString"/></Option><Option type="Map"><Option name="Esri Wayback 2016 (0.31 m)" value="esri_wayback_2016" type="QString"/></Option><Option type="Map"><Option name="Esri Wayback 2014 (0.31 m)" value="esri_wayback_2014" type="QString"/></Option><Option type="Map"><Option name="OpenAerialMap drone 2020 (12 cm)" value="oam_drone_2020" type="QString"/></Option><Option type="Map"><Option name="Mapillary photo" value="mapillary" type="QString"/></Option><Option type="Map"><Option name="Field visit" value="field" type="QString"/></Option></Option></Option></config></editWidget></field><field name="mapillary_image_id"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="camera_height_m"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="data_method"><editWidget type="ValueMap"><config><Option type="Map"><Option name="map" type="List"><Option type="Map"><Option name="Traced/measured by hand on imagery" value="manual_imagery" type="QString"/></Option><Option type="Map"><Option name="Coded by hand from Mapillary photo" value="manual_mapillary" type="QString"/></Option><Option type="Map"><Option name="Field visit (tape / laser / LiDAR)" value="field" type="QString"/></Option><Option type="Map"><Option name="Automatic (model output)" value="auto_model" type="QString"/></Option></Option></Option></config></editWidget></field><field name="model_version"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="confidence"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="validation_status"><editWidget type="ValueMap"><config><Option type="Map"><Option name="map" type="List"><Option type="Map"><Option name="Not checked yet" value="unchecked" type="QString"/></Option><Option type="Map"><Option name="Checked – correct" value="validated" type="QString"/></Option><Option type="Map"><Option name="Checked – corrected" value="corrected" type="QString"/></Option><Option type="Map"><Option name="Checked – rejected" value="rejected" type="QString"/></Option></Option></Option></config></editWidget></field><field name="validated_by"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="validated_date"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="mapper"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="date_mapped"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="notes"><editWidget type="TextEdit"><config><Option/></config></editWidget></field></fieldConfiguration><aliases><alias field="wm_id" index="0" name=""/><alias field="sw_id" index="1" name="Sidewalk ID"/><alias field="total_width_m" index="2" name="Total width (m, auto from line)"/><alias field="clear_width_m" index="3" name="Clear walkable width (m)"/><alias field="pinch_point" index="4" name="Narrowest point of this sidewalk?"/><alias field="source_imagery" index="5" name=""/><alias field="mapillary_image_id" index="6" name=""/><alias field="camera_height_m" index="7" name="Camera height used for scale (m, photo widths)"/><alias field="data_method" index="8" name="How produced"/><alias field="model_version" index="9" name="Model version (if automatic)"/><alias field="confidence" index="10" name="Confidence (0–1)"/><alias field="validation_status" index="11" name="Validation status"/><alias field="validated_by" index="12" name="Validated by"/><alias field="validated_date" index="13" name="Validated date"/><alias field="mapper" index="14" name=""/><alias field="date_mapped" index="15" name=""/><alias field="notes" index="16" name=""/></aliases><defaults><default field="wm_id" expression="left(regexp_replace(uuid(),'[{}-]',''),8)" applyOnUpdate="0"/><default field="sw_id" expression="array_first(overlay_intersects('sidewalks', &quot;sw_id&quot;))" applyOnUpdate="0"/><default field="total_width_m" expression="round($length,2)" applyOnUpdate="1"/><default field="clear_width_m" expression="" applyOnUpdate="0"/><default field="pinch_point" expression="'no'" applyOnUpdate="0"/><default field="source_imagery" expression="" applyOnUpdate="0"/><default field="mapillary_image_id" expression="" applyOnUpdate="0"/><default field="camera_height_m" expression="" applyOnUpdate="0"/><default field="data_method" expression="'manual_imagery'" applyOnUpdate="0"/><default field="model_version" expression="" applyOnUpdate="0"/><default field="confidence" expression="" applyOnUpdate="0"/><default field="validation_status" expression="'unchecked'" applyOnUpdate="0"/><default field="validated_by" expression="" applyOnUpdate="0"/><default field="validated_date" expression="" applyOnUpdate="0"/><default field="mapper" expression="@user_full_name" applyOnUpdate="0"/><default field="date_mapped" expression="format_date(now(),'yyyy-MM-dd')" applyOnUpdate="0"/><default field="notes" expression="" applyOnUpdate="0"/></defaults>
+  
+  <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
+</maplayer>
+<maplayer type="vector" geometry="Polygon" wkbType="Polygon" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
+  <id>sidewalks_50db43ee</id>
+  <datasource>./survey/sidewalk_survey.gpkg|layername=sidewalks</datasource>
+  <layername>sidewalks</layername>
+  <srs><spatialrefsys nativeFormat="Wkt">
+  <wkt>PROJCRS["WGS 84 / UTM zone 36N",BASEGEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],MEMBER["World Geodetic System 1984 (G2296)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["UTM zone 36N",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",33,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Navigation and medium accuracy spatial referencing."],AREA["Between 30°E and 36°E, northern hemisphere between equator and 84°N, onshore and offshore. Belarus. Cyprus. Egypt. Ethiopia. Finland. Israel. Jordan. Kenya. Lebanon. Moldova. Norway. Russian Federation. Saudi Arabia. Sudan. Syria. Türkiye (Turkey). Uganda. Ukraine."],BBOX[0,30,84,36]],ID["EPSG",32636]]</wkt>
+  <proj4>+proj=utm +zone=36 +datum=WGS84 +units=m +no_defs +type=crs</proj4>
+  <authid>EPSG:32636</authid>
+  <description>WGS 84 / UTM zone 36N</description>
+  <projectionacronym>utm</projectionacronym>
+  <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+  <geographicflag>false</geographicflag>
+</spatialrefsys></srs>
+  <provider encoding="UTF-8">ogr</provider>
+  <renderer-v2 type="singleSymbol" symbollevels="0" enableorderby="0" forceraster="0" referencescale="-1">
+  <symbols>
+    <symbol type="fill" name="0" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0">
+      <data_defined_properties><Option type="Map"><Option name="name" value="" type="QString"/><Option name="properties"/><Option name="type" value="collection" type="QString"/></Option></data_defined_properties>
+      <layer class="SimpleFill" enabled="1" locked="0" pass="0">
+        <Option type="Map"><Option name="color" value="255,200,0,90" type="QString"/><Option name="outline_color" value="255,140,0,255" type="QString"/><Option name="outline_width" value="0.5" type="QString"/><Option name="outline_width_unit" value="MM" type="QString"/><Option name="style" value="solid" type="QString"/><Option name="outline_style" value="solid" type="QString"/><Option name="joinstyle" value="bevel" type="QString"/></Option>
+      </layer>
+    </symbol>
+  </symbols>
+  <rotation/><sizescale/>
+</renderer-v2>
+  <fieldConfiguration><field name="sw_id"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="street_name"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="side"><editWidget type="ValueMap"><config><Option type="Map"><Option name="map" type="List"><Option type="Map"><Option name="North" value="N" type="QString"/></Option><Option type="Map"><Option name="South" value="S" type="QString"/></Option><Option type="Map"><Option name="East" value="E" type="QString"/></Option><Option type="Map"><Option name="West" value="W" type="QString"/></Option><Option type="Map"><Option name="Left (direction of OSM way)" value="left" type="QString"/></Option><Option type="Map"><Option name="Right (direction of OSM way)" value="right" type="QString"/></Option></Option></Option></config></editWidget></field><field name="surface"><editWidget type="ValueMap"><config><Option type="Map"><Option name="map" type="List"><Option type="Map"><Option name="Tiles / pavers" value="tiles" type="QString"/></Option><Option type="Map"><Option name="Concrete" value="concrete" type="QString"/></Option><Option type="Map"><Option name="Asphalt" value="asphalt" type="QString"/></Option><Option type="Map"><Option name="Stone" value="stone" type="QString"/></Option><Option type="Map"><Option name="Gravel / dirt" value="unpaved" type="QString"/></Option><Option type="Map"><Option name="Mixed" value="mixed" type="QString"/></Option><Option type="Map"><Option name="Unknown" value="unknown" type="QString"/></Option></Option></Option></config></editWidget></field><field name="condition"><editWidget type="ValueMap"><config><Option type="Map"><Option name="map" type="List"><Option type="Map"><Option name="Good" value="good" type="QString"/></Option><Option type="Map"><Option name="Fair" value="fair" type="QString"/></Option><Option type="Map"><Option name="Poor (cracks, missing tiles)" value="poor" type="QString"/></Option><Option type="Map"><Option name="Very poor / impassable" value="very_poor" type="QString"/></Option><Option type="Map"><Option name="Unknown" value="unknown" type="QString"/></Option></Option></Option></config></editWidget></field><field name="has_curb"><editWidget type="ValueMap"><config><Option type="Map"><Option name="map" type="List"><Option type="Map"><Option name="Yes" value="yes" type="QString"/></Option><Option type="Map"><Option name="No" value="no" type="QString"/></Option><Option type="Map"><Option name="Partly" value="partial" type="QString"/></Option><Option type="Map"><Option name="Unknown" value="unknown" type="QString"/></Option></Option></Option></config></editWidget></field><field name="curb_height_cm"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="curb_ramp"><editWidget type="ValueMap"><config><Option type="Map"><Option name="map" type="List"><Option type="Map"><Option name="Yes" value="yes" type="QString"/></Option><Option type="Map"><Option name="No" value="no" type="QString"/></Option><Option type="Map"><Option name="Partly" value="partial" type="QString"/></Option><Option type="Map"><Option name="Unknown" value="unknown" type="QString"/></Option></Option></Option></config></editWidget></field><field name="continuous"><editWidget type="ValueMap"><config><Option type="Map"><Option name="map" type="List"><Option type="Map"><Option name="Yes" value="yes" type="QString"/></Option><Option type="Map"><Option name="No" value="no" type="QString"/></Option><Option type="Map"><Option name="Partly" value="partial" type="QString"/></Option><Option type="Map"><Option name="Unknown" value="unknown" type="QString"/></Option></Option></Option></config></editWidget></field><field name="length_m"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="area_m2"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="source_imagery"><editWidget type="ValueMap"><config><Option type="Map"><Option name="map" type="List"><Option type="Map"><Option name="Esri World Imagery (current)" value="esri_current" type="QString"/></Option><Option type="Map"><Option name="Esri Wayback 2016 (0.31 m)" value="esri_wayback_2016" type="QString"/></Option><Option type="Map"><Option name="Esri Wayback 2014 (0.31 m)" value="esri_wayback_2014" type="QString"/></Option><Option type="Map"><Option name="OpenAerialMap drone 2020 (12 cm)" value="oam_drone_2020" type="QString"/></Option><Option type="Map"><Option name="Mapillary photo" value="mapillary" type="QString"/></Option><Option type="Map"><Option name="Field visit" value="field" type="QString"/></Option></Option></Option></config></editWidget></field><field name="mapillary_image_id"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="data_method"><editWidget type="ValueMap"><config><Option type="Map"><Option name="map" type="List"><Option type="Map"><Option name="Traced/measured by hand on imagery" value="manual_imagery" type="QString"/></Option><Option type="Map"><Option name="Coded by hand from Mapillary photo" value="manual_mapillary" type="QString"/></Option><Option type="Map"><Option name="Field visit (tape / laser / LiDAR)" value="field" type="QString"/></Option><Option type="Map"><Option name="Automatic (model output)" value="auto_model" type="QString"/></Option></Option></Option></config></editWidget></field><field name="model_version"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="confidence"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="validation_status"><editWidget type="ValueMap"><config><Option type="Map"><Option name="map" type="List"><Option type="Map"><Option name="Not checked yet" value="unchecked" type="QString"/></Option><Option type="Map"><Option name="Checked – correct" value="validated" type="QString"/></Option><Option type="Map"><Option name="Checked – corrected" value="corrected" type="QString"/></Option><Option type="Map"><Option name="Checked – rejected" value="rejected" type="QString"/></Option></Option></Option></config></editWidget></field><field name="validated_by"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="validated_date"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="mapper"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="date_mapped"><editWidget type="TextEdit"><config><Option/></config></editWidget></field><field name="notes"><editWidget type="TextEdit"><config><Option/></config></editWidget></field></fieldConfiguration><aliases><alias field="sw_id" index="0" name="Sidewalk ID"/><alias field="street_name" index="1" name=""/><alias field="side" index="2" name=""/><alias field="surface" index="3" name=""/><alias field="condition" index="4" name=""/><alias field="has_curb" index="5" name=""/><alias field="curb_height_cm" index="6" name="Curb height (cm, field only)"/><alias field="curb_ramp" index="7" name=""/><alias field="continuous" index="8" name=""/><alias field="length_m" index="9" name="Approx. length (m, auto = half perimeter)"/><alias field="area_m2" index="10" name="Area (m², auto)"/><alias field="source_imagery" index="11" name=""/><alias field="mapillary_image_id" index="12" name=""/><alias field="data_method" index="13" name="How produced"/><alias field="model_version" index="14" name="Model version (if automatic)"/><alias field="confidence" index="15" name="Confidence (0–1)"/><alias field="validation_status" index="16" name="Validation status"/><alias field="validated_by" index="17" name="Validated by"/><alias field="validated_date" index="18" name="Validated date"/><alias field="mapper" index="19" name=""/><alias field="date_mapped" index="20" name=""/><alias field="notes" index="21" name=""/></aliases><defaults><default field="sw_id" expression="left(regexp_replace(uuid(),'[{}-]',''),8)" applyOnUpdate="0"/><default field="street_name" expression="" applyOnUpdate="0"/><default field="side" expression="" applyOnUpdate="0"/><default field="surface" expression="" applyOnUpdate="0"/><default field="condition" expression="" applyOnUpdate="0"/><default field="has_curb" expression="" applyOnUpdate="0"/><default field="curb_height_cm" expression="" applyOnUpdate="0"/><default field="curb_ramp" expression="" applyOnUpdate="0"/><default field="continuous" expression="" applyOnUpdate="0"/><default field="length_m" expression="round($perimeter/2, 1)" applyOnUpdate="1"/><default field="area_m2" expression="round($area,1)" applyOnUpdate="1"/><default field="source_imagery" expression="" applyOnUpdate="0"/><default field="mapillary_image_id" expression="" applyOnUpdate="0"/><default field="data_method" expression="'manual_imagery'" applyOnUpdate="0"/><default field="model_version" expression="" applyOnUpdate="0"/><default field="confidence" expression="" applyOnUpdate="0"/><default field="validation_status" expression="'unchecked'" applyOnUpdate="0"/><default field="validated_by" expression="" applyOnUpdate="0"/><default field="validated_date" expression="" applyOnUpdate="0"/><default field="mapper" expression="@user_full_name" applyOnUpdate="0"/><default field="date_mapped" expression="format_date(now(),'yyyy-MM-dd')" applyOnUpdate="0"/><default field="notes" expression="" applyOnUpdate="0"/></defaults>
+  <expressionfields><field name="n_width_lines" expression="aggregate(layer:='width_measurements', aggregate:='count', expression:=&quot;wm_id&quot;, filter:=&quot;sw_id&quot; = attribute(@parent, 'sw_id') AND coalesce(&quot;validation_status&quot;, '') &lt;&gt; 'rejected')" type="2" typeName="integer" length="0" precision="0" subType="0" comment=""/><field name="width_median_m" expression="aggregate(layer:='width_measurements', aggregate:='median', expression:=&quot;total_width_m&quot;, filter:=&quot;sw_id&quot; = attribute(@parent, 'sw_id') AND coalesce(&quot;validation_status&quot;, '') &lt;&gt; 'rejected')" type="6" typeName="double" length="0" precision="0" subType="0" comment=""/><field name="width_min_m" expression="aggregate(layer:='width_measurements', aggregate:='min', expression:=&quot;total_width_m&quot;, filter:=&quot;sw_id&quot; = attribute(@parent, 'sw_id') AND coalesce(&quot;validation_status&quot;, '') &lt;&gt; 'rejected')" type="6" typeName="double" length="0" precision="0" subType="0" comment=""/><field name="clear_width_min_m" expression="aggregate(layer:='width_measurements', aggregate:='min', expression:=&quot;clear_width_m&quot;, filter:=&quot;sw_id&quot; = attribute(@parent, 'sw_id') AND coalesce(&quot;validation_status&quot;, '') &lt;&gt; 'rejected')" type="6" typeName="double" length="0" precision="0" subType="0" comment=""/><field name="n_obstructions" expression="aggregate(layer:='obstructions', aggregate:='count', expression:=&quot;ob_id&quot;, filter:=&quot;sw_id&quot; = attribute(@parent, 'sw_id') AND coalesce(&quot;validation_status&quot;, '') &lt;&gt; 'rejected')" type="2" typeName="integer" length="0" precision="0" subType="0" comment=""/><field name="n_permanent_obstructions" expression="aggregate(layer:='obstructions', aggregate:='count', expression:=&quot;ob_id&quot;, filter:=&quot;sw_id&quot; = attribute(@parent, 'sw_id') AND &quot;permanence&quot; = 'permanent' AND coalesce(&quot;validation_status&quot;, '') &lt;&gt; 'rejected')" type="2" typeName="integer" length="0" precision="0" subType="0" comment=""/><field name="obstructions_per_100m" expression="CASE WHEN &quot;length_m&quot; &gt; 0 THEN round(100 * coalesce(aggregate(layer:='obstructions', aggregate:='count', expression:=&quot;ob_id&quot;, filter:=&quot;sw_id&quot; = attribute(@parent, 'sw_id') AND coalesce(&quot;validation_status&quot;, '') &lt;&gt; 'rejected'), 0) / &quot;length_m&quot;, 1) END" type="6" typeName="double" length="0" precision="0" subType="0" comment=""/></expressionfields>
+  <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
+</maplayer>
+<maplayer type="vector" geometry="Point" wkbType="Point" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
+  <id>Mapillary_detected_objects_178a744a</id>
+  <datasource>./data/mapillary_map_features.geojson</datasource>
+  <layername>Mapillary detected objects</layername>
+  <srs><spatialrefsys nativeFormat="Wkt">
+  <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],MEMBER["World Geodetic System 1984 (G2296)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+  <proj4>+proj=longlat +datum=WGS84 +no_defs +type=crs</proj4>
+  <authid>EPSG:4326</authid>
+  <description>WGS 84</description>
+  <projectionacronym>longlat</projectionacronym>
+  <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+  <geographicflag>true</geographicflag>
+</spatialrefsys></srs>
+  <provider encoding="UTF-8">ogr</provider>
+  <renderer-v2 type="singleSymbol" symbollevels="0" enableorderby="0" forceraster="0" referencescale="-1">
+  <symbols>
+    <symbol type="marker" name="0" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0">
+      <data_defined_properties><Option type="Map"><Option name="name" value="" type="QString"/><Option name="properties"/><Option name="type" value="collection" type="QString"/></Option></data_defined_properties>
+      <layer class="SimpleMarker" enabled="1" locked="0" pass="0">
+        <Option type="Map"><Option name="name" value="square" type="QString"/><Option name="color" value="170,0,255,255" type="QString"/><Option name="outline_color" value="255,255,255,255" type="QString"/><Option name="outline_width" value="0.2" type="QString"/><Option name="outline_width_unit" value="MM" type="QString"/><Option name="size" value="2.2" type="QString"/><Option name="size_unit" value="MM" type="QString"/><Option name="outline_style" value="solid" type="QString"/></Option>
+      </layer>
+    </symbol>
+  </symbols>
+  <rotation/><sizescale/>
+</renderer-v2>
+  
+  
+  <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
+</maplayer>
+<maplayer type="vector" geometry="Point" wkbType="Point" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
+  <id>Mapillary_photo_points_db4fde27</id>
+  <datasource>./data/mapillary_images.geojson</datasource>
+  <layername>Mapillary photo points</layername>
+  <srs><spatialrefsys nativeFormat="Wkt">
+  <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],MEMBER["World Geodetic System 1984 (G2296)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+  <proj4>+proj=longlat +datum=WGS84 +no_defs +type=crs</proj4>
+  <authid>EPSG:4326</authid>
+  <description>WGS 84</description>
+  <projectionacronym>longlat</projectionacronym>
+  <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+  <geographicflag>true</geographicflag>
+</spatialrefsys></srs>
+  <provider encoding="UTF-8">ogr</provider>
+  <renderer-v2 type="singleSymbol" symbollevels="0" enableorderby="0" forceraster="0" referencescale="-1">
+  <symbols>
+    <symbol type="marker" name="0" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0">
+      <data_defined_properties><Option type="Map"><Option name="name" value="" type="QString"/><Option name="properties"/><Option name="type" value="collection" type="QString"/></Option></data_defined_properties>
+      <layer class="SimpleMarker" enabled="1" locked="0" pass="0">
+        <Option type="Map"><Option name="name" value="circle" type="QString"/><Option name="color" value="5,203,99,255" type="QString"/><Option name="outline_color" value="255,255,255,255" type="QString"/><Option name="outline_width" value="0.2" type="QString"/><Option name="outline_width_unit" value="MM" type="QString"/><Option name="size" value="1.6" type="QString"/><Option name="size_unit" value="MM" type="QString"/><Option name="outline_style" value="solid" type="QString"/></Option>
+      </layer>
+    </symbol>
+  </symbols>
+  <rotation/><sizescale/>
+</renderer-v2>
+  
+  <attributeactions><defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+<actionsetting type="5" name="Open photo in Mapillary" shortTitle="Open in Mapillary" action="[% &quot;open_url&quot; %]" capture="0" icon="" notificationMessage="" isEnabledOnlyWhenEditable="0" id="{5dfb0c57-e890-4c53-a56d-908b694132a8}"><actionScope id="Feature"/><actionScope id="Canvas"/><actionScope id="Field"/></actionsetting></attributeactions>
+  <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
+</maplayer>
+<maplayer type="vector" geometry="Point" wkbType="Point" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
+  <id>OSM_street_features_(lamps,_trees,_crossings,_shops)_9fc885a5</id>
+  <datasource>./data/osm_street_features.geojson</datasource>
+  <layername>OSM street features (lamps, trees, crossings, shops)</layername>
+  <srs><spatialrefsys nativeFormat="Wkt">
+  <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],MEMBER["World Geodetic System 1984 (G2296)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+  <proj4>+proj=longlat +datum=WGS84 +no_defs +type=crs</proj4>
+  <authid>EPSG:4326</authid>
+  <description>WGS 84</description>
+  <projectionacronym>longlat</projectionacronym>
+  <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+  <geographicflag>true</geographicflag>
+</spatialrefsys></srs>
+  <provider encoding="UTF-8">ogr</provider>
+  <renderer-v2 type="singleSymbol" symbollevels="0" enableorderby="0" forceraster="0" referencescale="-1">
+  <symbols>
+    <symbol type="marker" name="0" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0">
+      <data_defined_properties><Option type="Map"><Option name="name" value="" type="QString"/><Option name="properties"/><Option name="type" value="collection" type="QString"/></Option></data_defined_properties>
+      <layer class="SimpleMarker" enabled="1" locked="0" pass="0">
+        <Option type="Map"><Option name="name" value="circle" type="QString"/><Option name="color" value="255,255,255,255" type="QString"/><Option name="outline_color" value="60,60,60,255" type="QString"/><Option name="outline_width" value="0.2" type="QString"/><Option name="outline_width_unit" value="MM" type="QString"/><Option name="size" value="1.4" type="QString"/><Option name="size_unit" value="MM" type="QString"/><Option name="outline_style" value="solid" type="QString"/></Option>
+      </layer>
+    </symbol>
+  </symbols>
+  <rotation/><sizescale/>
+</renderer-v2>
+  
+  
+  <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
+</maplayer>
+<maplayer type="vector" geometry="Line" wkbType="LineString" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
+  <id>OSM_streets_a029f713</id>
+  <datasource>./data/osm_streets.geojson</datasource>
+  <layername>OSM streets</layername>
+  <srs><spatialrefsys nativeFormat="Wkt">
+  <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],MEMBER["World Geodetic System 1984 (G2296)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+  <proj4>+proj=longlat +datum=WGS84 +no_defs +type=crs</proj4>
+  <authid>EPSG:4326</authid>
+  <description>WGS 84</description>
+  <projectionacronym>longlat</projectionacronym>
+  <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+  <geographicflag>true</geographicflag>
+</spatialrefsys></srs>
+  <provider encoding="UTF-8">ogr</provider>
+  <renderer-v2 type="singleSymbol" symbollevels="0" enableorderby="0" forceraster="0" referencescale="-1">
+  <symbols>
+    <symbol type="line" name="0" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0">
+      <data_defined_properties><Option type="Map"><Option name="name" value="" type="QString"/><Option name="properties"/><Option name="type" value="collection" type="QString"/></Option></data_defined_properties>
+      <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+        <Option type="Map"><Option name="line_color" value="255,255,255,200" type="QString"/><Option name="line_width" value="0.35" type="QString"/><Option name="line_width_unit" value="MM" type="QString"/><Option name="line_style" value="dash" type="QString"/><Option name="capstyle" value="round" type="QString"/><Option name="joinstyle" value="round" type="QString"/></Option>
+      </layer>
+    </symbol>
+  </symbols>
+  <rotation/><sizescale/>
+</renderer-v2>
+  
+  
+  <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
+</maplayer>
+<maplayer type="vector" geometry="Line" wkbType="LineString" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
+  <id>HeiGIT_road_width_(arterials)_2ccaf4b7</id>
+  <datasource>./data/heigit_road_width.geojson</datasource>
+  <layername>HeiGIT road width (arterials)</layername>
+  <srs><spatialrefsys nativeFormat="Wkt">
+  <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],MEMBER["World Geodetic System 1984 (G2296)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+  <proj4>+proj=longlat +datum=WGS84 +no_defs +type=crs</proj4>
+  <authid>EPSG:4326</authid>
+  <description>WGS 84</description>
+  <projectionacronym>longlat</projectionacronym>
+  <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+  <geographicflag>true</geographicflag>
+</spatialrefsys></srs>
+  <provider encoding="UTF-8">ogr</provider>
+  <renderer-v2 type="singleSymbol" symbollevels="0" enableorderby="0" forceraster="0" referencescale="-1">
+  <symbols>
+    <symbol type="line" name="0" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0">
+      <data_defined_properties><Option type="Map"><Option name="name" value="" type="QString"/><Option name="properties"/><Option name="type" value="collection" type="QString"/></Option></data_defined_properties>
+      <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+        <Option type="Map"><Option name="line_color" value="0,255,255,160" type="QString"/><Option name="line_width" value="0.6" type="QString"/><Option name="line_width_unit" value="MM" type="QString"/><Option name="line_style" value="solid" type="QString"/><Option name="capstyle" value="round" type="QString"/><Option name="joinstyle" value="round" type="QString"/></Option>
+      </layer>
+    </symbol>
+  </symbols>
+  <rotation/><sizescale/>
+</renderer-v2>
+  
+  
+  <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
+</maplayer>
+<maplayer type="vector" geometry="Polygon" wkbType="Polygon" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
+  <id>Microsoft_building_footprints_(2026)_7f861558</id>
+  <datasource>./data/ms_buildings.geojson</datasource>
+  <layername>Microsoft building footprints (2026)</layername>
+  <srs><spatialrefsys nativeFormat="Wkt">
+  <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],MEMBER["World Geodetic System 1984 (G2296)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+  <proj4>+proj=longlat +datum=WGS84 +no_defs +type=crs</proj4>
+  <authid>EPSG:4326</authid>
+  <description>WGS 84</description>
+  <projectionacronym>longlat</projectionacronym>
+  <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+  <geographicflag>true</geographicflag>
+</spatialrefsys></srs>
+  <provider encoding="UTF-8">ogr</provider>
+  <renderer-v2 type="singleSymbol" symbollevels="0" enableorderby="0" forceraster="0" referencescale="-1">
+  <symbols>
+    <symbol type="fill" name="0" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0">
+      <data_defined_properties><Option type="Map"><Option name="name" value="" type="QString"/><Option name="properties"/><Option name="type" value="collection" type="QString"/></Option></data_defined_properties>
+      <layer class="SimpleFill" enabled="1" locked="0" pass="0">
+        <Option type="Map"><Option name="color" value="0,0,0,0" type="QString"/><Option name="outline_color" value="255,80,180,255" type="QString"/><Option name="outline_width" value="0.3" type="QString"/><Option name="outline_width_unit" value="MM" type="QString"/><Option name="style" value="solid" type="QString"/><Option name="outline_style" value="solid" type="QString"/><Option name="joinstyle" value="bevel" type="QString"/></Option>
+      </layer>
+    </symbol>
+  </symbols>
+  <rotation/><sizescale/>
+</renderer-v2>
+  
+  
+  <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
+</maplayer>
+<maplayer type="vector" geometry="Polygon" wkbType="Polygon" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
+  <id>OSM_buildings_19f710ea</id>
+  <datasource>./data/osm_buildings.geojson</datasource>
+  <layername>OSM buildings</layername>
+  <srs><spatialrefsys nativeFormat="Wkt">
+  <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],MEMBER["World Geodetic System 1984 (G2296)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+  <proj4>+proj=longlat +datum=WGS84 +no_defs +type=crs</proj4>
+  <authid>EPSG:4326</authid>
+  <description>WGS 84</description>
+  <projectionacronym>longlat</projectionacronym>
+  <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+  <geographicflag>true</geographicflag>
+</spatialrefsys></srs>
+  <provider encoding="UTF-8">ogr</provider>
+  <renderer-v2 type="singleSymbol" symbollevels="0" enableorderby="0" forceraster="0" referencescale="-1">
+  <symbols>
+    <symbol type="fill" name="0" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0">
+      <data_defined_properties><Option type="Map"><Option name="name" value="" type="QString"/><Option name="properties"/><Option name="type" value="collection" type="QString"/></Option></data_defined_properties>
+      <layer class="SimpleFill" enabled="1" locked="0" pass="0">
+        <Option type="Map"><Option name="color" value="0,0,0,0" type="QString"/><Option name="outline_color" value="120,200,255,200" type="QString"/><Option name="outline_width" value="0.25" type="QString"/><Option name="outline_width_unit" value="MM" type="QString"/><Option name="style" value="solid" type="QString"/><Option name="outline_style" value="solid" type="QString"/><Option name="joinstyle" value="bevel" type="QString"/></Option>
+      </layer>
+    </symbol>
+  </symbols>
+  <rotation/><sizescale/>
+</renderer-v2>
+  
+  
+  <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
+</maplayer>
+<maplayer type="raster" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
+  <id>drone_ortho_3cf6304b</id>
+  <datasource>./imagery/beirut_port_2020-08-04_12cm.tif</datasource>
+  <layername>Drone orthophoto 12 cm – Beirut port, 4 Aug 2020 (CC BY, OpenAerialMap)</layername>
+  <srs><spatialrefsys nativeFormat="Wkt">
+  <wkt>PROJCRS["WGS 84 / UTM zone 36N",BASEGEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],MEMBER["World Geodetic System 1984 (G2296)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["UTM zone 36N",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",33,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Navigation and medium accuracy spatial referencing."],AREA["Between 30°E and 36°E, northern hemisphere between equator and 84°N, onshore and offshore. Belarus. Cyprus. Egypt. Ethiopia. Finland. Israel. Jordan. Kenya. Lebanon. Moldova. Norway. Russian Federation. Saudi Arabia. Sudan. Syria. Türkiye (Turkey). Uganda. Ukraine."],BBOX[0,30,84,36]],ID["EPSG",32636]]</wkt>
+  <proj4>+proj=utm +zone=36 +datum=WGS84 +units=m +no_defs +type=crs</proj4>
+  <authid>EPSG:32636</authid>
+  <description>WGS 84 / UTM zone 36N</description>
+  <projectionacronym>utm</projectionacronym>
+  <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+  <geographicflag>false</geographicflag>
+</spatialrefsys></srs>
+  <provider>gdal</provider>
+  <pipe>
+    <rasterrenderer type="multibandcolor" redBand="1" greenBand="2" blueBand="3" alphaBand="4" opacity="1" nodataColor=""><rasterTransparency/><minMaxOrigin><limits>None</limits><extent>WholeRaster</extent><statAccuracy>Estimated</statAccuracy><cumulativeCutLower>0.02</cumulativeCutLower><cumulativeCutUpper>0.98</cumulativeCutUpper><stdDevFactor>2</stdDevFactor></minMaxOrigin></rasterrenderer>
+    <brightnesscontrast brightness="0" contrast="0" gamma="1"/>
+    <huesaturation saturation="0" grayscaleMode="0" invertColors="0" colorizeOn="0" colorizeRed="255" colorizeGreen="128" colorizeBlue="128" colorizeStrength="100"/>
+    <rasterresampler maxOversampling="2" zoomedInResampler="bilinear"/>
+    <resamplingStage>resamplingFilter</resamplingStage>
+  </pipe>
+  <blendMode>0</blendMode>
+</maplayer>
+<maplayer type="raster" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
+  <id>Esri_World_Imagery_–_current_ea428936</id>
+  <datasource>type=xyz&amp;url=https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/%7Bz%7D/%7By%7D/%7Bx%7D&amp;zmax=19&amp;zmin=0</datasource>
+  <layername>Esri World Imagery – current (Beirut: Aug–Nov 2024, 0.46–0.5 m)</layername>
+  <srs><spatialrefsys nativeFormat="Wkt">
+  <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],MEMBER["World Geodetic System 1984 (G2296)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Web mapping and visualisation."],AREA["World between 85.06°S and 85.06°N."],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
+  <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs +type=crs</proj4>
+  <authid>EPSG:3857</authid>
+  <description>WGS 84 / Pseudo-Mercator</description>
+  <projectionacronym>merc</projectionacronym>
+  <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+  <geographicflag>false</geographicflag>
+</spatialrefsys></srs>
+  <provider>wms</provider>
+  <pipe>
+    <rasterrenderer type="singlebandcolordata" band="1" opacity="1" alphaBand="-1" nodataColor=""><rasterTransparency/><minMaxOrigin><limits>None</limits><extent>WholeRaster</extent><statAccuracy>Estimated</statAccuracy><cumulativeCutLower>0.02</cumulativeCutLower><cumulativeCutUpper>0.98</cumulativeCutUpper><stdDevFactor>2</stdDevFactor></minMaxOrigin></rasterrenderer>
+    <brightnesscontrast brightness="0" contrast="0" gamma="1"/>
+    <huesaturation saturation="0" grayscaleMode="0" invertColors="0" colorizeOn="0" colorizeRed="255" colorizeGreen="128" colorizeBlue="128" colorizeStrength="100"/>
+    <rasterresampler maxOversampling="2" zoomedInResampler="bilinear"/>
+    <resamplingStage>resamplingFilter</resamplingStage>
+  </pipe>
+  <blendMode>0</blendMode>
+</maplayer>
+<maplayer type="raster" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
+  <id>Esri_Wayback_2018-06_release_6bbb121f</id>
+  <datasource>type=xyz&amp;url=https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/11334/%7Bz%7D/%7By%7D/%7Bx%7D&amp;zmax=19&amp;zmin=0</datasource>
+  <layername>Esri Wayback 2018-06 release (Beirut: Nov 2016, 0.31 m WorldView-3)</layername>
+  <srs><spatialrefsys nativeFormat="Wkt">
+  <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],MEMBER["World Geodetic System 1984 (G2296)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Web mapping and visualisation."],AREA["World between 85.06°S and 85.06°N."],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
+  <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs +type=crs</proj4>
+  <authid>EPSG:3857</authid>
+  <description>WGS 84 / Pseudo-Mercator</description>
+  <projectionacronym>merc</projectionacronym>
+  <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+  <geographicflag>false</geographicflag>
+</spatialrefsys></srs>
+  <provider>wms</provider>
+  <pipe>
+    <rasterrenderer type="singlebandcolordata" band="1" opacity="1" alphaBand="-1" nodataColor=""><rasterTransparency/><minMaxOrigin><limits>None</limits><extent>WholeRaster</extent><statAccuracy>Estimated</statAccuracy><cumulativeCutLower>0.02</cumulativeCutLower><cumulativeCutUpper>0.98</cumulativeCutUpper><stdDevFactor>2</stdDevFactor></minMaxOrigin></rasterrenderer>
+    <brightnesscontrast brightness="0" contrast="0" gamma="1"/>
+    <huesaturation saturation="0" grayscaleMode="0" invertColors="0" colorizeOn="0" colorizeRed="255" colorizeGreen="128" colorizeBlue="128" colorizeStrength="100"/>
+    <rasterresampler maxOversampling="2" zoomedInResampler="bilinear"/>
+    <resamplingStage>resamplingFilter</resamplingStage>
+  </pipe>
+  <blendMode>0</blendMode>
+</maplayer>
+<maplayer type="raster" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
+  <id>Esri_Wayback_2017-01_release_3472a330</id>
+  <datasource>type=xyz&amp;url=https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/9486/%7Bz%7D/%7By%7D/%7Bx%7D&amp;zmax=19&amp;zmin=0</datasource>
+  <layername>Esri Wayback 2017-01 release (Beirut: Sep 2014, 0.31 m WorldView-3)</layername>
+  <srs><spatialrefsys nativeFormat="Wkt">
+  <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],MEMBER["World Geodetic System 1984 (G2296)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Web mapping and visualisation."],AREA["World between 85.06°S and 85.06°N."],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
+  <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs +type=crs</proj4>
+  <authid>EPSG:3857</authid>
+  <description>WGS 84 / Pseudo-Mercator</description>
+  <projectionacronym>merc</projectionacronym>
+  <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+  <geographicflag>false</geographicflag>
+</spatialrefsys></srs>
+  <provider>wms</provider>
+  <pipe>
+    <rasterrenderer type="singlebandcolordata" band="1" opacity="1" alphaBand="-1" nodataColor=""><rasterTransparency/><minMaxOrigin><limits>None</limits><extent>WholeRaster</extent><statAccuracy>Estimated</statAccuracy><cumulativeCutLower>0.02</cumulativeCutLower><cumulativeCutUpper>0.98</cumulativeCutUpper><stdDevFactor>2</stdDevFactor></minMaxOrigin></rasterrenderer>
+    <brightnesscontrast brightness="0" contrast="0" gamma="1"/>
+    <huesaturation saturation="0" grayscaleMode="0" invertColors="0" colorizeOn="0" colorizeRed="255" colorizeGreen="128" colorizeBlue="128" colorizeStrength="100"/>
+    <rasterresampler maxOversampling="2" zoomedInResampler="bilinear"/>
+    <resamplingStage>resamplingFilter</resamplingStage>
+  </pipe>
+  <blendMode>0</blendMode>
+</maplayer>
+<maplayer type="raster" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
+  <id>OpenStreetMap_basemap_59dc8a61</id>
+  <datasource>type=xyz&amp;url=https://tile.openstreetmap.org/%7Bz%7D/%7By%7D/%7Bx%7D.png&amp;zmax=19&amp;zmin=0</datasource>
+  <layername>OpenStreetMap basemap</layername>
+  <srs><spatialrefsys nativeFormat="Wkt">
+  <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],MEMBER["World Geodetic System 1984 (G2296)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Web mapping and visualisation."],AREA["World between 85.06°S and 85.06°N."],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
+  <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs +type=crs</proj4>
+  <authid>EPSG:3857</authid>
+  <description>WGS 84 / Pseudo-Mercator</description>
+  <projectionacronym>merc</projectionacronym>
+  <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+  <geographicflag>false</geographicflag>
+</spatialrefsys></srs>
+  <provider>wms</provider>
+  <pipe>
+    <rasterrenderer type="singlebandcolordata" band="1" opacity="1" alphaBand="-1" nodataColor=""><rasterTransparency/><minMaxOrigin><limits>None</limits><extent>WholeRaster</extent><statAccuracy>Estimated</statAccuracy><cumulativeCutLower>0.02</cumulativeCutLower><cumulativeCutUpper>0.98</cumulativeCutUpper><stdDevFactor>2</stdDevFactor></minMaxOrigin></rasterrenderer>
+    <brightnesscontrast brightness="0" contrast="0" gamma="1"/>
+    <huesaturation saturation="0" grayscaleMode="0" invertColors="0" colorizeOn="0" colorizeRed="255" colorizeGreen="128" colorizeBlue="128" colorizeStrength="100"/>
+    <rasterresampler maxOversampling="2" zoomedInResampler="bilinear"/>
+    <resamplingStage>resamplingFilter</resamplingStage>
+  </pipe>
+  <blendMode>0</blendMode>
+</maplayer>
+  </projectlayers>
+  <properties>
+    <Paths><Absolute type="bool">false</Absolute></Paths>
+    <Measure><Ellipsoid type="QString">EPSG:7030</Ellipsoid></Measure>
+    <Measurement><DistanceUnits type="QString">meters</DistanceUnits><AreaUnits type="QString">m2</AreaUnits></Measurement>
+    <Digitizing><AvoidIntersectionsMode type="int">0</AvoidIntersectionsMode></Digitizing>
+  </properties>
+  <ellipsoid>EPSG:7030</ellipsoid>
+</qgis>

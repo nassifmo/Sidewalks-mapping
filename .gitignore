@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Large geodata / imagery (too big for GitHub; keep locally or re-download)
+*.tif
+*.tiff
+*.gpkg
+*.zip
+pilot_beirut/imagery/
+
+# Secrets
+.env
+*.token
+
+# OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/

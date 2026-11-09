@@ -1,0 +1,842 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
+  "id": "hotosm_lbn_roads-osm",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          34.99942958641054,
+          33.10343556677087
+        ],
+        [
+          35.00404103009015,
+          33.065424293958536
+        ],
+        [
+          35.033492653409525,
+          33.026631816067805
+        ],
+        [
+          35.13900991811113,
+          32.99393153207828
+        ],
+        [
+          35.26211219575197,
+          33.00056796953136
+        ],
+        [
+          35.313595238488034,
+          32.970057532651815
+        ],
+        [
+          35.38368240977971,
+          32.960021734585524
+        ],
+        [
+          35.5591981120416,
+          33.00864220339081
+        ],
+        [
+          35.61966810993198,
+          33.07258194788502
+        ],
+        [
+          35.64382232099007,
+          33.14921306063873
+        ],
+        [
+          35.88786499140667,
+          33.28904947625624
+        ],
+        [
+          35.92379716224602,
+          33.34198966044324
+        ],
+        [
+          36.01178969847567,
+          33.39627591426594
+        ],
+        [
+          36.0490709883706,
+          33.45407692917761
+        ],
+        [
+          36.10069127294628,
+          33.47844128050972
+        ],
+        [
+          36.14563618959798,
+          33.52450687345548
+        ],
+        [
+          36.163692006651615,
+          33.55859159205151
+        ],
+        [
+          36.16190010373424,
+          33.60349622260052
+        ],
+        [
+          36.138828345930335,
+          33.64688794930332
+        ],
+        [
+          36.08293497264111,
+          33.68980507341876
+        ],
+        [
+          36.133770676262515,
+          33.73715836561035
+        ],
+        [
+          36.26465085939111,
+          33.755785983717026
+        ],
+        [
+          36.392615774098545,
+          33.74388585720908
+        ],
+        [
+          36.46866775486441,
+          33.77894125514043
+        ],
+        [
+          36.499847841395564,
+          33.856445401584146
+        ],
+        [
+          36.451419383564286,
+          33.94284196421976
+        ],
+        [
+          36.57474743692066,
+          33.99587754599179
+        ],
+        [
+          36.61363343735633,
+          34.06185168480018
+        ],
+        [
+          36.707812381126786,
+          34.15279447711804
+        ],
+        [
+          36.72761037611724,
+          34.20280442512122
+        ],
+        [
+          36.695782017858136,
+          34.32289501833253
+        ],
+        [
+          36.65941417013471,
+          34.36645170837956
+        ],
+        [
+          36.66239597357031,
+          34.45535977437666
+        ],
+        [
+          36.54573039321292,
+          34.54934406851256
+        ],
+        [
+          36.57168459262482,
+          34.64105681191661
+        ],
+        [
+          36.533063857470125,
+          34.70689520997099
+        ],
+        [
+          36.44512114073933,
+          34.72920608229288
+        ],
+        [
+          36.389973012507596,
+          34.77195465427737
+        ],
+        [
+          36.33787360450478,
+          34.78357942794637
+        ],
+        [
+          36.26572304940254,
+          34.7676856410878
+        ],
+        [
+          36.21273135379187,
+          34.72613877810689
+        ],
+        [
+          36.05691099993993,
+          34.72623800499085
+        ],
+        [
+          35.97825037048216,
+          34.741420670086626
+        ],
+        [
+          35.89593750211688,
+          34.706100078668214
+        ],
+        [
+          35.86744043231346,
+          34.644350042523875
+        ],
+        [
+          35.87973611705286,
+          34.58132639941923
+        ],
+        [
+          35.84677080616521,
+          34.55111942114616
+        ],
+        [
+          35.77824463807315,
+          34.54369178634821
+        ],
+        [
+          35.733496119736316,
+          34.52205157802663
+        ],
+        [
+          35.69688032783844,
+          34.460749362776504
+        ],
+        [
+          35.65651830001934,
+          34.43691311050176
+        ],
+        [
+          35.55709995751036,
+          34.31624323882354
+        ],
+        [
+          35.51806038654888,
+          34.157468671982784
+        ],
+        [
+          35.536509296281594,
+          34.09266176282472
+        ],
+        [
+          35.513425381751574,
+          34.021619558512285
+        ],
+        [
+          35.49902091941419,
+          33.998485426091904
+        ],
+        [
+          35.41820981298255,
+          33.98003061030573
+        ],
+        [
+          35.37216392957404,
+          33.93845908497037
+        ],
+        [
+          35.36010685910253,
+          33.89411402479383
+        ],
+        [
+          35.37214373690222,
+          33.8164534042797
+        ],
+        [
+          35.31395959560962,
+          33.71930325287852
+        ],
+        [
+          35.25783286613583,
+          33.5603440441046
+        ],
+        [
+          35.19006011261149,
+          33.49759508892904
+        ],
+        [
+          35.14019715444783,
+          33.36319598243216
+        ],
+        [
+          35.09331481819919,
+          33.29999120864342
+        ],
+        [
+          35.09829099014689,
+          33.230532485248375
+        ],
+        [
+          35.019344271183826,
+          33.15488070514321
+        ],
+        [
+          34.99942958641054,
+          33.10343556677087
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    34.99942958641054,
+    32.960021734585524,
+    36.72761037611724,
+    34.78357942794637
+  ],
+  "properties": {
+    "oex:category": "roads",
+    "oex:source": "osm",
+    "oex:dataset_source": "OpenStreetMap (Geofabrik LBN 2026-11-02)",
+    "oex:snapshot": "2026-11-02",
+    "oex:boundary": "geoBoundaries gbOpen ADM0 (buffered +10000m, simplified 1000m)",
+    "oex:version": "0.4.19",
+    "oex:pcode_source_date": "2025-07-29",
+    "oex:geometry_types": {
+      "LINESTRING": 160600,
+      "POINT": 1633,
+      "POLYGON": 435
+    },
+    "title": "Roads of Lebanon",
+    "description": "162,668 features: 160,600 lines, 1,633 points, 435 polygons. 1 of 13 attributes are filled for at least half of the features.",
+    "license": "ODbL-1.0",
+    "created": "2026-11-02T14:32:30Z",
+    "keywords": [
+      "geodata",
+      "roads",
+      "transportation"
+    ],
+    "providers": [
+      {
+        "name": "OpenStreetMap (Geofabrik LBN 2026-11-02)",
+        "roles": [
+          "producer",
+          "licensor"
+        ]
+      }
+    ],
+    "proj:code": "EPSG:4326",
+    "table:row_count": 162668,
+    "table:primary_geometry": "geom",
+    "table:columns": [
+      {
+        "name": "id",
+        "type": "VARCHAR",
+        "oex:null_count": 0,
+        "oex:null_percent": 0.0,
+        "oex:distinct_count": 162668,
+        "oex:top_values": []
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "oex:null_count": 151758,
+        "oex:null_percent": 93.29,
+        "oex:distinct_count": 3455,
+        "oex:top_values": []
+      },
+      {
+        "name": "name_en",
+        "type": "VARCHAR",
+        "oex:null_count": 154616,
+        "oex:null_percent": 95.05,
+        "oex:distinct_count": 2437,
+        "oex:top_values": []
+      },
+      {
+        "name": "name_ar",
+        "type": "VARCHAR",
+        "oex:null_count": 154246,
+        "oex:null_percent": 94.82,
+        "oex:distinct_count": 2052,
+        "oex:top_values": []
+      },
+      {
+        "name": "highway",
+        "type": "VARCHAR",
+        "oex:null_count": 0,
+        "oex:null_percent": 0.0,
+        "oex:distinct_count": 43,
+        "oex:top_values": [
+          {
+            "value": "residential",
+            "count": 88650
+          },
+          {
+            "value": "track",
+            "count": 22372
+          },
+          {
+            "value": "service",
+            "count": 16091
+          },
+          {
+            "value": "unclassified",
+            "count": 12783
+          },
+          {
+            "value": "tertiary",
+            "count": 5459
+          }
+        ]
+      },
+      {
+        "name": "surface",
+        "type": "VARCHAR",
+        "oex:null_count": 143090,
+        "oex:null_percent": 87.96,
+        "oex:distinct_count": 26,
+        "oex:top_values": [
+          {
+            "value": "asphalt",
+            "count": 14660
+          },
+          {
+            "value": "unpaved",
+            "count": 3959
+          },
+          {
+            "value": "ground",
+            "count": 207
+          },
+          {
+            "value": "paved",
+            "count": 164
+          },
+          {
+            "value": "gravel",
+            "count": 159
+          }
+        ]
+      },
+      {
+        "name": "smoothness",
+        "type": "VARCHAR",
+        "oex:null_count": 162413,
+        "oex:null_percent": 99.84,
+        "oex:distinct_count": 7,
+        "oex:top_values": [
+          {
+            "value": "good",
+            "count": 172
+          },
+          {
+            "value": "bad",
+            "count": 48
+          },
+          {
+            "value": "excellent",
+            "count": 11
+          },
+          {
+            "value": "very_bad",
+            "count": 8
+          },
+          {
+            "value": "very_horrible",
+            "count": 8
+          }
+        ]
+      },
+      {
+        "name": "width",
+        "type": "VARCHAR",
+        "oex:null_count": 162623,
+        "oex:null_percent": 99.97,
+        "oex:distinct_count": 11,
+        "oex:top_values": [
+          {
+            "value": "4",
+            "count": 12
+          },
+          {
+            "value": "2.1",
+            "count": 10
+          },
+          {
+            "value": "2",
+            "count": 10
+          },
+          {
+            "value": "1",
+            "count": 3
+          },
+          {
+            "value": "2.5",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "name": "lanes",
+        "type": "VARCHAR",
+        "oex:null_count": 157892,
+        "oex:null_percent": 97.06,
+        "oex:distinct_count": 6,
+        "oex:top_values": [
+          {
+            "value": "2",
+            "count": 2211
+          },
+          {
+            "value": "1",
+            "count": 2113
+          },
+          {
+            "value": "3",
+            "count": 319
+          },
+          {
+            "value": "4",
+            "count": 120
+          },
+          {
+            "value": "5",
+            "count": 12
+          }
+        ]
+      },
+      {
+        "name": "oneway",
+        "type": "VARCHAR",
+        "oex:null_count": 149926,
+        "oex:null_percent": 92.17,
+        "oex:distinct_count": 4,
+        "oex:top_values": [
+          {
+            "value": "yes",
+            "count": 11956
+          },
+          {
+            "value": "no",
+            "count": 760
+          },
+          {
+            "value": "reversible",
+            "count": 13
+          },
+          {
+            "value": "alternating",
+            "count": 13
+          }
+        ]
+      },
+      {
+        "name": "bridge",
+        "type": "VARCHAR",
+        "oex:null_count": 161387,
+        "oex:null_percent": 99.21,
+        "oex:distinct_count": 1,
+        "oex:top_values": [
+          {
+            "value": "yes",
+            "count": 1281
+          }
+        ]
+      },
+      {
+        "name": "layer",
+        "type": "VARCHAR",
+        "oex:null_count": 161159,
+        "oex:null_percent": 99.07,
+        "oex:distinct_count": 6,
+        "oex:top_values": [
+          {
+            "value": "1",
+            "count": 1251
+          },
+          {
+            "value": "-1",
+            "count": 240
+          },
+          {
+            "value": "-2",
+            "count": 9
+          },
+          {
+            "value": "2",
+            "count": 6
+          },
+          {
+            "value": "-3",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "name": "source",
+        "type": "VARCHAR",
+        "oex:null_count": 160110,
+        "oex:null_percent": 98.43,
+        "oex:distinct_count": 20,
+        "oex:top_values": [
+          {
+            "value": "Bing",
+            "count": 1448
+          },
+          {
+            "value": "maxar",
+            "count": 598
+          },
+          {
+            "value": "bing",
+            "count": 285
+          },
+          {
+            "value": "digitalglobe",
+            "count": 140
+          },
+          {
+            "value": "GPS",
+            "count": 20
+          }
+        ]
+      },
+      {
+        "name": "adm0_pcode",
+        "type": "VARCHAR",
+        "oex:null_count": 0,
+        "oex:null_percent": 0.0,
+        "oex:distinct_count": 1,
+        "oex:top_values": [
+          {
+            "value": "LBN",
+            "count": 162668
+          }
+        ]
+      },
+      {
+        "name": "adm0_name",
+        "type": "VARCHAR",
+        "oex:null_count": 0,
+        "oex:null_percent": 0.0,
+        "oex:distinct_count": 1,
+        "oex:top_values": [
+          {
+            "value": "Lebanon",
+            "count": 162668
+          }
+        ]
+      },
+      {
+        "name": "adm1_pcode",
+        "type": "VARCHAR",
+        "oex:null_count": 62,
+        "oex:null_percent": 0.04,
+        "oex:distinct_count": 8,
+        "oex:top_values": [
+          {
+            "value": "LB3",
+            "count": 57577
+          },
+          {
+            "value": "LB6",
+            "count": 17618
+          },
+          {
+            "value": "LB4",
+            "count": 17277
+          },
+          {
+            "value": "LB2",
+            "count": 17270
+          },
+          {
+            "value": "LB8",
+            "count": 16979
+          }
+        ]
+      },
+      {
+        "name": "adm1_name",
+        "type": "VARCHAR",
+        "oex:null_count": 62,
+        "oex:null_percent": 0.04,
+        "oex:distinct_count": 8,
+        "oex:top_values": [
+          {
+            "value": "Mount Lebanon",
+            "count": 57577
+          },
+          {
+            "value": "South",
+            "count": 17618
+          },
+          {
+            "value": "El Nabatieh",
+            "count": 17277
+          },
+          {
+            "value": "Bekaa",
+            "count": 17270
+          },
+          {
+            "value": "Baalbek-El Hermel",
+            "count": 16979
+          }
+        ]
+      },
+      {
+        "name": "adm2_pcode",
+        "type": "VARCHAR",
+        "oex:null_count": 62,
+        "oex:null_percent": 0.04,
+        "oex:distinct_count": 26,
+        "oex:top_values": [
+          {
+            "value": "LB21",
+            "count": 15256
+          },
+          {
+            "value": "LB51",
+            "count": 13974
+          },
+          {
+            "value": "LB25",
+            "count": 11492
+          },
+          {
+            "value": "LB36",
+            "count": 11194
+          },
+          {
+            "value": "LB33",
+            "count": 10807
+          }
+        ]
+      },
+      {
+        "name": "adm2_name",
+        "type": "VARCHAR",
+        "oex:null_count": 62,
+        "oex:null_percent": 0.04,
+        "oex:distinct_count": 26,
+        "oex:top_values": [
+          {
+            "value": "Baalbek",
+            "count": 15256
+          },
+          {
+            "value": "Akkar",
+            "count": 13974
+          },
+          {
+            "value": "Zahle",
+            "count": 11492
+          },
+          {
+            "value": "El Meten",
+            "count": 11194
+          },
+          {
+            "value": "Chouf",
+            "count": 10807
+          }
+        ]
+      },
+      {
+        "name": "adm3_pcode",
+        "type": "VARCHAR",
+        "oex:null_count": 62,
+        "oex:null_percent": 0.04,
+        "oex:distinct_count": 872,
+        "oex:top_values": [
+          {
+            "value": "10210",
+            "count": 2487
+          },
+          {
+            "value": "10650",
+            "count": 2115
+          },
+          {
+            "value": "22111",
+            "count": 1431
+          },
+          {
+            "value": "31111",
+            "count": 1426
+          },
+          {
+            "value": "53111",
+            "count": 1387
+          }
+        ]
+      },
+      {
+        "name": "adm3_name",
+        "type": "VARCHAR",
+        "oex:null_count": 62,
+        "oex:null_percent": 0.04,
+        "oex:distinct_count": 862,
+        "oex:top_values": [
+          {
+            "value": "Moussaytbeh",
+            "count": 2487
+          },
+          {
+            "value": "Achrafieh",
+            "count": 2115
+          },
+          {
+            "value": "Bourj Hammoud",
+            "count": 1431
+          },
+          {
+            "value": "Trablous Ez-Zeitoun",
+            "count": 1426
+          },
+          {
+            "value": "Baalbek",
+            "count": 1387
+          }
+        ]
+      },
+      {
+        "name": "adm4_pcode",
+        "type": "VARCHAR",
+        "oex:null_count": 162668,
+        "oex:null_percent": 100.0,
+        "oex:distinct_count": 0,
+        "oex:top_values": []
+      },
+      {
+        "name": "adm4_name",
+        "type": "VARCHAR",
+        "oex:null_count": 162668,
+        "oex:null_percent": 100.0,
+        "oex:distinct_count": 0,
+        "oex:top_values": []
+      },
+      {
+        "name": "name_latin",
+        "type": "VARCHAR",
+        "oex:null_count": 151702,
+        "oex:null_percent": 93.26,
+        "oex:distinct_count": 3848,
+        "oex:top_values": []
+      }
+    ],
+    "datetime": "2026-11-02T00:00:00Z"
+  },
+  "links": [
+    {
+      "rel": "license",
+      "href": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "title": "Open Database License (ODC-ODbL)"
+    },
+    {
+      "rel": "root",
+      "href": "https://production-raw-data-api.s3.amazonaws.com/ISO3/catalog.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {}
+}

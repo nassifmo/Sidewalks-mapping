@@ -1,0 +1,78 @@
+osm_way,street,highway,side,width_m,offset_from_centreline_m,complete,filled_frac,dist_m,dist_to_gt_sidewalk_m,gt_width_m,err_m,gt_idx
+6051302,Ontario Place Northwest,residential,right,1.65,8.35,False,1.0,0.0,0.0,2.6,-0.9500000000000002,35127
+6055550,17th Street Northwest,tertiary,right,3.3,11.45,False,1.0,0.0,0.0,2.2,1.0999999999999996,15172
+6055572,Seaton Street Northwest,residential,left,1.9,2.8,False,1.0,0.0,0.0,3.384,-1.484,38127
+6055572,Seaton Street Northwest,residential,right,1.55,1.0,False,1.0,0.0,1.1434784678426784,0.7,0.8500000000000001,18609
+6055572,Seaton Street Northwest,residential,right,1.8,4.1,False,1.0,0.0,0.0,2.3,-0.4999999999999998,18618
+6055572,Seaton Street Northwest,residential,left,3.3,2.25,False,1.0,0.0,0.07940507855388076,0.949,2.351,15108
+6055572,Seaton Street Northwest,residential,left,1.8,4.85,False,1.0,0.0,0.0,1.1,0.7,15110
+6055572,Seaton Street Northwest,residential,right,1.8,4.85,False,1.0,0.0,0.0,3.1,-1.3,18651
+6055572,Seaton Street Northwest,residential,right,2.7,4.25,False,1.0,0.0,0.0,3.0,-0.2999999999999998,18654
+6055572,Seaton Street Northwest,residential,left,0.8,6.3,False,1.0,0.0,0.43520118784906286,1.1,-0.30000000000000004,15132
+6055572,Seaton Street Northwest,residential,left,1.8,3.55,False,1.0,0.0,0.0,2.2,-0.40000000000000013,15176
+6055572,Seaton Street Northwest,residential,left,1.3,4.15,False,1.0,0.0,0.0,2.2,-0.9000000000000001,15177
+6055572,Seaton Street Northwest,residential,left,1.8,3.8,False,1.0,0.0,0.5331647246401617,1.2,0.6000000000000001,15167
+6055572,Seaton Street Northwest,residential,right,3.85,3.9,False,1.0,0.0,0.0,4.1,-0.24999999999999956,18694
+6055572,Seaton Street Northwest,residential,left,3.2,2.95,False,1.0,0.0,0.0,2.3,0.9000000000000004,15179
+6055572,Seaton Street Northwest,residential,left,2.3,3.4,False,1.0,0.0,0.0,2.3,0.0,15180
+6055572,Seaton Street Northwest,residential,left,1.3,3.95,False,1.0,0.0,0.0,2.3,-0.9999999999999998,15181
+6055572,Seaton Street Northwest,residential,left,1.2,5.05,False,1.0,0.0,0.0,2.4,-1.2,15185
+6055572,Seaton Street Northwest,residential,left,1.3,5.1,False,1.0,0.0,0.0,2.4,-1.0999999999999999,15186
+6055572,Seaton Street Northwest,residential,left,2.8,3.65,False,1.0,0.0,0.0,2.4,0.3999999999999999,15187
+6055572,Seaton Street Northwest,residential,left,3.3,3.7,False,1.0,0.0,0.0,2.5,0.7999999999999998,15188
+6055572,Seaton Street Northwest,residential,left,2.8,4.25,False,1.0,0.0,0.0,2.5,0.2999999999999998,15189
+6055572,Seaton Street Northwest,residential,left,2.3,4.3,False,1.0,0.0,0.0,2.5,-0.20000000000000018,15190
+6055572,Seaton Street Northwest,residential,left,5.3,4.45,False,1.0,0.0,0.0,2.2,3.0999999999999996,15172
+6060109,Fuller Street Northwest,residential,right,1.8,4.45,False,1.0,0.0,0.0,2.1,-0.30000000000000004,32855
+6062557,Florida Avenue Northwest,secondary,right,3.1,6.05,False,1.0,0.0,0.0,3.384,-0.2839999999999998,38127
+6063047,Clydesdale Place Northwest,residential,right,1.15,7.75,False,1.0,0.0,0.0,1.676,-0.526,32711
+6063195,Ontario Road Northwest,residential,left,0.8,14.8,False,1.0,0.0,0.0,0.8,0.0,28488
+6063195,Ontario Road Northwest,residential,right,4.0,1.0,False,1.0,0.0,0.0,2.6,1.4,35127
+6063195,Ontario Road Northwest,residential,left,0.9,16.6,False,1.0,0.0,0.0,0.806,0.09399999999999997,28479
+6063195,Ontario Road Northwest,residential,right,1.3,2.5,False,1.0,0.0,0.0,1.552,-0.252,28991
+6063195,Ontario Road Northwest,residential,right,1.3,2.35,False,1.0,0.0,0.0,1.581,-0.2809999999999999,28993
+6063195,Ontario Road Northwest,residential,right,1.3,2.35,False,1.0,0.0,0.0,1.6,-0.30000000000000004,28995
+6063195,Ontario Road Northwest,residential,right,1.2,3.15,False,1.0,0.0,0.0,1.5,-0.30000000000000004,29007
+83005205,Swann Street Northwest,residential,left,2.3,3.7,False,1.0,0.0,0.0,2.2,0.09999999999999964,11416
+83005205,Swann Street Northwest,residential,left,2.3,3.75,False,1.0,0.0,0.0,2.2,0.09999999999999964,11418
+83005205,Swann Street Northwest,residential,left,2.3,3.4,False,1.0,0.0,0.0,2.2,0.09999999999999964,11422
+83005205,Swann Street Northwest,residential,left,2.3,3.35,False,1.0,0.0,0.0,2.2,0.09999999999999964,11431
+83005205,Swann Street Northwest,residential,left,2.3,2.65,False,1.0,0.0,0.03429429020448669,2.2,0.09999999999999964,11437
+83005205,Swann Street Northwest,residential,left,3.4,3.0,False,1.0,0.0,0.32749689732887116,0.943,2.457,19733
+83005205,Swann Street Northwest,residential,left,3.3,3.05,False,1.0,0.0,0.5519807965602765,0.9,2.4,19735
+83005205,Swann Street Northwest,residential,left,1.3,3.75,False,1.0,0.0,0.0,2.1,-0.8,19729
+83005205,Swann Street Northwest,residential,left,3.8,4.3,False,1.0,0.0,0.0,2.7,1.0999999999999996,19719
+83005205,Swann Street Northwest,residential,left,3.8,2.9,False,1.0,0.0,0.0,1.6,2.1999999999999997,19731
+83005205,Swann Street Northwest,residential,left,5.5,2.2,False,1.0,0.0,0.0,1.3,4.2,25208
+83005205,Swann Street Northwest,residential,left,2.3,2.5,False,1.0,0.0,0.05136177562254099,1.3,0.9999999999999998,25216
+83005205,Swann Street Northwest,residential,left,2.3,2.5,False,1.0,0.0,0.05006388300741875,2.5,-0.20000000000000018,25212
+131076051,Columbia Road Northwest,secondary,left,1.75,8.95,False,1.0,0.0,0.0,1.992,-0.242,11563
+131076051,Columbia Road Northwest,secondary,left,1.6,10.0,False,1.0,0.0,0.034660438196443655,1.105,0.4950000000000001,11566
+131076051,Columbia Road Northwest,secondary,left,2.8,13.75,False,1.0,0.0,0.0,0.8,1.9999999999999998,37748
+131076051,Columbia Road Northwest,secondary,left,0.75,19.25,False,1.0,0.0,0.0,0.949,-0.19899999999999995,37753
+346627389,New Hampshire Avenue Northwest,secondary,right,1.25,18.75,False,1.0,0.0,0.0,2.2,-0.9500000000000002,11409
+392354722,,service,left,4.4,13.8,False,1.0,0.0,0.0,2.2,2.2,15172
+392354722,,service,left,2.8,16.0,False,1.0,0.0,0.0,2.5,0.2999999999999998,15190
+392354722,,service,left,2.3,16.05,False,1.0,0.0,0.0,2.5,-0.20000000000000018,15189
+392354722,,service,left,2.8,16.55,False,1.0,0.0,0.0,2.5,0.2999999999999998,15188
+392354722,,service,left,2.4,16.6,False,1.0,0.0,0.0,2.4,0.0,15187
+392354722,,service,left,1.3,16.65,False,1.0,0.0,0.0,2.4,-1.0999999999999999,15186
+392354722,,service,left,0.8,17.2,False,1.0,0.0,0.0,2.4,-1.5999999999999999,15185
+392354722,,service,left,2.3,17.35,False,1.0,0.0,0.0,2.3,0.0,15180
+392354722,,service,left,1.8,17.35,False,1.0,0.0,0.0,2.3,-0.4999999999999998,15179
+392354722,,service,left,1.4,17.65,False,1.0,0.0,0.0,2.2,-0.8000000000000003,15177
+392354722,,service,left,2.3,17.2,False,1.0,0.0,0.0,2.2,0.09999999999999964,15176
+397331629,18th Street Northwest,secondary,left,1.85,8.35,False,1.0,0.0,0.08814848908070498,0.806,1.044,38744
+397331629,18th Street Northwest,secondary,right,1.05,8.65,True,1.0,0.0,0.0,3.493,-2.4429999999999996,11575
+397331629,18th Street Northwest,secondary,right,1.05,8.7,False,1.0,0.0,0.0,0.8,0.25,37748
+397331629,18th Street Northwest,secondary,right,1.85,11.85,False,1.0,0.0,0.0,1.105,0.7450000000000001,11566
+397331629,18th Street Northwest,secondary,right,1.0,18.3,False,1.0,0.0,0.0,1.334,-0.3340000000000001,38884
+488390606,,service,right,3.9,11.6,True,1.0,0.0,0.0,2.7,1.1999999999999997,19719
+488390606,,service,left,2.9,9.85,False,1.0,0.0,0.0,1.3,1.5999999999999999,25208
+488390606,,service,right,2.1,5.9,False,1.0,0.0,0.0,1.6,0.5,19731
+565580366,,service,right,3.8,14.7,False,1.0,0.0,0.0,4.1,-0.2999999999999998,18694
+565580392,,service,right,2.9,5.7,False,1.0,0.0,0.0,2.2,0.6999999999999997,11437
+565580394,,service,right,2.3,15.8,False,1.0,0.0,0.05183126253589025,2.2,0.09999999999999964,11437
+1047444437,Swann Street Northwest,residential,left,5.45,2.35,False,1.0,0.0,0.0,1.1,4.35,4491
+1047444437,Swann Street Northwest,residential,left,3.7,2.25,False,1.0,0.0,0.0,2.844,0.8560000000000003,4490
+1111546584,17th Street Northwest,secondary,left,1.7,18.1,True,1.0,0.0,0.0,2.2,-0.5000000000000002,11409

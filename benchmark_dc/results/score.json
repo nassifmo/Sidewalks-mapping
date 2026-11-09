@@ -1,0 +1,93 @@
+{
+  "location": {
+    "ai_samples": 652,
+    "on_official_sidewalk_pct": 48.9,
+    "within_1m_pct": 67.2,
+    "within_3m_pct": 80.1,
+    "median_offset_m": 0.04
+  },
+  "width_all": {
+    "n": 247,
+    "bias_m": -1.388,
+    "mae_m": 2.142,
+    "rmse_m": 2.745,
+    "median_abs_m": 1.7,
+    "within_0.25m_pct": 5.7,
+    "within_0.5m_pct": 17.0
+  },
+  "width_matched_share_pct": 37.9,
+  "width_by_distance": {},
+  "width_by_filled": {
+    "filled 0.9-1.01": {
+      "n": 247,
+      "bias_m": -1.388,
+      "mae_m": 2.142,
+      "rmse_m": 2.745,
+      "median_abs_m": 1.7,
+      "within_0.25m_pct": 5.7,
+      "within_0.5m_pct": 17.0
+    }
+  },
+  "width_aggregated_per_location": {
+    "n": 190,
+    "bias_m": -1.586,
+    "mae_m": 2.229,
+    "rmse_m": 2.862,
+    "median_abs_m": 1.738,
+    "within_0.25m_pct": 6.8,
+    "within_0.5m_pct": 16.8
+  },
+  "flag_under_1.2m": {
+    "gt_narrow": 11,
+    "sensitivity_pct": 18.2,
+    "precision_pct": 3.5
+  },
+  "width_same_station": {
+    "n": 389,
+    "bias_m": -1.081,
+    "mae_m": 1.906,
+    "rmse_m": 2.502,
+    "median_abs_m": 1.4,
+    "within_0.25m_pct": 5.9,
+    "within_0.5m_pct": 20.8,
+    "transects_with_official_sidewalk": 389,
+    "transects_total": 652,
+    "median_lateral_shift_m": 1.66
+  },
+  "objects": {
+    "utility_pole": {
+      "ai_objects_dedup": 209,
+      "precision_pct": 34.4,
+      "official_assets_in_view": 587,
+      "recall_pct": 10.7
+    },
+    "street_light": {
+      "ai_objects_dedup": 1,
+      "precision_pct": 0.0,
+      "official_assets_in_view": 184,
+      "recall_pct": 0.0
+    },
+    "sign_post": {
+      "ai_objects": 0,
+      "note": "nothing to match"
+    },
+    "cabinet": {
+      "ai_objects_dedup": 16,
+      "precision_pct": 0.0,
+      "official_assets_in_view": 2,
+      "recall_pct": 0.0
+    }
+  },
+  "objects_without_answer_key": {
+    "parked_car": 367,
+    "barrier": 262,
+    "bin": 119,
+    "bicycle": 97,
+    "bike_rack": 45,
+    "parked_motorcycle": 42,
+    "bench": 36,
+    "billboard": 23,
+    "fire_hydrant": 11,
+    "truck": 9
+  }
+}
