@@ -6,3 +6,15 @@ dc_adams_morgan_foot	D corners 8m	92	0.481	0.21	0.299	66.3	0.706
 dc_adams_morgan_foot	E near-side 8m	46	0.422	0.034	0.22	65.2	0.547
 dc_adams_morgan_pano	A scale from cars	585	1.361	0.31	1.01	24.6	1.841
 dc_adams_morgan_foot	A scale from cars	89	0.529	0.161	0.33	58.4	0.709
+dc_adams_morgan_foot_lines	C lines measured	100	0.495	0.182	0.27	64.0	0.713
+dc_adams_morgan_foot_lines	C curb as image line	102	0.558	0.243	0.33	66.7	0.893
+dc_adams_morgan_foot_tilt	B tilt sidewalk plane	118	0.467	0.097	0.299	72.9	0.685
+dc_adams_morgan_pano_lines	C lines measured	575	1.447	0.259	1.13	26.1	1.89
+dc_adams_morgan_pano_lines	C curb as image line	810	1.701	0.554	1.362	19.8	2.173
+dc_adams_morgan_pano_tilt	B tilt sidewalk plane	603	1.519	0.189	1.224	22.7	1.947
+dc_adams_morgan_foot	0 baseline recheck	98	0.48	0.199	0.269	66.3	0.704
+dc_adams_morgan_pano	0 baseline recheck	575	1.447	0.259	1.13	26.1	1.89
+dc_adams_morgan_foot	E near-side 8m recheck	46	0.422	0.034	0.22	65.2	0.547
+dc_adams_morgan_foot	D corners 8m recheck	92	0.481	0.21	0.299	66.3	0.706
+dc_adams_morgan_pano	E near-side 8m recheck	156	1.436	-0.238	1.267	17.9	1.762
+dc_adams_morgan_pano	D corners 8m recheck	539	1.428	0.235	1.12	26.0	1.865
