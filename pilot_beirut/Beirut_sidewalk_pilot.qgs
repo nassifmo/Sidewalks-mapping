@@ -13,7 +13,7 @@
   <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
   <geographicflag>false</geographicflag>
 </spatialrefsys></projectCrs>
-  <layer-tree-group><customproperties><Option/></customproperties><layer-tree-group name="0. AI results (automatic)" checked="Qt::Checked" expanded="1" groupLayer=""><customproperties><Option/></customproperties><layer-tree-layer id="AI_objects_on/near_sidewalks_59c223c9" name="AI objects on/near sidewalks" source="./ai_results/objects.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="Widths,_edge_method,_on-foot_photos_(most_reliable)_27f1d658" name="Widths, edge method, on-foot photos (most reliable)" source="./ai_results/width_edges.geojson|subset=&quot;source&quot; = 'on-foot'" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="Widths,_edge_method,_car_360_photos_(scale_uncertain)_13a20f9e" name="Widths, edge method, car 360 photos (scale uncertain)" source="./ai_results/width_edges.geojson|subset=&quot;source&quot; &lt;&gt; 'on-foot'" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="AI_sidewalk_widths_(every_2_m)_7e64387e" name="AI sidewalk widths (every 2 m)" source="./ai_results/width_transects.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="AI_sidewalk_outlines_8cce25b3" name="AI sidewalk outlines" source="./ai_results/sidewalks_ai.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="ai_map_48289371" name="AI ground map (sidewalk / road / grass)" source="./ai_results/sidewalk_map.tif" providerKey="gdal" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer></layer-tree-group><layer-tree-group name="1. Survey layers (edit these)" checked="Qt::Checked" expanded="1" groupLayer=""><customproperties><Option/></customproperties><layer-tree-layer id="obstructions_ff2ad03a" name="obstructions" source="./survey/sidewalk_survey.gpkg|layername=obstructions" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="width_measurements_1f78f704" name="width_measurements" source="./survey/sidewalk_survey.gpkg|layername=width_measurements" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="sidewalks_50db43ee" name="sidewalks" source="./survey/sidewalk_survey.gpkg|layername=sidewalks" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer></layer-tree-group><layer-tree-group name="2. Mapillary street photos" checked="Qt::Checked" expanded="1" groupLayer=""><customproperties><Option/></customproperties><layer-tree-layer id="Mapillary_detected_objects_178a744a" name="Mapillary detected objects" source="./data/mapillary_map_features.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="Mapillary_photo_points_db4fde27" name="Mapillary photo points" source="./data/mapillary_images.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer></layer-tree-group><layer-tree-group name="3. Reference data" checked="Qt::Checked" expanded="1" groupLayer=""><customproperties><Option/></customproperties><layer-tree-layer id="OSM_street_features_(lamps,_trees,_crossings,_shops)_9fc885a5" name="OSM street features (lamps, trees, crossings, shops)" source="./data/osm_street_features.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="OSM_streets_a029f713" name="OSM streets" source="./data/osm_streets.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="HeiGIT_road_width_(arterials)_2ccaf4b7" name="HeiGIT road width (arterials)" source="./data/heigit_road_width.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="Microsoft_building_footprints_(2026)_7f861558" name="Microsoft building footprints (2026)" source="./data/ms_buildings.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="OSM_buildings_19f710ea" name="OSM buildings" source="./data/osm_buildings.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer></layer-tree-group><layer-tree-group name="4. Imagery" checked="Qt::Checked" expanded="1" groupLayer=""><customproperties><Option/></customproperties><layer-tree-layer id="drone_ortho_3cf6304b" name="Drone orthophoto 12 cm – Beirut port, 4 Aug 2020 (CC BY, OpenAerialMap)" source="./imagery/beirut_port_2020-08-04_12cm.tif" providerKey="gdal" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="Esri_World_Imagery_–_current_ea428936" name="Esri World Imagery – current (Beirut: Aug–Nov 2024, 0.46–0.5 m)" source="type=xyz&amp;url=https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/%7Bz%7D/%7By%7D/%7Bx%7D&amp;zmax=19&amp;zmin=0" providerKey="wms" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="Esri_Wayback_2018-06_release_6bbb121f" name="Esri Wayback 2018-06 release (Beirut: Nov 2016, 0.31 m WorldView-3)" source="type=xyz&amp;url=https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/11334/%7Bz%7D/%7By%7D/%7Bx%7D&amp;zmax=19&amp;zmin=0" providerKey="wms" checked="Qt::Unchecked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="Esri_Wayback_2017-01_release_3472a330" name="Esri Wayback 2017-01 release (Beirut: Sep 2014, 0.31 m WorldView-3)" source="type=xyz&amp;url=https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/9486/%7Bz%7D/%7By%7D/%7Bx%7D&amp;zmax=19&amp;zmin=0" providerKey="wms" checked="Qt::Unchecked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="OpenStreetMap_basemap_59dc8a61" name="OpenStreetMap basemap" source="type=xyz&amp;url=https://tile.openstreetmap.org/%7Bz%7D/%7By%7D/%7Bx%7D.png&amp;zmax=19&amp;zmin=0" providerKey="wms" checked="Qt::Unchecked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer></layer-tree-group></layer-tree-group>
+  <layer-tree-group><customproperties><Option/></customproperties><layer-tree-group name="0. AI results (automatic)" checked="Qt::Checked" expanded="1" groupLayer=""><customproperties><Option/></customproperties><layer-tree-layer id="AI_objects_on/near_sidewalks_076ed081" name="AI objects on/near sidewalks" source="./ai_results/objects.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="Widths,_edge_method,_on-foot_photos_(most_reliable)_468836b3" name="Widths, edge method, on-foot photos (most reliable)" source="./ai_results/width_edges.geojson|subset=&quot;source&quot; = 'on-foot'" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="Widths,_edge_method,_car_360_photos_(scale_uncertain)_0317ed25" name="Widths, edge method, car 360 photos (scale uncertain)" source="./ai_results/width_edges.geojson|subset=&quot;source&quot; &lt;&gt; 'on-foot'" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="Widths,_high_confidence_only_(predicted_error_is_lowest)_b10cb49f" name="Widths, high confidence only (predicted error is lowest)" source="./ai_results/width_edges.geojson|subset=&quot;confidence&quot; = 'high'" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="AI_sidewalk_widths_(every_2_m)_16da1543" name="AI sidewalk widths (every 2 m)" source="./ai_results/width_transects.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="AI_sidewalk_outlines_2d6dd1be" name="AI sidewalk outlines" source="./ai_results/sidewalks_ai.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="ai_map_5800ebda" name="AI ground map (sidewalk / road / grass)" source="./ai_results/sidewalk_map.tif" providerKey="gdal" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer></layer-tree-group><layer-tree-group name="1. Survey layers (edit these)" checked="Qt::Checked" expanded="1" groupLayer=""><customproperties><Option/></customproperties><layer-tree-layer id="obstructions_6e6886b6" name="obstructions" source="./survey/sidewalk_survey.gpkg|layername=obstructions" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="width_measurements_7f852da7" name="width_measurements" source="./survey/sidewalk_survey.gpkg|layername=width_measurements" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="sidewalks_9ea587bc" name="sidewalks" source="./survey/sidewalk_survey.gpkg|layername=sidewalks" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer></layer-tree-group><layer-tree-group name="2. Mapillary street photos" checked="Qt::Checked" expanded="1" groupLayer=""><customproperties><Option/></customproperties><layer-tree-layer id="Mapillary_detected_objects_e2ff2653" name="Mapillary detected objects" source="./data/mapillary_map_features.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="Mapillary_photo_points_49fa39e5" name="Mapillary photo points" source="./data/mapillary_images.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer></layer-tree-group><layer-tree-group name="3. Reference data" checked="Qt::Checked" expanded="1" groupLayer=""><customproperties><Option/></customproperties><layer-tree-layer id="OSM_street_features_(lamps,_trees,_crossings,_shops)_ed262c7b" name="OSM street features (lamps, trees, crossings, shops)" source="./data/osm_street_features.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="OSM_streets_ff7fe0a1" name="OSM streets" source="./data/osm_streets.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="HeiGIT_road_width_(arterials)_3f9a01c6" name="HeiGIT road width (arterials)" source="./data/heigit_road_width.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="Microsoft_building_footprints_(2026)_3d450bac" name="Microsoft building footprints (2026)" source="./data/ms_buildings.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="OSM_buildings_b58cb45c" name="OSM buildings" source="./data/osm_buildings.geojson" providerKey="ogr" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer></layer-tree-group><layer-tree-group name="4. Imagery" checked="Qt::Checked" expanded="1" groupLayer=""><customproperties><Option/></customproperties><layer-tree-layer id="drone_ortho_7a0bb1fa" name="Drone orthophoto 12 cm – Beirut port, 4 Aug 2020 (CC BY, OpenAerialMap)" source="./imagery/beirut_port_2020-08-04_12cm.tif" providerKey="gdal" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="Esri_World_Imagery_–_current_c8ce368b" name="Esri World Imagery – current (Beirut: Aug–Nov 2024, 0.46–0.5 m)" source="type=xyz&amp;url=https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/%7Bz%7D/%7By%7D/%7Bx%7D&amp;zmax=19&amp;zmin=0" providerKey="wms" checked="Qt::Checked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="Esri_Wayback_2018-06_release_50a6cec4" name="Esri Wayback 2018-06 release (Beirut: Nov 2016, 0.31 m WorldView-3)" source="type=xyz&amp;url=https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/11334/%7Bz%7D/%7By%7D/%7Bx%7D&amp;zmax=19&amp;zmin=0" providerKey="wms" checked="Qt::Unchecked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="Esri_Wayback_2017-01_release_a46205a4" name="Esri Wayback 2017-01 release (Beirut: Sep 2014, 0.31 m WorldView-3)" source="type=xyz&amp;url=https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/9486/%7Bz%7D/%7By%7D/%7Bx%7D&amp;zmax=19&amp;zmin=0" providerKey="wms" checked="Qt::Unchecked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer><layer-tree-layer id="OpenStreetMap_basemap_ecadf6d5" name="OpenStreetMap basemap" source="type=xyz&amp;url=https://tile.openstreetmap.org/%7Bz%7D/%7By%7D/%7Bx%7D.png&amp;zmax=19&amp;zmin=0" providerKey="wms" checked="Qt::Unchecked" expanded="0" legend_exp=""><customproperties><Option/></customproperties></layer-tree-layer></layer-tree-group></layer-tree-group>
   <snapping-settings enabled="1" mode="2" type="1" tolerance="12" unit="1" intersection-snapping="0" self-snapping="0" scaleDependencyMode="0" minScale="0" maxScale="0"><individual-layer-settings/></snapping-settings>
   <relations/>
   <mapcanvas name="theMapCanvas" annotationsVisible="1">
@@ -34,7 +34,7 @@
   </mapcanvas>
   <projectlayers>
 <maplayer type="vector" geometry="Point" wkbType="Point" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
-  <id>AI_objects_on/near_sidewalks_59c223c9</id>
+  <id>AI_objects_on/near_sidewalks_076ed081</id>
   <datasource>./ai_results/objects.geojson</datasource>
   <layername>AI objects on/near sidewalks</layername>
   <srs><spatialrefsys nativeFormat="Wkt">
@@ -63,7 +63,7 @@
   <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
 </maplayer>
 <maplayer type="vector" geometry="Line" wkbType="LineString" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
-  <id>Widths,_edge_method,_on-foot_photos_(most_reliable)_27f1d658</id>
+  <id>Widths,_edge_method,_on-foot_photos_(most_reliable)_468836b3</id>
   <datasource>./ai_results/width_edges.geojson|subset="source" = 'on-foot'</datasource>
   <layername>Widths, edge method, on-foot photos (most reliable)</layername>
   <srs><spatialrefsys nativeFormat="Wkt">
@@ -82,7 +82,7 @@
   <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
 </maplayer>
 <maplayer type="vector" geometry="Line" wkbType="LineString" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
-  <id>Widths,_edge_method,_car_360_photos_(scale_uncertain)_13a20f9e</id>
+  <id>Widths,_edge_method,_car_360_photos_(scale_uncertain)_0317ed25</id>
   <datasource>./ai_results/width_edges.geojson|subset="source" &lt;&gt; 'on-foot'</datasource>
   <layername>Widths, edge method, car 360 photos (scale uncertain)</layername>
   <srs><spatialrefsys nativeFormat="Wkt">
@@ -101,7 +101,26 @@
   <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
 </maplayer>
 <maplayer type="vector" geometry="Line" wkbType="LineString" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
-  <id>AI_sidewalk_widths_(every_2_m)_7e64387e</id>
+  <id>Widths,_high_confidence_only_(predicted_error_is_lowest)_b10cb49f</id>
+  <datasource>./ai_results/width_edges.geojson|subset="confidence" = 'high'</datasource>
+  <layername>Widths, high confidence only (predicted error is lowest)</layername>
+  <srs><spatialrefsys nativeFormat="Wkt">
+  <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],MEMBER["World Geodetic System 1984 (G2296)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+  <proj4>+proj=longlat +datum=WGS84 +no_defs +type=crs</proj4>
+  <authid>EPSG:4326</authid>
+  <description>WGS 84</description>
+  <projectionacronym>longlat</projectionacronym>
+  <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+  <geographicflag>true</geographicflag>
+</spatialrefsys></srs>
+  <provider encoding="UTF-8">ogr</provider>
+  <renderer-v2 type="graduatedSymbol" attr="width_m" graduatedMethod="GraduatedColor" symbollevels="0" enableorderby="0" forceraster="0" referencescale="-1"><ranges><range lower="0" upper="1.2" symbol="0" label="&lt; 1.2 m" render="true"/><range lower="1.2" upper="1.5" symbol="1" label="1.2–1.5 m" render="true"/><range lower="1.5" upper="2.0" symbol="2" label="1.5–2.0 m" render="true"/><range lower="2.0" upper="99" symbol="3" label="&gt; 2.0 m" render="true"/></ranges><symbols><symbol type="line" name="0" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0"><layer class="SimpleLine" enabled="1" locked="0" pass="0"><Option type="Map"><Option name="line_color" value="215,25,28,255" type="QString"/><Option name="line_width" value="1.0" type="QString"/><Option name="line_width_unit" value="MM" type="QString"/><Option name="line_style" value="solid" type="QString"/><Option name="capstyle" value="flat" type="QString"/></Option></layer></symbol><symbol type="line" name="1" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0"><layer class="SimpleLine" enabled="1" locked="0" pass="0"><Option type="Map"><Option name="line_color" value="253,174,97,255" type="QString"/><Option name="line_width" value="1.0" type="QString"/><Option name="line_width_unit" value="MM" type="QString"/><Option name="line_style" value="solid" type="QString"/><Option name="capstyle" value="flat" type="QString"/></Option></layer></symbol><symbol type="line" name="2" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0"><layer class="SimpleLine" enabled="1" locked="0" pass="0"><Option type="Map"><Option name="line_color" value="255,255,140,255" type="QString"/><Option name="line_width" value="1.0" type="QString"/><Option name="line_width_unit" value="MM" type="QString"/><Option name="line_style" value="solid" type="QString"/><Option name="capstyle" value="flat" type="QString"/></Option></layer></symbol><symbol type="line" name="3" alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0"><layer class="SimpleLine" enabled="1" locked="0" pass="0"><Option type="Map"><Option name="line_color" value="26,150,65,255" type="QString"/><Option name="line_width" value="1.0" type="QString"/><Option name="line_width_unit" value="MM" type="QString"/><Option name="line_style" value="solid" type="QString"/><Option name="capstyle" value="flat" type="QString"/></Option></layer></symbol></symbols><mode name="manual"/><rotation/><sizescale/></renderer-v2>
+  
+  
+  <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
+</maplayer>
+<maplayer type="vector" geometry="Line" wkbType="LineString" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
+  <id>AI_sidewalk_widths_(every_2_m)_16da1543</id>
   <datasource>./ai_results/width_transects.geojson</datasource>
   <layername>AI sidewalk widths (every 2 m)</layername>
   <srs><spatialrefsys nativeFormat="Wkt">
@@ -120,7 +139,7 @@
   <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
 </maplayer>
 <maplayer type="vector" geometry="Polygon" wkbType="Polygon" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
-  <id>AI_sidewalk_outlines_8cce25b3</id>
+  <id>AI_sidewalk_outlines_2d6dd1be</id>
   <datasource>./ai_results/sidewalks_ai.geojson</datasource>
   <layername>AI sidewalk outlines</layername>
   <srs><spatialrefsys nativeFormat="Wkt">
@@ -149,7 +168,7 @@
   <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
 </maplayer>
 <maplayer type="raster" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
-  <id>ai_map_48289371</id>
+  <id>ai_map_5800ebda</id>
   <datasource>./ai_results/sidewalk_map.tif</datasource>
   <layername>AI ground map (sidewalk / road / grass)</layername>
   <srs><spatialrefsys nativeFormat="Wkt">
@@ -172,7 +191,7 @@
   <blendMode>0</blendMode>
 </maplayer>
 <maplayer type="vector" geometry="Point" wkbType="Point" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
-  <id>obstructions_ff2ad03a</id>
+  <id>obstructions_6e6886b6</id>
   <datasource>./survey/sidewalk_survey.gpkg|layername=obstructions</datasource>
   <layername>obstructions</layername>
   <srs><spatialrefsys nativeFormat="Wkt">
@@ -201,7 +220,7 @@
   <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
 </maplayer>
 <maplayer type="vector" geometry="Line" wkbType="LineString" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
-  <id>width_measurements_1f78f704</id>
+  <id>width_measurements_7f852da7</id>
   <datasource>./survey/sidewalk_survey.gpkg|layername=width_measurements</datasource>
   <layername>width_measurements</layername>
   <srs><spatialrefsys nativeFormat="Wkt">
@@ -230,7 +249,7 @@
   <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
 </maplayer>
 <maplayer type="vector" geometry="Polygon" wkbType="Polygon" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
-  <id>sidewalks_50db43ee</id>
+  <id>sidewalks_9ea587bc</id>
   <datasource>./survey/sidewalk_survey.gpkg|layername=sidewalks</datasource>
   <layername>sidewalks</layername>
   <srs><spatialrefsys nativeFormat="Wkt">
@@ -259,7 +278,7 @@
   <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
 </maplayer>
 <maplayer type="vector" geometry="Point" wkbType="Point" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
-  <id>Mapillary_detected_objects_178a744a</id>
+  <id>Mapillary_detected_objects_e2ff2653</id>
   <datasource>./data/mapillary_map_features.geojson</datasource>
   <layername>Mapillary detected objects</layername>
   <srs><spatialrefsys nativeFormat="Wkt">
@@ -288,7 +307,7 @@
   <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
 </maplayer>
 <maplayer type="vector" geometry="Point" wkbType="Point" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
-  <id>Mapillary_photo_points_db4fde27</id>
+  <id>Mapillary_photo_points_49fa39e5</id>
   <datasource>./data/mapillary_images.geojson</datasource>
   <layername>Mapillary photo points</layername>
   <srs><spatialrefsys nativeFormat="Wkt">
@@ -314,11 +333,11 @@
 </renderer-v2>
   
   <attributeactions><defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
-<actionsetting type="5" name="Open photo in Mapillary" shortTitle="Open in Mapillary" action="[% &quot;open_url&quot; %]" capture="0" icon="" notificationMessage="" isEnabledOnlyWhenEditable="0" id="{5dfb0c57-e890-4c53-a56d-908b694132a8}"><actionScope id="Feature"/><actionScope id="Canvas"/><actionScope id="Field"/></actionsetting></attributeactions>
+<actionsetting type="5" name="Open photo in Mapillary" shortTitle="Open in Mapillary" action="[% &quot;open_url&quot; %]" capture="0" icon="" notificationMessage="" isEnabledOnlyWhenEditable="0" id="{4ea6fb39-f3b5-4897-8da8-66b074498460}"><actionScope id="Feature"/><actionScope id="Canvas"/><actionScope id="Field"/></actionsetting></attributeactions>
   <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
 </maplayer>
 <maplayer type="vector" geometry="Point" wkbType="Point" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
-  <id>OSM_street_features_(lamps,_trees,_crossings,_shops)_9fc885a5</id>
+  <id>OSM_street_features_(lamps,_trees,_crossings,_shops)_ed262c7b</id>
   <datasource>./data/osm_street_features.geojson</datasource>
   <layername>OSM street features (lamps, trees, crossings, shops)</layername>
   <srs><spatialrefsys nativeFormat="Wkt">
@@ -347,7 +366,7 @@
   <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
 </maplayer>
 <maplayer type="vector" geometry="Line" wkbType="LineString" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
-  <id>OSM_streets_a029f713</id>
+  <id>OSM_streets_ff7fe0a1</id>
   <datasource>./data/osm_streets.geojson</datasource>
   <layername>OSM streets</layername>
   <srs><spatialrefsys nativeFormat="Wkt">
@@ -376,7 +395,7 @@
   <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
 </maplayer>
 <maplayer type="vector" geometry="Line" wkbType="LineString" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
-  <id>HeiGIT_road_width_(arterials)_2ccaf4b7</id>
+  <id>HeiGIT_road_width_(arterials)_3f9a01c6</id>
   <datasource>./data/heigit_road_width.geojson</datasource>
   <layername>HeiGIT road width (arterials)</layername>
   <srs><spatialrefsys nativeFormat="Wkt">
@@ -405,7 +424,7 @@
   <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
 </maplayer>
 <maplayer type="vector" geometry="Polygon" wkbType="Polygon" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
-  <id>Microsoft_building_footprints_(2026)_7f861558</id>
+  <id>Microsoft_building_footprints_(2026)_3d450bac</id>
   <datasource>./data/ms_buildings.geojson</datasource>
   <layername>Microsoft building footprints (2026)</layername>
   <srs><spatialrefsys nativeFormat="Wkt">
@@ -434,7 +453,7 @@
   <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
 </maplayer>
 <maplayer type="vector" geometry="Polygon" wkbType="Polygon" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
-  <id>OSM_buildings_19f710ea</id>
+  <id>OSM_buildings_b58cb45c</id>
   <datasource>./data/osm_buildings.geojson</datasource>
   <layername>OSM buildings</layername>
   <srs><spatialrefsys nativeFormat="Wkt">
@@ -463,7 +482,7 @@
   <blendMode>0</blendMode><featureBlendMode>0</featureBlendMode><layerOpacity>1</layerOpacity>
 </maplayer>
 <maplayer type="raster" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
-  <id>drone_ortho_3cf6304b</id>
+  <id>drone_ortho_7a0bb1fa</id>
   <datasource>./imagery/beirut_port_2020-08-04_12cm.tif</datasource>
   <layername>Drone orthophoto 12 cm – Beirut port, 4 Aug 2020 (CC BY, OpenAerialMap)</layername>
   <srs><spatialrefsys nativeFormat="Wkt">
@@ -486,7 +505,7 @@
   <blendMode>0</blendMode>
 </maplayer>
 <maplayer type="raster" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
-  <id>Esri_World_Imagery_–_current_ea428936</id>
+  <id>Esri_World_Imagery_–_current_c8ce368b</id>
   <datasource>type=xyz&amp;url=https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/%7Bz%7D/%7By%7D/%7Bx%7D&amp;zmax=19&amp;zmin=0</datasource>
   <layername>Esri World Imagery – current (Beirut: Aug–Nov 2024, 0.46–0.5 m)</layername>
   <srs><spatialrefsys nativeFormat="Wkt">
@@ -509,7 +528,7 @@
   <blendMode>0</blendMode>
 </maplayer>
 <maplayer type="raster" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
-  <id>Esri_Wayback_2018-06_release_6bbb121f</id>
+  <id>Esri_Wayback_2018-06_release_50a6cec4</id>
   <datasource>type=xyz&amp;url=https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/11334/%7Bz%7D/%7By%7D/%7Bx%7D&amp;zmax=19&amp;zmin=0</datasource>
   <layername>Esri Wayback 2018-06 release (Beirut: Nov 2016, 0.31 m WorldView-3)</layername>
   <srs><spatialrefsys nativeFormat="Wkt">
@@ -532,7 +551,7 @@
   <blendMode>0</blendMode>
 </maplayer>
 <maplayer type="raster" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
-  <id>Esri_Wayback_2017-01_release_3472a330</id>
+  <id>Esri_Wayback_2017-01_release_a46205a4</id>
   <datasource>type=xyz&amp;url=https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/9486/%7Bz%7D/%7By%7D/%7Bx%7D&amp;zmax=19&amp;zmin=0</datasource>
   <layername>Esri Wayback 2017-01 release (Beirut: Sep 2014, 0.31 m WorldView-3)</layername>
   <srs><spatialrefsys nativeFormat="Wkt">
@@ -555,7 +574,7 @@
   <blendMode>0</blendMode>
 </maplayer>
 <maplayer type="raster" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories">
-  <id>OpenStreetMap_basemap_59dc8a61</id>
+  <id>OpenStreetMap_basemap_ecadf6d5</id>
   <datasource>type=xyz&amp;url=https://tile.openstreetmap.org/%7Bz%7D/%7By%7D/%7Bx%7D.png&amp;zmax=19&amp;zmin=0</datasource>
   <layername>OpenStreetMap basemap</layername>
   <srs><spatialrefsys nativeFormat="Wkt">
