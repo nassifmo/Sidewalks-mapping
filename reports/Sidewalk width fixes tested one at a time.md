@@ -57,7 +57,31 @@ Re-running the AI pass with no change moves on-foot MAE by about 0.01 m. Smaller
 4. **Corners (D) are only slightly worse than mid-block.** Skipping them is a small clean-up, not a fix.
 5. **Near side only (E) removes the panorama bias but throws away most stations.** It is not worth it.
 
-## Proposed merge (for your confirmation)
+## Merged version: implemented and tested (2026-11-10)
+
+The merge below was confirmed, implemented, and tested on DC.
+
+| Photo source | Setting | Stations | MAE | Median | Within 0.5 m | Bias |
+|---|---|---|---|---|---|---|
+| Car 360 panoramas | Baseline | 575 | 1.45 | 1.13 | 26 % | +0.26 |
+| Car 360 panoramas | **Merged (A + D)** | 528 | **1.34** | **1.01** | 25 % | +0.33 |
+| Car 360 panoramas | Paired, 426 shared stations: baseline → merged | | 1.34 → **1.29** | 1.04 → 1.01 | 26 → 27 % | +0.43 → +0.32 |
+| On-foot | Baseline | 98 | 0.48 | 0.27 | 66 % | +0.20 |
+| On-foot | **Merged (B + D)** | **113** | **0.47** | 0.31 | **73 %** | **+0.09** |
+| On-foot | Paired, 92 shared stations: baseline → merged | | 0.48 → **0.45** | 0.30 → 0.28 | 66 → 72 % | +0.21 → +0.19 |
+
+The unpaired on-foot median rises (0.27 → 0.31) only because the 30 newly measured stations are harder ones. On the shared stations every measure improves.
+
+**Confidence flag, tested across photo sources** (the model never sees the width it is judging):
+
+| Trained on → flagged | High | Medium | Low | Rank correlation |
+|---|---|---|---|---|
+| Panoramas → on-foot | MAE 0.32 (33 stations, 82 % ≤0.5 m) | 0.51 (72) | 0.80 (8) | 0.34 |
+| On-foot → panoramas | MAE 0.34 (9) | 1.33 (476) | 1.68 (43) | 0.08 |
+
+The flag separates good from bad stations when it is trained on enough data (panoramas). On-foot alone is too little to train on. For Beirut the model is trained on **both** DC sources together.
+
+## Proposed merge (as confirmed)
 
 | Photo source | Fixes switched on | Expected (estimate from the paired tests, not yet measured) |
 |---|---|---|

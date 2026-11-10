@@ -143,8 +143,9 @@ def main():
     ap.add_argument("--station-m", type=float, default=2.0)
     ap.add_argument("--no-align", action="store_true")
     ap.add_argument("--no-calib", action="store_true", help="ignore sequence_scale.csv")
+    ap.add_argument("--calib-foot", action="store_true", help="also use parked-car calibration for on-foot sequences")
     ap.add_argument("--use-lines", action="store_true", help="use the straight edge lines fitted in the image (codes 5/6)")
-    ap.add_argument("--corner-m", type=float, default=0.0, help="skip views whose sidewalk is within this distance of an intersection")
+    ap.add_argument("--corner-m", type=float, default=8.0, help="skip views whose sidewalk is within this distance of an intersection")
     ap.add_argument("--out-suffix", default="", help="suffix for the output files (experiments)")
     a = ap.parse_args()
     area = os.path.expanduser(a.area_dir)
@@ -166,8 +167,8 @@ def main():
         bld_tree = cKDTree(ref) if len(ref) else None
 
     log = pd.read_csv(os.path.join(out, "per_view.csv"))
-    from fuse_map import sequence_heights
-    est_h, ref_h = sequence_heights(out, log, not getattr(a, "no_calib", False))
+    from fuse_map import sequence_heights, pano_sequences
+    est_h, ref_h = sequence_heights(out, log, not a.no_calib, None if a.calib_foot else pano_sequences(meta))
     shifts, view_rot = {}, {}
     if not a.no_align:
         sp = os.path.join(out, "sequence_shifts.csv")
@@ -267,14 +268,14 @@ def main():
         nrm = np.array([-sg["u"][1], sg["u"][0]]) * side
         base = sg["p0"] + sg["u"] * t
         p_c, p_b = base + nrm * c, base + nrm * b
-        props = {"osm_way": wid, "street": sg["way"]["name"], "highway": sg["way"]["highway"], "side": side_name,
+        skey = f"{wid}_{kseg}_{side_name}_{st}"
+        props = {"station": skey, "osm_way": wid, "street": sg["way"]["name"], "highway": sg["way"]["highway"], "side": side_name,
                  "width_m": round(w, 2), "n_views": len(L), "width_spread_m": round(float(np.median(np.abs(ws - w))), 2),
                  "seen_frac": round(float(np.median([d["seen_frac"] for d in L])), 2),
                  "method": "edges_bridged" if np.median([d["seen_frac"] for d in L]) < 0.95 else "edges_seen",
                  "source": {(True,): "car 360", (False,): "on-foot"}.get(tuple(set(d["pano"] for d in L)), "mixed"),
                  "complete": True, "filled_frac": 1.0, "dist_m": 0.0, "offset_from_centreline_m": round(c, 2)}
         mid = (p_c + p_b) / 2
-        skey = f"{wid}_{kseg}_{side_name}_{st}"
         lc, lb = to_ll.transform(*p_c), to_ll.transform(*p_b)
         s_along = sg["s0"] + t
         for d in L:
@@ -290,6 +291,9 @@ def main():
     pd.DataFrame(view_log).to_csv(os.path.join(out, f"view_edges_log{sfx}.csv"), index=False)
     json.dump({"type": "FeatureCollection", "features": samples}, open(os.path.join(out, f"width_samples_views{sfx}.geojson"), "w"))
     json.dump({"type": "FeatureCollection", "features": transects}, open(os.path.join(out, f"width_transects_views{sfx}.geojson"), "w"))
+    stale = os.path.join(out, f"width_transects_views{sfx}_conf.geojson")   # confidence layer of an older run
+    if os.path.exists(stale):
+        os.remove(stale)
     print(f"{n_ok} of {n_views} views gave both edges -> {len(transects)} stations "
           f"(median {np.median([len(v) for v in per_station.values()]) if per_station else 0:.0f} views each)")
 

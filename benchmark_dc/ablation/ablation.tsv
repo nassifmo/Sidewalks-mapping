@@ -18,3 +18,5 @@ dc_adams_morgan_foot	E near-side 8m recheck	46	0.422	0.034	0.22	65.2	0.547
 dc_adams_morgan_foot	D corners 8m recheck	92	0.481	0.21	0.299	66.3	0.706
 dc_adams_morgan_pano	E near-side 8m recheck	156	1.436	-0.238	1.267	17.9	1.762
 dc_adams_morgan_pano	D corners 8m recheck	539	1.428	0.235	1.12	26.0	1.865
+dc_adams_morgan_foot_tilt	M merged	113	0.472	0.094	0.31	72.6	0.688
+dc_adams_morgan_pano	M merged	528	1.338	0.329	1.01	25.4	1.817

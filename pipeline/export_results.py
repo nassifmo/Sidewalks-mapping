@@ -34,8 +34,11 @@ def main():
         if os.path.exists(os.path.join(out, f)):
             shutil.copy(os.path.join(out, f), os.path.join(a.dest, f))
     # widths from the two edges seen in each photo, bridging parked cars (view_edges.py)
-    if os.path.exists(os.path.join(out, "width_transects_views.geojson")):
-        shutil.copy(os.path.join(out, "width_transects_views.geojson"), os.path.join(a.dest, "width_edges.geojson"))
+    # (the _conf version adds pred_error_m + confidence from ml_widths.py --apply-rows, when it was run)
+    for f in ("width_transects_views_conf.geojson", "width_transects_views.geojson"):
+        if os.path.exists(os.path.join(out, f)):
+            shutil.copy(os.path.join(out, f), os.path.join(a.dest, "width_edges.geojson"))
+            break
 
     tr = gpd.read_file(os.path.join(out, "width_transects.geojson"))
     crs = tr.estimate_utm_crs()

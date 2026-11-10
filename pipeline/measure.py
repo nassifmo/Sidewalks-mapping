@@ -45,7 +45,8 @@ SIDEWALK = {"Sidewalk", "Curb Cut", "Pedestrian Area"}
 ROAD = {"Road", "Crosswalk - Plain", "Lane Marking - Crosswalk", "Parking", "Bike Lane", "Service Lane",
         "Lane Marking - General", "Manhole", "Catch Basin", "Pothole"}
 CURB = {"Curb"}
-SW_PLANE = True           # fit the sidewalk's own ground plane (tilt fix); --no-sw-plane turns it off
+SW_PLANE = "foot"         # sidewalk-plane tilt fix: "foot" = on-foot photos only (DC test: helps on-foot, hurts panoramas),
+                          # "all" = every photo (--sw-plane-pano), "off" = never (--no-sw-plane)
 OBJECTS = {  # model label -> pipeline object class (names match the pilot's obstruction types where possible)
     "Pole": "utility_pole", "Utility Pole": "utility_pole", "Street Light": "street_light",
     "Traffic Sign Frame": "sign_post", "Trash Can": "bin", "Bench": "bench", "Fire Hydrant": "fire_hydrant",
@@ -250,7 +251,7 @@ class Models:
 
 
 # ----------------------------------------------------------------------------- per-view measurement
-def measure_view(img, lab, pts, valid, M, K, debug_path=None, prior_deg=0.0):
+def measure_view(img, lab, pts, valid, M, K, debug_path=None, prior_deg=0.0, sw_plane=True):
     """prior_deg: street direction in the view (0 = straight ahead, 90 = left-right).
     Geometry: the depth model only provides the ground plane's orientation and the camera height;
     every ground pixel is then placed exactly by intersecting its viewing ray with that plane
@@ -282,7 +283,7 @@ def measure_view(img, lab, pts, valid, M, K, debug_path=None, prior_deg=0.0):
     res["curb_h"] = round(curb, 3)
     d_sw = d - curb
     n_sw = n
-    if SW_PLANE and side.sum() > 3000:
+    if sw_plane and side.sum() > 3000:
         # fit the sidewalk's own plane: the road is crowned / the street may slope, so the road plane
         # raised by the curb height can be tilted relative to the sidewalk. Accept only a plausible plane.
         sp = pts[side]
@@ -454,10 +455,11 @@ def main():
     ap.add_argument("--debug", type=int, default=0, help="save overlay images for the first N views")
     ap.add_argument("--panos-only", action="store_true")
     ap.add_argument("--no-sw-plane", action="store_true", help="sidewalk = road plane raised by the curb (old behaviour)")
+    ap.add_argument("--sw-plane-pano", action="store_true", help="also apply the sidewalk-plane tilt fix to panoramas")
     ap.add_argument("--cam-height", type=float, default=0.0, help="known rig height in metres (0 = use per-sequence median estimate)")
     a = ap.parse_args()
     global SW_PLANE
-    SW_PLANE = not a.no_sw_plane
+    SW_PLANE = "off" if a.no_sw_plane else ("all" if a.sw_plane_pano else "foot")
     from pyproj import Transformer
 
     area = os.path.expanduser(a.area_dir)
@@ -514,7 +516,8 @@ def main():
                 pts, valid, K = M.points(img, fov_x=CROP["fov"] if vname in ("left", "right") else None)
                 r = measure_view(img, lab, pts, valid, M, K,
                                  os.path.join(dbg_dir, f"{p['id']}_{vname}.jpg") if n_views <= a.debug else None,
-                                 prior_deg=90.0 if vname in ("left", "right") else 0.0)
+                                 prior_deg=90.0 if vname in ("left", "right") else 0.0,
+                                 sw_plane=SW_PLANE == "all" or (SW_PLANE == "foot" and not p.get("is_pano")))
             except torch.cuda.OutOfMemoryError:
                 torch.cuda.empty_cache()
                 r = {"status": "oom", "widths": [], "objects": [], "cam_height": None}

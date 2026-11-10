@@ -124,8 +124,8 @@ def main():
     tree = cKDTree(ref)
 
     log = pd.read_csv(os.path.join(out, "per_view.csv"))
-    from fuse_map import sequence_heights
-    est_h, ref_h = sequence_heights(out, log, not getattr(a, "no_calib", False))
+    from fuse_map import sequence_heights, pano_sequences
+    est_h, ref_h = sequence_heights(out, log, not getattr(a, "no_calib", False), pano_sequences(meta))
     # ---- 1. heading correction per view: the sidewalk runs along the street, and the street's direction
     #         is known from OpenStreetMap. Compare the sidewalk's direction in the photo with the nearest
     #         street's direction and rotate the view by the difference (max +-25 deg).

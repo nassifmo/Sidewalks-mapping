@@ -23,12 +23,14 @@ def main():
     if os.path.isdir(bev):
         shutil.rmtree(bev)
     os.makedirs(bev)
-    feats, logs, layers = {}, [], {"width_samples": [], "objects_raw": []}
+    feats, logs, scales, layers = {}, [], [], {"width_samples": [], "objects_raw": []}
     for src in map(os.path.expanduser, a.areas):
         for f in json.load(open(os.path.join(src, "imagery", "images.geojson")))["features"]:
             feats[str(f["properties"]["id"])] = f
         o = os.path.join(src, "outputs")
         logs.append(pd.read_csv(os.path.join(o, "per_view.csv")))
+        if os.path.exists(os.path.join(o, "sequence_scale.csv")):          # parked-car calibration (calib_scale.py)
+            scales.append(pd.read_csv(os.path.join(o, "sequence_scale.csv"), dtype={"sequence": str}))
         for name in layers:
             p = os.path.join(o, f"{name}.geojson")
             if os.path.exists(p):
@@ -43,6 +45,11 @@ def main():
         print(f"{src}: {len(logs[-1])} views, {n} bird's-eye files")
     json.dump({"type": "FeatureCollection", "features": list(feats.values())}, open(os.path.join(out, "imagery", "images.geojson"), "w"))
     pd.concat(logs).to_csv(os.path.join(out, "outputs", "per_view.csv"), index=False)
+    sp = os.path.join(out, "outputs", "sequence_scale.csv")
+    if scales:
+        pd.concat(scales).drop_duplicates("sequence").to_csv(sp, index=False)
+    elif os.path.exists(sp):
+        os.remove(sp)
     for name, fs in layers.items():
         json.dump({"type": "FeatureCollection", "features": fs}, open(os.path.join(out, "outputs", f"{name}.geojson"), "w"))
     print(f"merged {len(feats)} photos -> {out}")

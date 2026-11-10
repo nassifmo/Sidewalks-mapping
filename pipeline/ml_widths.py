@@ -75,7 +75,12 @@ def main():
     ap.add_argument("--no-width-features", action="store_true", help="do not let the model see the measured width / curb offset")
     ap.add_argument("--group-by", default="block", choices=["block", "sequence"], help="what is held out in cross-validation")
     ap.add_argument("--out", default=None, help="write the comparison as JSON here")
+    ap.add_argument("--apply-rows", default=None, help="confidence mode: view_station_rows CSV of the area to flag")
+    ap.add_argument("--apply-transects", default=None, help="confidence mode: that area's width_transects_views GeoJSON")
+    ap.add_argument("--conf-out", default=None, help="confidence mode: output GeoJSON (transects + pred_error_m + confidence)")
     a = ap.parse_args()
+    if a.apply_rows:
+        return confidence(a)
     df = pd.concat([pd.read_csv(p, dtype={"sequence": str}).assign(dataset=p) for p in a.rows], ignore_index=True)
     df["station"] = df["dataset"].str.slice(-40) + "|" + df["station"].astype(str)
     st = df.groupby("station").first()[["c_lon", "c_lat", "b_lon", "b_lat", "osm_way", "side_name", "s_along", "dataset"]]
@@ -164,6 +169,50 @@ def main():
     print(json.dumps(report, indent=1))
     if a.out:
         json.dump(report, open(a.out, "w"), indent=1)
+
+
+def design(df, cols):
+    X = df[[f for f in NUM if f not in ("w", "c")]].copy()          # never the width itself -> transferable
+    for c in CAT:
+        X = X.join(pd.get_dummies(df[c].astype(str), prefix=c).astype(float))
+    return X.reindex(columns=cols, fill_value=0.0) if cols is not None else X
+
+
+def confidence(a):
+    """Train the error model on all labelled rows (--rows + --gt), predict every view of another area, and
+    write each station's predicted width error and a high / medium / low confidence flag into its transects.
+    The tiers are the 25 % / 75 % quantiles of the training stations' predicted error."""
+    df = pd.concat([pd.read_csv(p, dtype={"sequence": str}).assign(dataset=p) for p in a.rows], ignore_index=True)
+    df["skey"] = df["dataset"] + "|" + df["station"].astype(str)
+    st = df.groupby("skey").first()[["c_lon", "c_lat", "b_lon", "b_lat"]]
+    epsg = 32618 if st.c_lon.mean() < -72 else 32636
+    st["gt_w"], _ = gt_for_stations(st, a.gt, epsg)
+    df = df.join(st[["gt_w"]], on="skey")
+    lab = df[df.gt_w.notna()]
+    X = design(lab, None)
+    m = HistGradientBoostingRegressor(max_iter=200, learning_rate=0.05, max_leaf_nodes=15, min_samples_leaf=20,
+                                      loss="absolute_error").fit(X.values, np.abs(lab.w - lab.gt_w).values)
+
+    def station_err(rows):
+        pe = np.clip(m.predict(design(rows, X.columns).values), 0.05, None)
+        return pd.Series(pe, index=rows.index).groupby(rows.station.astype(str)).apply(
+            lambda s: float(1.0 / np.sqrt(np.sum(1.0 / s.values ** 2))))
+    tr_err = station_err(lab)
+    q_hi, q_lo = float(tr_err.quantile(0.25)), float(tr_err.quantile(0.75))
+    ap_rows = pd.read_csv(a.apply_rows, dtype={"sequence": str})
+    err = station_err(ap_rows)
+    g = json.load(open(a.apply_transects))
+    n = 0
+    for f in g["features"]:
+        e = err.get(str(f["properties"].get("station")))
+        if e is None:
+            continue
+        n += 1
+        f["properties"]["pred_error_m"] = round(float(e), 2)
+        f["properties"]["confidence"] = "high" if e <= q_hi else ("low" if e >= q_lo else "medium")
+    json.dump(g, open(a.conf_out, "w"))
+    print(f"confidence: trained on {len(lab)} labelled views; flagged {n} of {len(g['features'])} stations "
+          f"(high <= {q_hi:.2f} m predicted error, low >= {q_lo:.2f} m) -> {a.conf_out}")
 
 
 if __name__ == "__main__":

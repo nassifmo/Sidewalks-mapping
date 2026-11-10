@@ -222,6 +222,10 @@ if _os.path.exists(_os.path.join(_HERE, "ai_results", "width_transects.geojson")
                    "Line", "LineString", graduated_lines("width_m", _W))
         add_vector(G0, "Widths, edge method, car 360 photos (scale uncertain)", "./ai_results/width_edges.geojson|subset=\"source\" <> 'on-foot'",
                    "Line", "LineString", graduated_lines("width_m", _W))
+        if '"confidence"' in open(_os.path.join(_HERE, "ai_results", "width_edges.geojson"), encoding="utf-8").read(4000):
+            add_vector(G0, "Widths, high confidence only (predicted error is lowest)",
+                       "./ai_results/width_edges.geojson|subset=\"confidence\" = 'high'",
+                       "Line", "LineString", graduated_lines("width_m", _W))
     add_vector(G0, "AI sidewalk widths (every 2 m)", "./ai_results/width_transects.geojson", "Line", "LineString",
                graduated_lines("width_m", [(0, 1.2, "215,25,28,255", "< 1.2 m"), (1.2, 1.5, "253,174,97,255", "1.2–1.5 m"),
                                            (1.5, 2.0, "255,255,140,255", "1.5–2.0 m"), (2.0, 99, "26,150,65,255", "> 2.0 m")]))

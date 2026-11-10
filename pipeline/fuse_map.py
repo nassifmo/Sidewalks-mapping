@@ -49,16 +49,24 @@ def osm_streets(bbox, cache):
     return ways
 
 
-def sequence_heights(out_dir, log, use_calib=True):
+def pano_sequences(meta):
+    """Sequences made of 360 panoramas (the parked-car calibration is used for these only)."""
+    return {str(f["properties"].get("sequence")) for f in meta if f["properties"].get("is_pano")}
+
+
+def sequence_heights(out_dir, log, use_calib=True, pano_seqs=None):
     """Per-sequence reference camera height.
     est: median of the depth model's own per-view estimates (used to reject inconsistent views).
     scale: the height used to set metric scale = parked-car calibration (calib_scale.py) when available,
-    else est."""
+    else est. pano_seqs: when given, calibration is applied to these (panorama) sequences only (DC test:
+    on-foot sequences rarely show enough whole cars, and the few calibrations made widths worse)."""
     est = {str(k): float(v) for k, v in log.groupby("sequence").cam_height.median().items()}
     scale = dict(est)
     p = os.path.join(out_dir, "sequence_scale.csv")
     if use_calib and os.path.exists(p):
         cal = pd.read_csv(p, dtype={"sequence": str}).dropna(subset=["rig_height_m"])
+        if pano_seqs is not None:
+            cal = cal[cal.sequence.isin(pano_seqs)]
         n = 0
         for r in cal.itertuples():
             if r.sequence in est and est[r.sequence] > 0:
@@ -88,8 +96,8 @@ def main():
     out = os.path.join(area, "outputs")
     files = sorted(glob.glob(os.path.join(out, "bev", "*.npz")))
     log = pd.read_csv(os.path.join(out, "per_view.csv"))
-    est_h, ref_h = sequence_heights(out, log, not a.no_calib)
     meta = json.load(open(os.path.join(area, "imagery", "images.geojson")))["features"]
+    est_h, ref_h = sequence_heights(out, log, not a.no_calib, pano_sequences(meta))
     lons = [f["geometry"]["coordinates"][0] for f in meta]
     lats = [f["geometry"]["coordinates"][1] for f in meta]
     epsg = utm_epsg(np.mean(lons), np.mean(lats))
